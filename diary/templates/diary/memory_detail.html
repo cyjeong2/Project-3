@@ -1,0 +1,12 @@
+{% extends "diary/base.html" %}
+
+{% block content %}
+    <h2>{{ memory.title }}</h2>
+
+    {{ memory.content }}
+
+    <hr>
+    <a href="/diary/{{ memory.pk }}/edit/">Edit</a>
+    <a href="/diary/{{ memory.pk }}/delete/">Delete</a>
+    <a href="/diary/">Go to list</a>
+{% endblock %}

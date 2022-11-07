@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+    <h2>새 포스팅 쓰기</h2>
+
+    <form action="" method="post" novalidate>
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <input type="submit" />
+    </form>
+{% endblock %}
