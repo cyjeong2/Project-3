@@ -31,7 +31,7 @@
 .features-one .title {
   font-size: 44px;
   font-weight: 600;
-  color: var(--black);
+  color: #4646CD;
   line-height: 55px;
 }
 @media (max-width: 767px) {
@@ -48,7 +48,7 @@
 }
 
 .features-style-one {
-  background-color: var(--white);
+  background-color: lightblue;
   padding: 40px 20px;
   margin-top: 40px;
   box-shadow: var(--shadow-2);
@@ -67,7 +67,7 @@
   line-height: 100px;
   text-align: center;
   font-size: 40px;
-  color: var(--primary);
+  color: white;
   border: 2px solid rgba(187, 187, 187, 0.192);
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -85,9 +85,9 @@
   }
 }
 .features-style-one:hover .features-icon {
-  border-color: transparent;
-  color: var(--white);
-  background-color: var(--primary);
+  border-color: black;
+  color: white;
+  background-color: white;
 }
 .features-style-one .features-content {
   margin-top: 24px;
@@ -96,7 +96,7 @@
   font-size: 26px;
   line-height: 35px;
   font-weight: 600;
-  color: var(--black);
+  color: black;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -109,7 +109,7 @@
   }
 }
 .features-style-one .text {
-  color: var(--dark-3);
+  color: black;
   margin-top: 16px;
 }
 .features-style-one .features-btn {
@@ -138,17 +138,16 @@
                   <i class="lni lni-compass"></i>
                </div>
                <div class="features-content">
-                  <h4 class="features-title">Graphics Design</h4>
+                  <h4 class="features-title">긴 글로 일기 쓰기</h4>
                   <p class="text">
-                     Short description for the ones who look for something new.
-                     Awesome!
+                     평소 일기 쓰듯이 쓰길 원하시는 분께
                   </p>
                   <div class="features-btn rounded-buttons">
                      <a
                         class="btn primary-btn-outline rounded-full"
-                        href="javascript:void(0)"
+                        href="http://localhost:8000/diary/new/"
                         >
-                     KNOW MORE
+                     작성 시작하기
                      </a>
                   </div>
                </div>
@@ -161,51 +160,27 @@
                   <i class="lni lni-construction"></i>
                </div>
                <div class="features-content">
-                  <h4 class="features-title">Product Design</h4>
+                  <h4 class="features-title">짧은 단어로 일기 쓰기</h4>
                   <p class="text">
-                     Short description for the ones who look for something new.
-                     Awesome!
+                     짧은 단어들로만 하루를 표현하고 싶으신 분께
                   </p>
                   <div class="features-btn rounded-buttons">
                      <a
                         class="btn primary-btn-outline rounded-full"
-                        href="javascript:void(0)"
+                        href=""
                         >
-                     KNOW MORE
+                     작성 시작하기
                      </a>
                   </div>
                </div>
             </div>
             <!-- single features -->
-         </div>
-         <div class="col-lg-4 col-md-7 col-sm-9">
-            <div class="features-style-one text-center">
-               <div class="features-icon">
-                  <i class="lni lni-cup"></i>
-               </div>
-               <div class="features-content">
-                  <h4 class="features-title">UI & UX Design</h4>
-                  <p class="text">
-                     Short description for the ones who look for something new.
-                     Awesome!
-                  </p>
-                  <div class="features-btn rounded-buttons">
-                     <a
-                        class="btn primary-btn-outline rounded-full"
-                        href="javascript:void(0)"
-                        >
-                     KNOW MORE
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <!-- single features -->
-         </div>
+
       </div>
       <!-- row -->
    </div>
    <!-- container -->
 </section>
 <!--====== FEATURE ONE PART ENDS ======-->
-    <a href="/diary/new/">New Memory</a>
+
 {% endblock %}

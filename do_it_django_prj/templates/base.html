@@ -7,11 +7,20 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/52f1c1721d.js" crossorigin="anonymous"></script>
     <title>memory list</title>
     {% bootstrap_css %}
 
 </head>
-<body>
+    <style>
+        body { background-color: #C0FFFF; }
+    </style>
+    <style type="text/css">
+
+    body { color:#000000; }
+
+    </style>
+<body class="d-flex flex-column min-vh-100">
 
 
 <!-- 사이드바 -->
@@ -57,63 +66,42 @@
 <!--  </div>-->
 <!--</nav>-->
 <!-- 사이드바 끝-->
-<!--사이드바-->
-<style>
 
-<!--@media (min-width: 992px) {-->
-<!--  .navbar,-->
-<!--  .navbar-collapse {-->
-<!--    flex-direction: column;-->
-<!--  }-->
-<!--  .navbar-expand-lg .navbar-nav {-->
-<!--    flex-direction: column;-->
-<!--  }-->
-<!--  .navbar {-->
-<!--    width: 13%;-->
-<!--    height: 100vh;-->
-<!--    align-items: flex-start;-->
-<!--    position: fixed;-->
-<!--    overflow: auto;-->
-<!--  }-->
-<!--  .navbar-brand {-->
-<!--    margin-left: 0.5em;-->
-<!--    padding-bottom: 0;-->
-<!--    border-bottom: 4px solid #464646;-->
-<!--  }-->
-<!--  form input {-->
-<!--    margin-bottom: 0.7em;-->
-<!--  }-->
-<!--}-->
-<!--사이드바-->
- </style>
 <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <i class="fa-regular fa-book-heart"></i>
         <a href="http://localhost:8000/blog/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <span class="fs-4">하루 그림</span>
         </a>
 
         <ul class="nav nav-pills">
-            <li class="nav-item"><a href="/blog/" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="/diary/" class="nav-link">Diary</a></li>
-
+            <li class="nav-item"><a href="/blog/" class="nav-link">대문</a></li>
+            <li class="nav-item"><a href="/diary/" class="nav-link">일기작성</a></li>
+            <li class="nav-item"><a href="/diary/gallery" class="nav-link">갤러리</a></li>
+                <li class="nav-item"><a href="/diary/calendar/" class="nav-link">캘린더</a></li>
             {% if not user.is_authenticated %}
-                <li class="nav-item"><a href="/accounts/signup/" class="nav-link">Signup</a></li>
-                <li class="nav-item"><a href="/accounts/login/" class="nav-link">Login</a></li>
+                <li class="nav-item"><a href="/accounts/login/" class="nav-link">로그인</a></li>
             {% else %}
-                <li class="nav-item"><a href="/accounts/profile/" class="nav-link">Profile</a></li>
-                <li class="nav-item"><a href="/accounts/logout/" class="nav-link">Logout</a></li>
+                <li class="nav-item"><a href="/accounts/profile/" class="nav-link">회원정보</a></li>
+                <li class="nav-item"><a href="/accounts/logout/" class="nav-link">로그아웃</a></li>
             {% endif %}
         </ul>
     </header>
 </div>
 
-<div class="container">
     {% bootstrap_messages %}
+
     {% block content %}{% endblock %}
-    <hr/>
-    &copy; 2022. Haru Grim Co.
-</div>
+
+
 
 {% bootstrap_javascript %}
 </body>
+<footer class="bg-light text-center text-lg-start mt-auto">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: #79FFCE;">
+    © Haru Grim Co.
+  </div>
+  <!-- Copyright -->
+</footer>
 </html>

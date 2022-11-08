@@ -73,5 +73,6 @@ def memory_delete(request, pk):
 def gallery(request):
     return render(request, "diary/gallery.html")
 
-
+def calendar(request):
+    return render(request, "diary/calendar.html")
 
