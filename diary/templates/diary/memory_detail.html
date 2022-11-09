@@ -1,12 +1,21 @@
 {% extends "diary/base.html" %}
 
 {% block content %}
+<div class ="container">
+    <div class ="row">
+        <div class ="col-8">
     <h2>{{ memory.title }}</h2>
 
     {{ memory.content }}
-
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     <hr>
-    <a href="/diary/{{ memory.pk }}/edit/">수정</a>
-    <a href="/diary/{{ memory.pk }}/delete/">삭제</a>
-    <a href="/diary/">일기 작성 페이지로</a>
+            <a class="btn btn-primary" href="/diary/{{ memory.pk }}/edit/" role="button">수정</a>
+            <a class="btn btn-primary" href="/diary/{{ memory.pk }}/delete/" role="button">삭제</a>
+            <a class="btn btn-primary" href="/diary/" role="button">일기 작성 페이지로</a>
+<!--    <a href="/diary/{{ memory.pk }}/edit/">수정</a>-->
+<!--    <a href="/diary/{{ memory.pk }}/delete/">삭제</a>-->
+<!--    <a href="/diary/">일기 작성 페이지로</a>-->
+        </div>
+    </div>
+</div>
 {% endblock %}

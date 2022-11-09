@@ -1,9 +1,15 @@
 {% extends "diary/base.html" %}
 
 {% block content %}
+<div class ="container">
+    <div class ="row">
+        <div class ="col-4">
     <form action="" method="post">
         {% csrf_token %}
         삭제하시겠습니까? <br/><br/>
         <input type="submit" value="네 삭제하겠습니다" />
     </form>
+        </div>
+    </div>
+</div>
 {% endblock %}

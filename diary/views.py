@@ -25,7 +25,6 @@ def memory_new(request):
         if form.is_valid():
             # form.cleaned_data
             memory = form.save()
-            messages.success(request, "메모리를 생성했습니다.")
             # return redirect(f"/diary/{memory.pk}/")
             # return redirect(memory.get_absolute_url())
             return redirect(memory)
@@ -76,3 +75,8 @@ def gallery(request):
 def calendar(request):
     return render(request, "diary/calendar.html")
 
+def info(request):
+    return render(request, "diary/info.html")
+
+def select(request):
+    return render(request, "diary/memory_photo_confirm.html")

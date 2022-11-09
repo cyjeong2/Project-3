@@ -9,4 +9,6 @@ urlpatterns = [
     path("<int:pk>/delete/", views.memory_delete),
     path("gallery/", views.gallery),
     path("calendar/", views.calendar),
+    path("info/", views.info),
+    path("select/", views.select),
 ]
