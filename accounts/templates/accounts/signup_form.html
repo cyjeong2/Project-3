@@ -2,11 +2,17 @@
 {% load django_bootstrap5 %}
 
 {% block content %}
+<div class ="container">
+    <div class ="row">
+        <div class ="col-8">
     <h2>회원등록</h2>
 
     <form action="" method="post">
         {% csrf_token %}
         {% bootstrap_form form %}
-        <input type="submit" value="Signup" />
+        <button type="submit" class="btn btn-primary">회원가입</button>
     </form>
+        </div>
+    </div>
+</div>
 {% endblock %}

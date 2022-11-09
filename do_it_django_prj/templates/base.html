@@ -8,7 +8,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/52f1c1721d.js" crossorigin="anonymous"></script>
-    <title>memory list</title>
+    <title>하루 그림</title>
     {% bootstrap_css %}
 
 </head>
@@ -67,26 +67,27 @@
 <!--</nav>-->
 <!-- 사이드바 끝-->
 
-<div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+<!-- header -->
+<!--<div class="container">-->
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" style="background-color:#28E7FF	">
         <i class="fa-regular fa-book-heart"></i>
-        <a href="http://localhost:8000/blog/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <a href="http://localhost:8000/home/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            &nbsp&nbsp&nbsp&nbsp<i class="far fa-edit"></i> &nbsp
             <span class="fs-4">하루 그림</span>
         </a>
 
         <ul class="nav nav-pills">
+
             <li class="nav-item"><a href="/diary/" class="nav-link">일기작성</a></li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 일기보기
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/diary/gallery">갤러리</a></li>
+                    <li><a class="dropdown-item" href="/diary/gallery">갤러리</a>
                     <li><a class="dropdown-item" href="/diary/calendar/">캘린더</a></li>
                 </ul>
             </li>
-<!--            <li class="nav-item"><a href="/diary/gallery" class="nav-link">갤러리</a></li>-->
-<!--                <li class="nav-item"><a href="/diary/calendar/" class="nav-link">캘린더</a></li>-->
             <li class="nav-item"><a href="http://localhost:8000/diary/info/" class="nav-link">도움말</a></li>
             {% if not user.is_authenticated %}
                 <li class="nav-item"><a href="/accounts/login/" class="nav-link">로그인</a></li>

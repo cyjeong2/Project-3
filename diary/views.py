@@ -44,7 +44,7 @@ def memory_edit(request, pk):
         if form.is_valid():
             # form.cleaned_data
             memory = form.save()
-            messages.success(request, "메모리를 저장했습니다.")
+            messages.success(request, "일기를 저장했습니다.")
             # return redirect(f"/diary/{memory.pk}/")
             # return redirect(memory.get_absolute_url())
             return redirect(memory)
