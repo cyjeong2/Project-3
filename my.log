@@ -94,3 +94,1086 @@ sss</textarea>
 2022-11-14 14:57:13,138 - django.request - WARNING - Not Found: /diary/new/do_it_django_prj/static/diary_bg1.png
 2022-11-14 14:57:17,462 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['4Z49sf9zBNxJEZPaLMHr0X6iKnMUE1VVySgSPUwMtYiz2sWnuyKlliDP5c4FEBaO'], 'Weather': ['Clody'], 'Emotion': ['Neutral'], 'Drawing': ['1'], 'content': ['ss']}>
 2022-11-14 14:57:17,570 - django.request - WARNING - Not Found: /diary/new/do_it_django_prj/static/diary_bg1.png
+2022-11-14 14:58:33,439 - django.request - WARNING - Not Found: /diary/new/do_it_django_prj/static/diary_bg1.png
+2022-11-14 14:58:37,856 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['lY6e6mi2TWUtff2xnH2FoE4VAczBaD3JPRiXt1FfL7FjDI9K6t5zJZBsV1RmadiC'], 'Weather': ['Rainy'], 'Emotion': ['Neutral'], 'Drawing': ['Digital Art'], 'content': ['ssss']}>
+2022-11-14 14:58:38,099 - django.request - WARNING - Not Found: /diary/select/do_it_django_prj/static/diary_bg1.png
+2022-11-14 15:02:28,229 - django.request - WARNING - Not Found: /home/do_it_django_prj/static/diary_bg1.png
+2022-11-14 15:02:29,753 - django.request - WARNING - Not Found: /diary/do_it_django_prj/static/diary_bg1.png
+2022-11-14 15:02:31,043 - django.request - WARNING - Not Found: /diary/new/do_it_django_prj/static/diary_bg1.png
+2022-11-14 15:04:39,782 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['UY4Y83v7dxgNTVxEbFEarM9NCS73LUnJoRgHvISk5I1DhoERUrH4M7GkXHpOLuCC'], 'Weather': ['Sunny'], 'Emotion': ['Cheerful'], 'Drawing': ['원하시는 화풍을 선택해주세요'], 'content': ['']}>
+2022-11-14 15:04:43,187 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['XDQmqsG537naYoblU1eyDo2RP0tKXqkTrw25N73iVi80mRiyDNhsYJzoaPLvX0zM'], 'Weather': ['Sunny'], 'Emotion': ['Cheerful'], 'Drawing': ['원하시는 화풍을 선택해주세요'], 'content': ['']}>
+2022-11-14 15:04:44,469 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['wJoygM99fAcXO5PW9E3A4SH279JkSugY0CAhDrwm7LXNcyW9Sq6updezsY15S4vR'], 'Weather': ['Sunny'], 'Emotion': ['Cheerful'], 'Drawing': ['원하시는 화풍을 선택해주세요'], 'content': ['']}>
+2022-11-14 15:04:45,336 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['aRSbHF9eCbgnajji7j7JN7QJZNs5fGZ9EK4U4kwrum1dyMqvQ5aD8sngkCKQfge2'], 'Weather': ['Sunny'], 'Emotion': ['Cheerful'], 'Drawing': ['원하시는 화풍을 선택해주세요'], 'content': ['']}>
+2022-11-14 15:05:14,071 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['aQnGW5lv0PqCLDkrbFy5zTBOg4v5wWd4EJzpjKIIS0bs96rEUrBZUe8lBTNQwwsX'], 'Weather': ['Sunny'], 'Emotion': ['Cheerful'], 'Drawing': ['원하시는 화풍을 선택해주세요'], 'content': ['']}>
+2022-11-14 15:05:24,394 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['wMhhDwkSH3B9d3qyUZ2PFCLtW4wKMkXp0Ft00bH5zemZBwxLDL5J0Xi0hTOvMUci'], 'Weather': ['Rainy'], 'Emotion': ['Happy'], 'Drawing': ['Sketched'], 'content': ['asdfasdfasdfasdfas']}>
+2022-11-14 15:15:21,592 - django.request - ERROR - Internal Server Error: /diary/1/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 25, in memory_detail
+    memory = Memory.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.Memory.DoesNotExist: Memory matching query does not exist.
+2022-11-14 15:16:36,597 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 15:16:49,883 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 15:17:45,254 - django.request - ERROR - Internal Server Error: /admin/diary/keywordpost/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\options.py", line 668, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\options.py", line 670, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: KeywordPost has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 284, in lookup_field
+    value = attr()
+  File "D:\GIT WD\Project 3\esg-a-django\diary\models.py", line 81, in __str__
+    return f"[{self.pk}] {self.content} "
+AttributeError: 'KeywordPost' object has no attribute 'content'
+2022-11-14 15:18:47,560 - django.request - ERROR - Internal Server Error: /admin/diary/keywordpost/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\options.py", line 668, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\options.py", line 670, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: KeywordPost has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 284, in lookup_field
+    value = attr()
+  File "D:\GIT WD\Project 3\esg-a-django\diary\models.py", line 81, in __str__
+    return f"[{self.pk}] {self.content} "
+AttributeError: 'KeywordPost' object has no attribute 'content'
+2022-11-14 15:25:59,165 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['inKtKwItNCmeFq6yp0iuhzWI9f44PGUCMgWc7b5GFN743TdL8MloCUtfu4mPPg9v'], 'Weather': ['Rainy'], 'Emotion': ['Happy'], 'Drawing': ['Sketched'], 'content': ['asdfasdfasdf']}>
+2022-11-14 15:41:55,339 - django.request - WARNING - Not Found: /diary/select/staticiary_bg2.png
+2022-11-14 15:41:56,881 - django.request - WARNING - Not Found: /home/staticiary_bg2.png
+2022-11-14 15:41:57,673 - django.request - WARNING - Not Found: /home/staticiary_bg2.png
+2022-11-14 15:41:57,981 - django.request - WARNING - Not Found: /home/staticiary_bg2.png
+2022-11-14 15:42:06,759 - django.request - WARNING - Not Found: /home/staticiary_bg2.png
+2022-11-14 15:50:42,160 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['hOb9ARQ1w9cYUl0zx9Tym0fKvhcIc7emLHnSXwdeokXOiO7MgVWsHlMhQ6utcHtf'], 'Weather': ['Clody'], 'Emotion': ['Happy'], 'Drawing': ['Oil and Canvas'], 'content': ['ㅁㄴㅇㄻㄴㅇㄹ']}>
+2022-11-14 15:50:49,231 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['FF8Xa4eoK4pw75JYKnlHKc0aRl3WMGeE9ykGxJBBCfamvyQbt9oB5xxHcalHMgtx'], 'Weather': ['Clody'], 'Emotion': ['Happy'], 'Drawing': ['Oil and Canvas'], 'content': ['ㅁㄴㅇㄻㄴㅇㄹ']}>
+2022-11-14 15:50:51,885 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['QbJwONoCdlfR83ig9Fx6kBMEBmWGK2t5k4VfbsLP5w0HwwptSrA0FWjbWberKCIY'], 'Weather': ['Sunny'], 'Emotion': ['Cheerful'], 'Drawing': ['원하시는 화풍을 선택해주세요'], 'content': ['']}>
+2022-11-14 15:50:52,083 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['82ejl1lJtkoE4SPIZ6RyhTagNQk64SAZCVq2IGIWlv9uslWVISUsCeHN8FCR4sPS'], 'Weather': ['Sunny'], 'Emotion': ['Cheerful'], 'Drawing': ['원하시는 화풍을 선택해주세요'], 'content': ['']}>
+2022-11-14 15:51:12,903 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['GqL2gdTCJgpdgGhn14B0iWO2fjRhGvacajXLDSgPBra3E9oAKQEUDhlzA892G5p5'], 'Weather': ['Clody'], 'Emotion': ['Happy'], 'Drawing': ['Digital Art'], 'content': ['ㅁㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇ']}>
+2022-11-14 15:53:08,104 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['QEaCsFOAXNEjfQpAmBMC1mt2c8MS1S1QkxmlPkbNPYp9DjwN5nPwmH0zxX4D1sgJ'], 'Weather': ['Rainy'], 'Emotion': ['Happy'], 'Drawing': ['Sketched'], 'content': ['ㅇㅋㄻㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ']}>
+2022-11-14 15:59:04,820 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-14 16:00:53,155 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 16:02:34,656 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['lgjtQy9izEGklmoSBx76Sp0OSjED8J7RP9vcddwvrPraJPv5kja0dKxld8Wo8jmK'], 'Weather': ['Clody'], 'Emotion': ['Happy'], 'Drawing': ['Digital Art'], 'content': ['테스틉니다.']}>
+2022-11-14 16:02:36,297 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['cBUsCfXAAFUmPI7ZVotPiIPl1aaKEy9lGu6bZUkNsQFcdbecEawJD3mSmZsvE8oe'], 'Weather': ['Sunny'], 'Emotion': ['Cheerful'], 'Drawing': ['원하시는 화풍을 선택해주세요'], 'content': ['']}>
+2022-11-14 16:02:47,390 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Xov0A0fNwWiuHE1208Pq39BM264ojM55rhHJXFC0o73k578fJUSkou8jnVm9jmkY'], 'Weather': ['Clody'], 'Emotion': ['Happy'], 'Drawing': ['Sketched'], 'content': ['ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄹ']}>
+2022-11-14 16:02:51,080 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Lxox8BuDObul1RVJMqxiucitQPWfCbuEfqAgvgRQGmfbpk2WvcAcPxP0bEe0CLJx'], 'Weather': ['Rainy'], 'Emotion': ['Depressed'], 'Drawing': ['Oil and Canvas'], 'content': ['ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹㄴㅁㅇㄻㄴㅇㄹ']}>
+2022-11-14 16:03:28,630 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['yz1uvP0o2dWdOgoeYnROYkevi1nGjqOW2sddSunBUoH3cJvrH9UIjFL2DQFrj03P'], 'Weather': ['Clody'], 'Emotion': ['Happy'], 'Drawing': ['Impressionism'], 'content': ['사과']}>
+2022-11-14 16:03:38,157 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['3SSfJceOJHpg7LqbFkZ6wPEmh6qXZTtVxL4Y6RB1BSa6vexoo620RabTCVIIZtIO'], 'Weather': ['Snowy'], 'Emotion': ['Depressed'], 'Drawing': ['Sketched'], 'content': ['스파게티']}>
+2022-11-14 16:03:46,805 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['ynMtvqijzAMd4BqYTz8yAxltiGP9ElzG2gYcS5FwrLx3s4xbClbsVSS0Dv7UEVOz'], 'Weather': ['Rainy'], 'Emotion': ['Neutral'], 'Drawing': ['Oil and Canvas'], 'content': ['짜장면']}>
+2022-11-14 16:03:54,266 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['8jsmcq0EVPfkW1RG0bENYobkoWcCBkuECcE5z5nRN00akuYTJXHHjJIRJLunBUJx'], 'Weather': ['Clody'], 'Emotion': ['Happy'], 'Drawing': ['Digital Art'], 'content': ['똥']}>
+2022-11-14 16:05:23,565 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['qSZvnuT5w5vItLOcA6Gr2OQHdDYmFgqlULbeK9gioggyReVpjSJln9neysg7FQFe'], 'Weather': ['Snowy'], 'Emotion': ['Depressed'], 'Drawing': ['Digital Art'], 'content': ['사과']}>
+2022-11-14 16:05:39,167 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['6QZ4jjSw22Nsh1gbyZPQPPwYDs02pOpJAJbNGYfJUdyiFunohLSKaa3vYhiNpoEC'], 'Weather': ['Clody'], 'Emotion': ['Happy'], 'Drawing': ['원하시는 화풍을 선택해주세요'], 'content': ['사과']}>
+2022-11-14 16:05:45,070 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['TD7bWF61BtVfP5Fm6yxmDMGFC3ZkOi4pnwjUjktetEG5dyMzPkAgY7dcXSh5OSji'], 'Weather': ['Clody'], 'Emotion': ['Happy'], 'Drawing': ['Oil and Canvas'], 'content': ['ㅁㄴㅇㄻㄴㅇㄹ']}>
+2022-11-14 16:06:37,078 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['ie0ZzQIUVH22SJN95OEjYHswYCzlKQGOM7cIWv57NSNSgcUmOAHdj2Z3jrR6KqVH'], 'Weather': ['Clody'], 'Emotion': ['Cheerful'], 'Drawing': ['Sketched'], 'content': ['사과']}>
+2022-11-14 16:06:45,709 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['U7doHMgEYnUbep32JWvz4RwHEyOK5NC5o0p74rDRQyF1CSafsIytpc3eZn6v5nRY'], 'Weather': ['Sunny'], 'Emotion': ['Happy'], 'Drawing': ['Oil and Canvas'], 'content': ['사과']}>
+2022-11-14 16:07:27,553 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['P3umyzKfkr3gg5ZImihgdimk4A3HjU3wjWG5Ve7scCO6Ey6V54kayDTRpplsjuip'], 'Weather': ['Cloudy'], 'Emotion': ['Cheerful'], 'Drawing': ['Oil and Canvas'], 'content': ['ㅁㅇㅁㄴㅇ']}>
+2022-11-14 16:07:42,583 - django.request - ERROR - Internal Server Error: /admin/diary/keywordpost/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\options.py", line 668, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\options.py", line 670, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: KeywordPost has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 284, in lookup_field
+    value = attr()
+  File "D:\GIT WD\Project 3\esg-a-django\diary\models.py", line 81, in __str__
+    return f"[{self.pk}] {self.content} "
+AttributeError: 'KeywordPost' object has no attribute 'content'
+2022-11-14 16:10:29,051 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:10:29,478 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:10:29,712 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:10:29,902 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:10:30,121 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:10:30,323 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:10:30,529 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:10:30,736 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:10:30,952 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:10:31,196 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:10:31,354 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:14:27,086 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:14:51,855 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:14:53,347 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:14:54,074 - django.request - WARNING - Not Found: /home/staticiary_bg1.png
+2022-11-14 16:30:08,658 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['2ca6kxSz8u8yfWJ1IG5rcpcNwxdGZ8vkw5mPHcfM0FToDpQers8lxKJkRmvrZIKd'], 'Weather': ['Rainy'], 'Emotion': ['Happy'], 'Drawing': ['Digital Art'], 'content': ['asdfasdfsdaf']}>
+2022-11-14 16:32:52,107 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['BIGmYFZswSbBMPoCC0O9AHd0qLyVevvr5BS5lkmFo3WraivPlMR3V2KxLAQGe5Kk'], 'Weather': ['Rainy'], 'Emotion': ['Happy'], 'Drawing': ['Oil and Canvas'], 'content': ['dfasdfsdf']}>
+2022-11-14 16:35:32,909 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\do_it_django_prj\urls.py changed, reloading.
+2022-11-14 16:37:56,692 - django.request - ERROR - Internal Server Error: /admin/diary/keywordpost/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\options.py", line 668, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\options.py", line 670, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: KeywordPost has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 284, in lookup_field
+    value = attr()
+  File "D:\GIT WD\Project 3\esg-a-django\diary\models.py", line 81, in __str__
+    return f"[{self.pk}] {self.content} "
+AttributeError: 'KeywordPost' object has no attribute 'content'
+2022-11-14 16:38:00,751 - django.request - ERROR - Internal Server Error: /admin/diary/keywordpost/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\options.py", line 668, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\options.py", line 670, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: KeywordPost has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 284, in lookup_field
+    value = attr()
+  File "D:\GIT WD\Project 3\esg-a-django\diary\models.py", line 81, in __str__
+    return f"[{self.pk}] {self.content} "
+AttributeError: 'KeywordPost' object has no attribute 'content'
+2022-11-14 16:47:12,286 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\forms.py changed, reloading.
+2022-11-14 16:58:26,544 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\forms.py changed, reloading.
+2022-11-14 16:58:50,854 - django.request - ERROR - Internal Server Error: /admin/diary/keywordpost/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\options.py", line 668, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\options.py", line 670, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: KeywordPost has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\utils.py", line 284, in lookup_field
+    value = attr()
+  File "D:\GIT WD\Project 3\esg-a-django\diary\models.py", line 81, in __str__
+    return f"[{self.pk}] {self.content} "
+AttributeError: 'KeywordPost' object has no attribute 'content'
+2022-11-14 16:59:35,648 - django.request - ERROR - Internal Server Error: /admin/diary/keywordpost/add/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 1890, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 1808, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 924, in log_addition
+    object_repr=str(obj),
+  File "D:\GIT WD\Project 3\esg-a-django\diary\models.py", line 81, in __str__
+    return f"[{self.pk}] {self.content} "
+AttributeError: 'KeywordPost' object has no attribute 'content'
+2022-11-14 17:00:09,173 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-14 17:05:47,786 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-14 17:07:18,929 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-14 17:19:17,942 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 17:19:19,331 - django.request - ERROR - Internal Server Error: /diary/gallery/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 19, in index
+    return render(request, "diary/memory_list.html", {
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 72: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+2022-11-14 17:20:02,092 - django.request - ERROR - Internal Server Error: /diary/gallery/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 19, in index
+    return render(request, "diary/memory_list.html", {
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 72: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+2022-11-14 17:21:16,987 - django.request - ERROR - Internal Server Error: /diary/gallery/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 19, in index
+    return render(request, "diary/memory_list.html", {
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 72: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+2022-11-14 17:21:39,607 - django.request - ERROR - Internal Server Error: /diary/gallery/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 19, in index
+    return render(request, "diary/memory_list.html", {
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 72: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+2022-11-14 17:23:05,742 - django.request - ERROR - Internal Server Error: /diary/gallery/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 19, in index
+    return render(request, "diary/memory_list.html", {
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 72: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+2022-11-14 17:24:43,012 - django.request - WARNING - Not Found: /diary//
+2022-11-14 17:31:46,052 - django.request - ERROR - Internal Server Error: /diary/keyword/1/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 123, in k_detail_page
+    return render(request, "diary/keyword_detail.html", {
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 45: 'endblock'. Did you forget to register or load this tag?
+2022-11-14 17:42:22,710 - django.request - WARNING - Not Found: /diary//edit/
+2022-11-14 17:42:54,043 - django.request - WARNING - Not Found: /diary//delete/
+2022-11-14 17:47:35,982 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 17:48:12,915 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 17:53:52,508 - django.request - ERROR - Internal Server Error: /diary/keyword/6/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 122, in k_detail_page
+    keyword_memory = KeywordPost.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.KeywordPost.DoesNotExist: KeywordPost matching query does not exist.
+2022-11-14 17:55:04,562 - django.request - ERROR - Internal Server Error: /diary/keyword/6/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 122, in k_detail_page
+    keyword_memory = KeywordPost.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.KeywordPost.DoesNotExist: KeywordPost matching query does not exist.
+2022-11-14 17:57:06,326 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 17:57:21,046 - django.request - ERROR - Internal Server Error: /diary/keyword/7/edit/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 157, in key_edit
+    return redirect("key_edit")
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'key_edit' not found. 'key_edit' is not a valid view function or pattern name.
+2022-11-14 17:59:04,534 - django.request - ERROR - Internal Server Error: /diary/keyword/7/edit/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 157, in key_edit
+    return redirect("key_edit")
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'key_edit' not found. 'key_edit' is not a valid view function or pattern name.
+2022-11-14 17:59:37,205 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 17:59:39,244 - django.request - ERROR - Internal Server Error: /diary/keyword/7/edit/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 157, in key_edit
+    return redirect("memory")
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'memory' not found. 'memory' is not a valid view function or pattern name.
+2022-11-14 17:59:44,353 - django.request - ERROR - Internal Server Error: /diary/keyword/7/edit/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 157, in key_edit
+    return redirect("memory")
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'memory' not found. 'memory' is not a valid view function or pattern name.
+2022-11-14 18:00:22,533 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 18:00:25,572 - django.request - WARNING - Not Found: /diary/keyword/7/edit/keyword_post.get_absolute_url()
+2022-11-14 18:00:55,409 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 18:00:57,999 - django.request - WARNING - Not Found: /diary/keyword/7/edit/diary/keyword/<int:pk>
+2022-11-14 18:01:06,048 - django.request - WARNING - Not Found: /diary/keyword/7/edit/diary/keyword/<int:pk>
+2022-11-14 18:01:19,982 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 18:01:20,982 - django.request - WARNING - Not Found: /diary/keyword/7/edit/diary/keyword/<int:pk>
+2022-11-14 18:01:21,505 - django.request - WARNING - Not Found: /diary/keyword/7/edit/diary/keyword/<int:pk>
+2022-11-14 18:01:31,109 - django.request - WARNING - Not Found: /diary/keyword/7/edit/diary/gallery
+2022-11-14 18:01:48,763 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.

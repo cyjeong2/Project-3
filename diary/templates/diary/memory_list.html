@@ -34,25 +34,25 @@
 <div class="album py-5 bg-light">
     <div class="container">
       <div class="row">
-{% for p in memory_list %}
+{% for m in memory_list %}
         <div class="col-md-4" >
           <div class="card mb-4 shadow-sm" style="text-align : center;">
-              {% if p.head_image %}
-              <a href="http://localhost:8000/diary/{{ p.pk }}/"><img src="{{ p.head_image.url }}" height="225" width="400"/></svg></a>
+              {% if m.head_image %}
+              <a href="http://localhost:8000/diary/{{ m.pk }}/"><img src="{{ m.head_image.url }}" height="225" width="400"/></svg></a>
               {% else %}
-              <a href="http://localhost:8000/diary/{{ p.pk }}/"><svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <a href="http://localhost:8000/diary/{{ m.pk }}/"><svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">준비중입니다</text></svg>
               </a>
               {% endif %}
            <div class="card-body">
-              <p class="card-text">{{ p.content }}</p>
+              <p class="card-text">{{ m.content }}</p>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted" >{{ p.created_at }}</small>
+                <small class="text-muted" >{{ m.created_at }}</small>
               </div>
             </div>
           </div>
         </div>
+          {% endfor %}
 
-{% endfor %}
       </div>
     </div>
   </div>

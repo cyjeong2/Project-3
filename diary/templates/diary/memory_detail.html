@@ -4,16 +4,16 @@
 <br/>
 <div class ="container">
             <div class="col-md-12>
-<div class="col-md-6" >
+<div class="col-md-6">
                 {% if memory.head_image %}
             <img src="{{ memory.head_image.url }}" style="float: left;width:800 px; height:500px;"/>
-                {% endif  %}
+                {% endif %}
   <!-- Card Start -->
   <div class="card">
     <div class="row ">
       <div class="col-md-12" style="height:500px;">
         <div class="card-block px-1">
-          <h5 class="card-title">{{ memory.created_at }}</h5>
+          <h5 class="card-title">{{ memory.created_at }} {{ memory.Emotion }}</h5>
                 <br/>
             <h3>{{ memory.content }}</h3>
 
@@ -31,7 +31,5 @@
             <a class="btn btn-primary" href="/diary/" role="button">일기 작성 페이지로</a>
 </div>
 </div>
-<!--    <a href="/diary/{{ memory.pk }}/edit/">수정</a>-->
-<!--    <a href="/diary/{{ memory.pk }}/delete/">삭제</a>-->
-<!--    <a href="/diary/">일기 작성 페이지로</a>-->
+
 {% endblock %}

@@ -91,7 +91,7 @@ def memory_delete(request, pk):
     if request.method == "POST":
         memory.delete()
         messages.success(request, "일기를 삭제했습니다.")
-        return redirect("/diary/")
+        return redirect("/diary/gallery/")
 
     return render(request, "diary/memory_confirm_delete.html", {
         "memory": memory,
@@ -110,6 +110,12 @@ def select(request):
 
 # 목록 페이지는 위와 같음. 갤러리 or 달력으로 보여줌.
 
+def keywordpost_list(request):
+    # 전체 포스팅을 가져올 준비. 아직 가져오지는 않음.
+    keywordpost_qs = KeywordPost.objects.all(pk=pk)
+    return render(request, "diary/memory_list.html", {
+        "keywordpost_list": keywordpost_qs,
+    })
 
 # 상세페이지
 def k_detail_page(request, pk):
@@ -127,11 +133,11 @@ def keyword_new(request):
         form = KeywordForm(request.POST)
         if form.is_valid():
             # form.cleaned_data
-            memory = form.save()
+            form.save()
             messages.success(request, "일기를 생성했습니다.")
             # return redirect(f"/diary/{memory.pk}/")
             # return redirect(memory.get_absolute_url())
-            return redirect(memory)
+            return redirect("http://localhost:8000/diary/select/")
     else:
         form = KeywordForm()
 
@@ -146,16 +152,13 @@ def key_edit(request, pk):
     if request.method == "POST":
         form = KeywordForm(request.POST, instance=memory)
         if form.is_valid():
-            # form.cleaned_data
-            memory = form.save()
+            form.save()
             messages.success(request, "메모리를 저장했습니다.")
-            # return redirect(f"/diary/{memory.pk}/")
-            # return redirect(memory.get_absolute_url())
-            return redirect(memory)
+            return redirect("http://localhost:8000/diary/gallery/")
     else:
         form = MemoryForm(instance=memory)
 
-    return render(request, "diary/memory_form.html", {
+    return render(request, "diary/keyword_form.html", {
         "form": form,
     })
 

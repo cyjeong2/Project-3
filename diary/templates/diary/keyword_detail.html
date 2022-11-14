@@ -4,18 +4,19 @@
 <br/>
 <div class ="container">
             <div class="col-md-12>
-<div class="col-md-6" >
-                {% if memory.head_image %}
-            <img src="{{ KeywordPost.head_image.url }}" style="float: left;width:800 px; height:500px;"/>
-                {% endif  %}
+<div class="col-md-6">
+                {% if keyword_post.head_image %}
+            <img src="{{ keyword_post.head_image.url }}" style="float: left;width:800 px; height:500px;"/>
+                {% endif %}
   <!-- Card Start -->
   <div class="card">
     <div class="row ">
       <div class="col-md-12" style="height:500px;">
         <div class="card-block px-1">
-          <h5 class="card-title">{{ KeywordPost.created_at }}</h5>
+          <h5 class="card-title">{{ keyword_post.create_dat }}&nbsp{{ keyword_post.Emotion }}</h5><br/>
+            <h4>{{ keyword_post.content1 }}, {{ keyword_post.content2 }}, {{ keyword_post.content3 }}</h4>
                 <br/>
-            <h3>{{ KeywordPost.content }}</h3>
+<!--            <h3>{{ KeywordPost.content }}</h3>-->
 
           <br>
         </div>
@@ -26,20 +27,9 @@
 <!-- End of card -->
 <hr>
 
-            <a class="btn btn-primary" href="/diary/{{ memory.pk }}/edit/" role="button">수정</a>
-            <a class="btn btn-primary" href="/diary/{{ memory.pk }}/delete/" role="button">삭제</a>
+            <a class="btn btn-primary" href="/diary/keyword/{{ keyword_post.pk }}/edit/" role="button">수정</a>
+            <a class="btn btn-primary" href="/diary/keyword/{{ keyword_post.pk }}/delete/" role="button">삭제</a>
             <a class="btn btn-primary" href="/diary/" role="button">일기 작성 페이지로</a>
 </div>
 </div>
-<!--    <a href="/diary/{{ memory.pk }}/edit/">수정</a>-->
-<!--    <a href="/diary/{{ memory.pk }}/delete/">삭제</a>-->
-<!--    <a href="/diary/">일기 작성 페이지로</a>-->
-{% endblock %}
-
-
-
-    <hr>
-    <a href="/diary/keyword/{{ keyword_post.pk }}/edit/">수정</a>
-    <a href="/diary/keyword/{{ keyword_post.pk }}/delete/">삭제</a>
-    <a href="/diary/">일기 목록으로 가기</a>
 {% endblock %}

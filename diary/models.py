@@ -67,9 +67,9 @@ class KeywordPost(models.Model):
     Emotion = models.CharField(max_length=20, choices=emotion_choices, null=True)
     # title = models.CharField(max_length=30)
 
-    content1 = models.TextField(max_length=7)
-    content2 = models.TextField(max_length=7)
-    content3 = models.TextField(max_length=7)
+    content1 = models.TextField(max_length=15)
+    content2 = models.TextField(max_length=15)
+    content3 = models.TextField(max_length=15)
 
     create_dat = models.DateTimeField(auto_now_add=True)
     update_dat = models.DateTimeField(auto_now=True)
@@ -78,4 +78,4 @@ class KeywordPost(models.Model):
         return f"/diary/{self.pk}/"
 
     def __str__(self):
-        return f"[{self.pk}] {self.content} "
+        return f"[{self.pk}] {self.content1} "

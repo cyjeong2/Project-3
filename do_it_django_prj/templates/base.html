@@ -13,7 +13,18 @@
 
 </head>
     <style>
-
+a:link {
+  color : black;
+}
+a:visited {
+  color : black;
+}
+a:hover {
+  color : black;
+}
+a:active {
+  color : black;
+}
     </style>
     <style type="text/css">
     footer {
@@ -28,7 +39,7 @@
 
 <!-- header -->
 <!--<div class="container">-->
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" style="background-color:#28E7FF	">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" style="background-color:#FFDAB9	">
         <i class="fa-regular fa-book-heart"></i>
         <a href="http://localhost:8000/home/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             &nbsp&nbsp&nbsp&nbsp<i class="far fa-edit"></i> &nbsp
@@ -37,12 +48,12 @@
 
         <ul class="nav nav-pills">
 
-            <li class="nav-item"><a href="/diary/" class="nav-link">일기작성</a></li>
+            <li class="nav-item" ><a href="/diary/" class="nav-link">일기작성</a></li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 일기보기
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" >
                     <li><a class="dropdown-item" href="/diary/gallery">갤러리</a>
                     <li><a class="dropdown-item" href="/diary/calendar/">캘린더</a></li>
                 </ul>
@@ -74,3 +85,4 @@
 </footer>
 {% bootstrap_javascript %}
 </html>
+
