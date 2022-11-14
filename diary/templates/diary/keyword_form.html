@@ -7,27 +7,25 @@
         <div class ="col-12">
     <form action="" method="post" novalidate>
         {% csrf_token %}
-       <section class="mbr-section form1 cid-qv5ApHdm7c mbr-parallax-background" id="form1-4t" data-rv-view="10803">
-
-
-
-    <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(239, 239, 239);">
+         <section class="mbr-section form1 cid-qv5ApHdm7c mbr-parallax-background" id="form1-4t" data-rv-view="10803">
+             <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(239, 239, 239);">
     </div>
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-12 col-lg-8">
-                <h4>긴 글로 일기 쓰기</h4><br/>
-                <h5 >
-                    오늘 하루 있었던 일을 편하게 써주세요
+                <h4>단어로 일기 쓰기</h4> <br/>
+                <h5>
+                    오늘 하루 생각나는 단어들을 입력해주세요
                 </h5>
             </div>
         </div>
     </div>
-    <div class="container">
+             <br/>
+                <div class="container">
         <div class="row justify-content-center">
             <div class="media-container-column col-lg-8" data-form-type="formoid">
-
-                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+<!--      날씨 선택 라디오 버튼 그룹-->
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
       <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked="" value="Sunny">
       <label class="btn btn-outline-primary" for="btnradio1"> <span class="form-selectgroup-label"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun-high" width="100" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -83,7 +81,7 @@
 
 
 
-<!--  감정 라디오 버튼-->
+<!--감정 라디오 버튼-->
 
 
  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -140,12 +138,11 @@
         <path d="M8 9l2 1"></path>
         <path d="M16 9l-2 1"></path>
         <path d="M14.5 16.05a3.5 3.5 0 0 0 -5 0"></path>
-     </svg>
-      </label>
-</div>
+     </svg></label>
+ </div>
                 <br/><br/>
-    <!-- 화풍 선택 드롭다운 -->
-        <div class="input-group mb-3">
+        <!-- 화풍 선택 드롭다운 -->
+<div class="input-group mb-3">
   <label class="input-group-text" for="inputGroupSelect01">화풍</label>
   <select class="form-select" id="inputGroupSelect01">
     <option selected>원하시는 화풍을 선택해주세요</option>
@@ -155,84 +152,43 @@
       <option value="3">인상주의</option>
   </select>
 </div>
+<!-- 이자리에 form template 넣어야 함! -->
+<div class="input-group" style="height: auto; min-height: 100px; overflow: auto;">
+  <span class="input-group-text">단어를 입력해주세요</span>
+  <input type="text" aria-label="content1" class="form-control">
+  <input type="text" aria-label="content2" class="form-control">
+    <input type="text" aria-label="content3" class="form-control">
+</div>
 
-                    <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form"><input type="hidden" data-form-email="true" value="6P93kNKo0YMrlhki4aqAh6kWEOLpuhFCYRe6n1FvaZgJ/pa39BUyHBYCW4WA4rZvUr5K4HMIOOmyetX9vVlNIOE3Nf/x57GRMvbDPtNT2dl1hbyF3plFTnLCQuB9fjD/">
-                        <div class="row row-sm-offset">
+        <br>
+        <br>
 
-                        </div>
-                        <br/>
+<input type="submit" class="btn btn-primary btn-lg" value="자동 생성" />
 
-                        <div class="form-group" data-for="message">
-                            <label class="form-control-label mbr-fonts-style display-7" for="message-form1-4t">일기 내용</label>
-                            <textarea type="text" class="form-control" name="message" rows="7" data-form-field="Message" id="message-form1-4t"></textarea>
-                        </div>
+<!--자동 생성-->
 
-                        <span class="input-group-btn">
-                            <br/>
-                            <button href="http://localhost:8000/diary/select/" type="submit" class="btn btn-primary btn-lg">자동생성</button>
-                        </span>
-                        <button
-      type="button"
-      class="btn btn-primary btn-lg"
-      data-bs-toggle="modal"
-      data-bs-target="#goModal"
-      data-bs-whatever=""
-    >
-      직접 생성
-    </button>
-
-    <div
-      class="modal fade"
-      id="goModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      style="display: none"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-             직접 생성
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+<!--            <button type="button" class="btn btn-primary" href="/diary/">그림 생성</button>-->
           </div>
-          <div class="modal-body">
-            <form action="" method="post" novalidate>
-              <div class="mb-3">
-                <label for="message-text" class="col-form-label">원하는 그림을 한 문장으로 작성해주세요. </label>
-
-                  <div class="form-floating">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                  <label for="floatingTextarea2">20자 이내</label>
-                  </div>
-
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              닫기
-            </button>
-              <input type="submit" class="btn btn-primary" value="그림 생성" />
-
-                    </form>
-            </div>
+        </div>
+      </div>
+    </div>
+            </section>
         </div>
     </div>
-</section>
-
+</div>
     </form>
         </div>
     </div>
 </div>
+
 {% endblock %}
+
+
+<!--    <h4>{{ kmemory.created_at }}</h4>-->
+
+<!--    <p>{{ kmemory.weather }}</p>-->
+<!--    <p>{{ kmemory.content1 }}</p>-->
+
+<!--    <p>{{ kmemory.content1 }}</p>-->
+<!--    <p>{{ kmemory.content2 }}</p>-->
+<!--    <p>{{ kmemory.content3 }}</p>-->

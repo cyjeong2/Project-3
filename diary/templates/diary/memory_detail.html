@@ -8,6 +8,9 @@
             <h4>작성시간</h4>
             <h5>{{ memory.created_at}}</h5>
             <hr/>
+                {% if memory.head_image %}
+            <img src="{{ memory.head_image.url }}" alt="{{ p }} head image">
+                {% endif  %}
             <br/>
     <h2>{{ memory.title }}</h2>
     <br/>

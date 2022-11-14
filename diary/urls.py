@@ -11,4 +11,9 @@ urlpatterns = [
     path("calendar/", views.calendar),
     path("info/", views.info),
     path("select/", views.select),
+
+    path("keyword/new/", views.keyword_new),
+    path("keyword/<int:pk>/", views.k_detail_page),
+    path("keyword/<int:pk>/edit/", views.key_edit),
+    path("keyword/<int:pk>/delete/", views.key_delete),
 ]

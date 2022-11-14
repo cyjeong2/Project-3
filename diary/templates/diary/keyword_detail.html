@@ -1,0 +1,23 @@
+{% extends "diary/base.html" %}
+
+{% block content %}
+    <h2>{{ keyword_post.create_dat }}</h2>
+
+# 선택된 최종 그림 삽입
+
+
+    {{ keyword_post.weather }}
+    {{ keyword_post.drawing }}
+
+    {{ keyword_post.content1 }}
+    {{ keyword_post.content2 }}
+    {{ keyword_post.content3 }}
+
+
+
+
+    <hr>
+    <a href="/diary/keyword/{{ keyword_post.pk }}/edit/">수정</a>
+    <a href="/diary/keyword/{{ keyword_post.pk }}/delete/">삭제</a>
+    <a href="/diary/">일기 목록으로 가기</a>
+{% endblock %}
