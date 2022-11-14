@@ -7,22 +7,22 @@ class Memory(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    weather_choices = {('Sunny', 'Sunny'),
-                       ('Cloudy', 'Cloudy'),
-                       ('Rainy', 'Rainy'),
-                       ('Snowy', 'Snowy')}
+    weather_choices = {('Sunny', '맑음'),
+                       ('Cloudy', '흐림'),
+                       ('Rainy', '비'),
+                       ('Snowy', '눈')}
 
-    drawing_choices = {('Digital Art', 'Digital Art'),
-                       ('Oil and Canvas', 'Oil and Canvas'),
-                       ('Sketched', 'Sketched'),
-                       ('Impressionism', 'Impressionism'),
+    drawing_choices = {('Digital Art', '디지털 아트'),
+                       ('Oil and Canvas', '유화'),
+                       ('Sketched', '스케치'),
+                       ('Impressionism', '인상주의'),
                        # ('','')
                        }
-    emotion_choices = {('Cheerful', 'Cheerful'),
-                       ('Happy', 'Happy'),
-                       ('Neutral', 'Neutral'),
-                       ('Depressed', 'Depressed'),
-                       ('Angry', 'Angry')
+    emotion_choices = {('Cheerful', '쾌활'),
+                       ('Happy', '기쁨'),
+                       ('Neutral', '보통'),
+                       ('Depressed', '우울'),
+                       ('Angry', '화남')
                        }
 
     Weather = models.CharField(max_length=20, choices=weather_choices, null=True)
@@ -44,22 +44,22 @@ class Memory(models.Model):
 
 class KeywordPost(models.Model):
     head_image = models.ImageField(upload_to='blog/images/%Y/%m/%d/', blank=True)
-    weather_choices = {('Sunny', 'Sunny'),
-                       ('Cloudy', 'Cloudy'),
-                       ('Rainy', 'Rainy'),
-                       ('Snowy', 'Snowy')}
+    weather_choices = {('Sunny', '맑음'),
+                       ('Cloudy', '흐림'),
+                       ('Rainy', '비'),
+                       ('Snowy', '눈')}
 
-    drawing_choices = {('Digital Art', 'Digital Art'),
-                       ('Oil and Canvas', 'Oil and Canvas'),
-                       ('Sketched', 'Sketched'),
-                       ('Impressionism', 'Impressionism'),
+    drawing_choices = {('Digital Art', '디지털 아트'),
+                       ('Oil and Canvas', '유화'),
+                       ('Sketched', '스케치'),
+                       ('Impressionism', '인상주의'),
                        # ('','')
                        }
-    emotion_choices = {('Cheerful', 'Cheerful'),
-                       ('Happy', 'Happy'),
-                       ('Neutral', 'Neutral'),
-                       ('Depressed', 'Depressed'),
-                       ('Angry', 'Angry')
+    emotion_choices = {('Cheerful', '쾌활'),
+                       ('Happy', '기쁨'),
+                       ('Neutral', '보통'),
+                       ('Depressed', '우울'),
+                       ('Angry', '화남'),
                        }
 
     Weather = models.CharField(max_length=20, choices=weather_choices, null=True)

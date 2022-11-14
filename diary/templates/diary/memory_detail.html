@@ -1,6 +1,17 @@
 {% extends "diary/base.html" %}
 
 {% block content %}
+<style>
+@font-face {
+    font-family: 'KyoboHandwriting2020A';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+	font-family: 'KyoboHandwriting2020A';
+}
+</style>
 <br/>
 <div class ="container">
             <div class="col-md-12>
@@ -12,10 +23,10 @@
   <div class="card">
     <div class="row ">
       <div class="col-md-12" style="height:500px;">
-        <div class="card-block px-1">
-          <h5 class="card-title">{{ memory.created_at }} {{ memory.Emotion }}</h5>
+        <div class="card-block px-1" style="text-align:center;">
+          <br/><h3 class="card-title">{{ memory.created_at }} / {{ memory.Weather }} / {{ memory.Emotion }}</h3><hr/>
                 <br/>
-            <h3>{{ memory.content }}</h3>
+            <h1>{{ memory.content }}</h1>
 
           <br>
         </div>
