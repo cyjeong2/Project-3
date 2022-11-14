@@ -1,29 +1,40 @@
 {% extends "diary/base.html" %}
 
 {% block content %}
+<br/>
 <div class ="container">
-    <div class ="row">
-        <div class ="col-8">
-
-            <h4>작성시간</h4>
-            <h5>{{ memory.created_at}}</h5>
-            <hr/>
+            <div class="col-md-12>
+                <!-- Carousel start -->
+<div class="col-md-6" >
                 {% if memory.head_image %}
-            <img src="{{ memory.head_image.url }}" alt="{{ p }} head image">
+            <img src="{{ memory.head_image.url }}" style="float: left;width:800 px; height:500px;"/>
                 {% endif  %}
-            <br/>
-    <h2>{{ memory.title }}</h2>
-    <br/>
-    {{ memory.content }}
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <hr>
+
+
+  <!-- Card Start -->
+  <div class="card">
+    <div class="row ">
+      <div class="col-md-12" style="height:500px;">
+        <div class="card-block px-1">
+          <h5 class="card-title">{{ memory.created_at }}</h5>
+                <br/>
+            <h3>{{ memory.content }}</h3>
+
+          <br>
+        </div>
+      </div>
+</div>
+      </div>
+
+<!-- End of card -->
+<hr>
+
             <a class="btn btn-primary" href="/diary/{{ memory.pk }}/edit/" role="button">수정</a>
             <a class="btn btn-primary" href="/diary/{{ memory.pk }}/delete/" role="button">삭제</a>
             <a class="btn btn-primary" href="/diary/" role="button">일기 작성 페이지로</a>
+</div>
+</div>
 <!--    <a href="/diary/{{ memory.pk }}/edit/">수정</a>-->
 <!--    <a href="/diary/{{ memory.pk }}/delete/">삭제</a>-->
 <!--    <a href="/diary/">일기 작성 페이지로</a>-->
-        </div>
-    </div>
-</div>
 {% endblock %}

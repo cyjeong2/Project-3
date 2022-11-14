@@ -3,27 +3,26 @@ from django.db import models
 
 class Memory(models.Model):
     head_image = models.ImageField(upload_to='blog/images/%Y/%m/%d/', blank=True)
-    title = models.CharField(max_length=30)
     content = models.TextField(max_length=1000)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    weather_choices = {('Sunny', '맑아요'),
-                       ('Cloudy', '흐려요'),
-                       ('Rainy', '비가 와요'),
-                       ('Snowy', '눈이 와요')}
+    weather_choices = {('Sunny', 'Sunny'),
+                       ('Cloudy', 'Cloudy'),
+                       ('Rainy', 'Rainy'),
+                       ('Snowy', 'Snowy')}
 
-    drawing_choices = {('Digital Art', '디지털 아트'),
-                       ('Oil and Canvas', '유화'),
-                       ('Sketched', '스케치'),
-                       ('Impressionism', '인상주의'),
+    drawing_choices = {('Digital Art', 'Digital Art'),
+                       ('Oil and Canvas', 'Oil and Canvas'),
+                       ('Sketched', 'Sketched'),
+                       ('Impressionism', 'Impressionism'),
                        # ('','')
                        }
-    emotion_choices = {('Cheerful', '쾌활함'),
-                       ('Happy', '기쁨'),
-                       ('Neutral', '평범'),
-                       ('Depressed', '우울함'),
-                       ('Angry', '화남')
+    emotion_choices = {('Cheerful', 'Cheerful'),
+                       ('Happy', 'Happy'),
+                       ('Neutral', 'Neutral'),
+                       ('Depressed', 'Depressed'),
+                       ('Angry', 'Angry')
                        }
 
     Weather = models.CharField(max_length=20, choices=weather_choices, null=True)
@@ -44,22 +43,23 @@ class Memory(models.Model):
 
 
 class KeywordPost(models.Model):
-    weather_choices = {('Sunny', '맑아요'),
-                       ('Cloudy', '흐려요'),
-                       ('Rainy', '비가 와요'),
-                       ('Snowy', '눈이 와요')}
+    head_image = models.ImageField(upload_to='blog/images/%Y/%m/%d/', blank=True)
+    weather_choices = {('Sunny', 'Sunny'),
+                       ('Cloudy', 'Cloudy'),
+                       ('Rainy', 'Rainy'),
+                       ('Snowy', 'Snowy')}
 
-    drawing_choices = {('Digital Art', '디지털 아트'),
-                       ('Oil and Canvas', '유화'),
-                       ('Sketched', '스케치'),
-                       ('Impressionism', '인상주의'),
+    drawing_choices = {('Digital Art', 'Digital Art'),
+                       ('Oil and Canvas', 'Oil and Canvas'),
+                       ('Sketched', 'Sketched'),
+                       ('Impressionism', 'Impressionism'),
                        # ('','')
                        }
-    emotion_choices = {('Cheerful', '쾌활함'),
-                       ('Happy', '기쁨'),
-                       ('Neutral', '평범'),
-                       ('Depressed', '우울함'),
-                       ('Angry', '화남')
+    emotion_choices = {('Cheerful', 'Cheerful'),
+                       ('Happy', 'Happy'),
+                       ('Neutral', 'Neutral'),
+                       ('Depressed', 'Depressed'),
+                       ('Angry', 'Angry')
                        }
 
     Weather = models.CharField(max_length=20, choices=weather_choices, null=True)
