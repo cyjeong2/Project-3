@@ -16,7 +16,7 @@ class Memory(models.Model):
                        ('Oil and Canvas', '유화'),
                        ('Sketched', '스케치'),
                        ('Impressionism', '인상주의'),
-                       # ('','')
+                       ('Vaper Wave','MZ세대 스타일'),
                        }
     emotion_choices = {('Cheerful', '쾌활'),
                        ('Happy', '기쁨'),
@@ -53,7 +53,7 @@ class KeywordPost(models.Model):
                        ('Oil and Canvas', '유화'),
                        ('Sketched', '스케치'),
                        ('Impressionism', '인상주의'),
-                       # ('','')
+                       ('Vaper Wave', 'MZ세대 스타일'),
                        }
     emotion_choices = {('Cheerful', '쾌활'),
                        ('Happy', '기쁨'),
