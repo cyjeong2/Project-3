@@ -6,7 +6,7 @@
 <div class ="container">
     <div class ="row">
         <div class ="col-12">
-    <form action="" method="post" novalidate>
+    <form action="" method="post">
         {% csrf_token %}
        <section class="mbr-section form1 cid-qv5ApHdm7c mbr-parallax-background" id="form1-4t" data-rv-view="10803">
 
@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-12 col-lg-8">
-                <h4>긴 글로 일기 쓰기</h4><br/>
+                <h4>긴 글로 일기 쓰기</h4>
                 <h5 >
                     오늘 하루 있었던 일을 편하게 써주세요
                 </h5>
@@ -27,7 +27,7 @@
             <div class="media-container-column col-lg-8" data-form-type="formoid">
 
                     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-      <input type="radio" class="btn-check" name="weather_choices" id="Sunny" autocomplete="off" checked="" value="Sunny">
+      <input type="radio" class="btn-check" name="Weather" id="Sunny" autocomplete="off" checked="" value="Sunny">
       <label class="btn btn-outline-primary" for="Sunny"> <span class="form-selectgroup-label"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun-high" width="100" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -45,7 +45,7 @@
 
       </label>
 
-      <input type="radio" class="btn-check" name="weather_choices" id="Clody" autocomplete="off" value="Clody">
+      <input type="radio" class="btn-check" name="Weather" id="Clody" autocomplete="off" value="Clody">
       <label class="btn btn-outline-primary" for="Clody">
       <span class="form-selectgroup-label"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud" width="100" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -54,7 +54,7 @@
        </svg>
       </span></label>
 
-      <input type="radio" class="btn-check" name="weather_choices" id="Rainy" autocomplete="off" value="Rainy">
+      <input type="radio" class="btn-check" name="Weather" id="Rainy" autocomplete="off" value="Rainy">
       <label class="btn btn-outline-primary" for="Rainy"><span class="form-selectgroup-label"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-umbrella" width="100" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -63,7 +63,7 @@
        </svg>
         </span></label>
 
-      <input type="radio" class="btn-check" name="weather_choices" id="Snowy" autocomplete="off" value="Snowy">
+      <input type="radio" class="btn-check" name="Weather" id="Snowy" autocomplete="off" value="Snowy">
       <label class="btn btn-outline-primary" for="Snowy">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-snowman" width="100" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -83,7 +83,7 @@
  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 
 
-    <input type="radio" class="btn-check" name="emotion_choices" id="Cheerful" autocomplete="off" checked="" value="Cheerful">
+    <input type="radio" class="btn-check" name="Emotion" id="Cheerful" autocomplete="off" checked="" value="Cheerful">
     <label class="btn btn-outline-primary" for="Cheerful"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-xd" width="100" height="45" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
       <circle cx="12" cy="12" r="9"></circle>
@@ -94,7 +94,7 @@
    </svg></label>
 
 
-      <input type="radio" class="btn-check" name="emotion_choices" id="Happy" autocomplete="off" value="Happy">
+      <input type="radio" class="btn-check" name="Emotion" id="Happy" autocomplete="off" value="Happy">
       <label class="btn btn-outline-primary" for="Happy"><span class="form-selectgroup-label"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-happy" width="100" height="45" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -107,7 +107,7 @@
 
 
 
-      <input type="radio" class="btn-check" name="emotion_choices" id="Neutral" autocomplete="off" value="Neutral">
+      <input type="radio" class="btn-check" name="Emotion" id="Neutral" autocomplete="off" value="Neutral">
       <label class="btn btn-outline-primary" for="Neutral"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-empty" width="100" height="45" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
         <circle cx="12" cy="12" r="9"></circle>
@@ -116,7 +116,7 @@
         <line x1="9" y1="15" x2="15" y2="15"></line>
      </svg></label>
 
-      <input type="radio" class="btn-check" name="emotion_choices" id="Depressed" autocomplete="off" value="Depressed">
+      <input type="radio" class="btn-check" name="Emotion" id="Depressed" autocomplete="off" value="Depressed">
       <label class="btn btn-outline-primary" for="Depressed"><span class="form-selectgroup-label"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-sad" width="100" height="45" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -127,7 +127,7 @@
        </svg>
         </span></label>
 
-      <input type="radio" class="btn-check" name="emotion_choices" id="Angry" autocomplete="off" value="Angry">
+      <input type="radio" class="btn-check" name="Emotion" id="Angry" autocomplete="off" value="Angry">
       <label class="btn btn-outline-primary" for="Angry"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-angry" width="100" height="45" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
         <path d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z"></path>
@@ -141,24 +141,25 @@
     <!-- 화풍 선택 드롭다운 -->
         <div class="input-group mb-3">
   <label class="input-group-text" for="drawing_choices">화풍</label>
-  <select class="form-select" id="drawing_choices">
+  <select class="form-select" id="drawing_choices" name ="Drawing">
     <option selected>원하시는 화풍을 선택해주세요</option>
-    <option value="1">디지털 아트</option>
-    <option value="2">유화</option>
-    <option value="3">스케치</option>
-      <option value="3">인상주의</option>
+    <option value="Digital Art">디지털 아트</option>
+    <option value="Oil and Canvas">유화</option>
+    <option value="Sketched">스케치</option>
+      <option value="Impressionism">인상주의</option>
   </select>
 </div>
 
-                    <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form"><input type="hidden" data-form-email="true" value="6P93kNKo0YMrlhki4aqAh6kWEOLpuhFCYRe6n1FvaZgJ/pa39BUyHBYCW4WA4rZvUr5K4HMIOOmyetX9vVlNIOE3Nf/x57GRMvbDPtNT2dl1hbyF3plFTnLCQuB9fjD/">
+                   <!-- <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Mobirise Form">
+                        <input type="hidden" data-form-email="true" value="6P93kNKo0YMrlhki4aqAh6kWEOLpuhFCYRe6n1FvaZgJ/pa39BUyHBYCW4WA4rZvUr5K4HMIOOmyetX9vVlNIOE3Nf/x57GRMvbDPtNT2dl1hbyF3plFTnLCQuB9fjD/">
                         <div class="row row-sm-offset">
-
                         </div>
                         <br/>
+                        -->
 
                         <div class="form-group" data-for="message">
-                            <label class="form-control-label mbr-fonts-style display-7" for="content">일기 내용</label>
-                            <textarea type="text" class="form-control" name="message" rows="6" data-form-field="Message" id="content"></textarea>
+                            <label class="form-control-label mbr-fonts-style display-7" for="content">일기 내용</label><br/>
+                            <textarea type="text" class="form-control" name="content" rows="6" data-form-field="Message" id="content"></textarea>
                         </div>
 
                         <span class="input-group-btn">

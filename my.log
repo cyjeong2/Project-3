@@ -1,0 +1,96 @@
+2022-11-14 14:54:01,465 - root - INFO - =======memory_new
+2022-11-14 14:54:01,627 - django.request - WARNING - Not Found: /diary/new/do_it_django_prj/static/diary_bg1.png
+2022-11-14 14:54:19,730 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 14:54:22,598 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 14:54:39,074 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 14:54:54,501 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 14:55:01,327 - django.request - WARNING - Not Found: /diary/new/do_it_django_prj/static/diary_bg1.png
+2022-11-14 14:55:06,314 - django.request - WARNING - Not Found: /diary/new/do_it_django_prj/static/diary_bg1.png
+2022-11-14 14:55:37,211 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 14:55:43,137 - django.request - WARNING - Not Found: /diary/new/do_it_django_prj/static/diary_bg1.png
+2022-11-14 14:55:49,822 - root - INFO - <tr>
+    <th><label for="id_content">Content:</label></th>
+    <td>
+      
+      <textarea name="content" cols="40" rows="10" maxlength="1000" required id="id_content">
+sss</textarea>
+      
+      
+    </td>
+  </tr>
+
+  <tr>
+    <th><label for="id_Weather">Weather:</label></th>
+    <td>
+      
+      <select name="Weather" required id="id_Weather">
+  <option value="">---------</option>
+
+  <option value="Cloudy">Cloudy</option>
+
+  <option value="Snowy">Snowy</option>
+
+  <option value="Rainy" selected>Rainy</option>
+
+  <option value="Sunny">Sunny</option>
+
+</select>
+      
+      
+    </td>
+  </tr>
+
+  <tr>
+    <th><label for="id_Drawing">Drawing:</label></th>
+    <td>
+      <ul class="errorlist"><li>올바르게 선택해 주세요. 1 이/가 선택가능항목에 없습니다.</li></ul>
+      <select name="Drawing" required id="id_Drawing">
+  <option value="">---------</option>
+
+  <option value="Impressionism">Impressionism</option>
+
+  <option value="Digital Art">Digital Art</option>
+
+  <option value="Oil and Canvas">Oil and Canvas</option>
+
+  <option value="Sketched">Sketched</option>
+
+</select>
+      
+      
+    </td>
+  </tr>
+
+  <tr>
+    <th><label for="id_Emotion">Emotion:</label></th>
+    <td>
+      
+      <select name="Emotion" required id="id_Emotion">
+  <option value="">---------</option>
+
+  <option value="Neutral" selected>Neutral</option>
+
+  <option value="Depressed">Depressed</option>
+
+  <option value="Cheerful">Cheerful</option>
+
+  <option value="Happy">Happy</option>
+
+  <option value="Angry">Angry</option>
+
+</select>
+      
+      
+        
+      
+    </td>
+  </tr>
+2022-11-14 14:55:49,988 - django.request - WARNING - Not Found: /diary/new/do_it_django_prj/static/diary_bg1.png
+2022-11-14 14:56:37,269 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 14:56:42,256 - django.request - WARNING - Not Found: /diary/new/do_it_django_prj/static/diary_bg1.png
+2022-11-14 14:56:46,445 - root - INFO - False
+2022-11-14 14:56:46,517 - django.request - WARNING - Not Found: /diary/new/do_it_django_prj/static/diary_bg1.png
+2022-11-14 14:57:08,039 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-14 14:57:13,138 - django.request - WARNING - Not Found: /diary/new/do_it_django_prj/static/diary_bg1.png
+2022-11-14 14:57:17,462 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['4Z49sf9zBNxJEZPaLMHr0X6iKnMUE1VVySgSPUwMtYiz2sWnuyKlliDP5c4FEBaO'], 'Weather': ['Clody'], 'Emotion': ['Neutral'], 'Drawing': ['1'], 'content': ['ss']}>
+2022-11-14 14:57:17,570 - django.request - WARNING - Not Found: /diary/new/do_it_django_prj/static/diary_bg1.png

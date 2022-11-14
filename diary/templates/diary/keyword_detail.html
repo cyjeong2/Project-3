@@ -1,18 +1,40 @@
 {% extends "diary/base.html" %}
 
 {% block content %}
-    <h2>{{ keyword_post.create_dat }}</h2>
+<br/>
+<div class ="container">
+            <div class="col-md-12>
+<div class="col-md-6" >
+                {% if memory.head_image %}
+            <img src="{{ KeywordPost.head_image.url }}" style="float: left;width:800 px; height:500px;"/>
+                {% endif  %}
+  <!-- Card Start -->
+  <div class="card">
+    <div class="row ">
+      <div class="col-md-12" style="height:500px;">
+        <div class="card-block px-1">
+          <h5 class="card-title">{{ KeywordPost.created_at }}</h5>
+                <br/>
+            <h3>{{ KeywordPost.content }}</h3>
 
-# 선택된 최종 그림 삽입
+          <br>
+        </div>
+      </div>
+</div>
+      </div>
 
+<!-- End of card -->
+<hr>
 
-    {{ keyword_post.weather }}
-    {{ keyword_post.drawing }}
-
-    {{ keyword_post.content1 }}
-    {{ keyword_post.content2 }}
-    {{ keyword_post.content3 }}
-
+            <a class="btn btn-primary" href="/diary/{{ memory.pk }}/edit/" role="button">수정</a>
+            <a class="btn btn-primary" href="/diary/{{ memory.pk }}/delete/" role="button">삭제</a>
+            <a class="btn btn-primary" href="/diary/" role="button">일기 작성 페이지로</a>
+</div>
+</div>
+<!--    <a href="/diary/{{ memory.pk }}/edit/">수정</a>-->
+<!--    <a href="/diary/{{ memory.pk }}/delete/">삭제</a>-->
+<!--    <a href="/diary/">일기 작성 페이지로</a>-->
+{% endblock %}
 
 
 

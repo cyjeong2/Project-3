@@ -5,8 +5,8 @@ from diary.models import Memory,KeywordPost
 class MemoryForm(forms.ModelForm):
     class Meta:
         model = Memory
-        fields = "__all__"
-        # fields = ["title", "content"]
+        # fields = "__all__"
+        fields = ["content", "Weather", "Drawing", "Emotion"]
 
 class KeywordForm(forms.ModelForm):
     class Meta:
