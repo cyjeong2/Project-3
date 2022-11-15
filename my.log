@@ -1201,3 +1201,5 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'memory' not found. 'memory' 
 2022-11-14 20:28:19,718 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['GMZUJVsI0c08tMm80HvmxaizcsMHizCJaFbD6APVSnLYRftlJtygSvP6xh4si9RC'], 'Weather': ['Sunny'], 'Emotion': ['Cheerful'], 'Drawing': ['원하시는 화풍을 선택해주세요'], 'content': ['']}>
 2022-11-14 20:34:29,924 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['xQpLAYVTfff5xloXDzzHVUcAal3HMimK1JBuXDi67q0VVOvamlCBgfJ7valsMSBD'], 'Weather': ['Cloudy'], 'Emotion': ['Neutral'], 'Drawing': ['Oil and Canvas'], 'content': ['ㅋㅌㅍㅋㅌㅊㅍㅋㅌㅊㅍㅋㅌㅊㅍ']}>
 2022-11-14 21:13:51,744 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-15 10:12:21,699 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-15 10:56:57,753 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.

@@ -6,23 +6,36 @@ class Memory(models.Model):
     content = models.TextField(max_length=1000)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    #
+    weather_choices = {('맑음', '맑음'),
+                       ('흐림', '흐림'),
+                       ('비', '비'),
+                       ('눈', '눈')}
 
-    weather_choices = {('Sunny', '맑음'),
-                       ('Cloudy', '흐림'),
-                       ('Rainy', '비'),
-                       ('Snowy', '눈')}
-
-    drawing_choices = {('Digital Art', '디지털 아트'),
-                       ('Oil and Canvas', '유화'),
-                       ('Sketched', '스케치'),
-                       ('Impressionism', '인상주의'),
-                       ('Vaper Wave','MZ세대 스타일'),
+    # drawing_choices = {('Digital Art', '디지털 아트'),
+    #                    ('Oil and Canvas', '유화'),
+    #                    ('Sketched', '스케치'),
+    #                    ('Impressionism', '인상주의'),
+    #                    ('Vaper Wave','MZ세대 스타일'),
+    #                    }
+    drawing_choices = {('디지털 아트', 'Digital Art'),
+                       ('유화', 'Oil and Canvas'),
+                       ('스케치', 'Sketched'),
+                       ('인상주의', 'Impressionism'),
+                       ('MZ세대 스타일','Vaper Wave'),
                        }
-    emotion_choices = {('Cheerful', '쾌활'),
-                       ('Happy', '기쁨'),
-                       ('Neutral', '보통'),
-                       ('Depressed', '우울'),
-                       ('Angry', '화남')
+
+    # emotion_choices = {('Cheerful', '쾌활'),
+    #                    ('Happy', '기쁨'),
+    #                    ('Neutral', '보통'),
+    #                    ('Depressed', '우울'),
+    #                    ('Angry', '화남')
+    #                    }
+    emotion_choices = {('쾌활', 'Cheerful'),
+                       ('기쁨', 'Happy'),
+                       ('보통', 'Neutral'),
+                       ('우울', 'Depressed'),
+                       ('화남', 'Angry')
                        }
 
     Weather = models.CharField(max_length=20, choices=weather_choices, null=True)
@@ -44,22 +57,35 @@ class Memory(models.Model):
 
 class KeywordPost(models.Model):
     head_image = models.ImageField(upload_to='blog/images/%Y/%m/%d/', blank=True)
-    weather_choices = {('Sunny', '맑음'),
-                       ('Cloudy', '흐림'),
-                       ('Rainy', '비'),
-                       ('Snowy', '눈')}
+    weather_choices = {('맑음', '맑음'),
+                       ('흐림', '흐림'),
+                       ('비', '비'),
+                       ('눈', '눈')}
 
-    drawing_choices = {('Digital Art', '디지털 아트'),
-                       ('Oil and Canvas', '유화'),
-                       ('Sketched', '스케치'),
-                       ('Impressionism', '인상주의'),
-                       ('Vaper Wave', 'MZ세대 스타일'),
+    # drawing_choices = {('Digital Art', '디지털 아트'),
+    #                    ('Oil and Canvas', '유화'),
+    #                    ('Sketched', '스케치'),
+    #                    ('Impressionism', '인상주의'),
+    #                    ('Vaper Wave', 'MZ세대 스타일'),
+    #                    }
+    drawing_choices = {('디지털 아트', 'Digital Art'),
+                       ('유화', 'Oil and Canvas'),
+                       ('스케치', 'Sketched'),
+                       ('인상주의', 'Impressionism'),
+                       ('MZ세대 스타일','Vaper Wave'),
                        }
-    emotion_choices = {('Cheerful', '쾌활'),
-                       ('Happy', '기쁨'),
-                       ('Neutral', '보통'),
-                       ('Depressed', '우울'),
-                       ('Angry', '화남'),
+
+    # emotion_choices = {('Cheerful', '쾌활'),
+    #                    ('Happy', '기쁨'),
+    #                    ('Neutral', '보통'),
+    #                    ('Depressed', '우울'),
+    #                    ('Angry', '화남'),
+    #                    }
+    emotion_choices = {('쾌활', 'Cheerful'),
+                       ('기쁨', 'Happy'),
+                       ('보통', 'Neutral'),
+                       ('우울', 'Depressed'),
+                       ('화남', 'Angry')
                        }
 
     Weather = models.CharField(max_length=20, choices=weather_choices, null=True)
