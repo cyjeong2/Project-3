@@ -1203,3 +1203,59 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'memory' not found. 'memory' 
 2022-11-14 21:13:51,744 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
 2022-11-15 10:12:21,699 - django.request - WARNING - Not Found: /favicon.ico
 2022-11-15 10:56:57,753 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-15 10:58:05,813 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['JPK1Pdtjj5wJU9FEGCcYWNG5xgkFznqodIWKcSQwbghziCMRpofSh8dCS5CqzXFh'], 'Weather': ['흐림'], 'Emotion': ['보통'], 'Drawing': ['디지털 아트'], 'content': ['오늘은 화요일 곧 발표날이다. 열심히 홈페이지 자잘한 부분을 고치고 있습니다.\r\n                           ']}>
+2022-11-15 11:06:27,309 - django.security.csrf - WARNING - Forbidden (CSRF token missing.): /
+2022-11-15 11:07:58,702 - django.security.csrf - WARNING - Forbidden (CSRF token missing.): /
+2022-11-15 11:09:58,050 - django.security.csrf - WARNING - Forbidden (CSRF token missing.): /
+2022-11-15 11:25:23,224 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-15 11:25:24,407 - django.request - WARNING - Not Found: /accounts/profile/assets/css/bootstrap.min.css
+2022-11-15 11:25:24,410 - django.request - WARNING - Not Found: /accounts/profile/assets/css/materialdesignicons.min.css
+2022-11-15 11:25:24,412 - django.request - WARNING - Not Found: /accounts/profile/assets/css/lineicons.css
+2022-11-15 11:25:24,421 - django.request - WARNING - Not Found: /accounts/profile/assets/css/fullcalendar.css
+2022-11-15 11:25:24,437 - django.request - WARNING - Not Found: /accounts/profile/assets/js/bootstrap.bundle.min.js
+2022-11-15 11:25:24,439 - django.request - WARNING - Not Found: /accounts/profile/assets/css/main.css
+2022-11-15 11:25:24,448 - django.request - WARNING - Not Found: /accounts/profile/assets/css/lineicons.css
+2022-11-15 11:25:24,462 - django.request - WARNING - Not Found: /accounts/profile/assets/js/Chart.min.js
+2022-11-15 11:25:24,465 - django.request - WARNING - Not Found: /accounts/profile/assets/js/moment.min.js
+2022-11-15 11:25:24,467 - django.request - WARNING - Not Found: /accounts/profile/assets/js/dynamic-pie-chart.js
+2022-11-15 11:25:24,485 - django.request - WARNING - Not Found: /accounts/profile/assets/css/materialdesignicons.min.css
+2022-11-15 11:25:24,487 - django.request - WARNING - Not Found: /accounts/profile/assets/js/fullcalendar.js
+2022-11-15 11:25:24,488 - django.request - WARNING - Not Found: /accounts/profile/assets/js/jvectormap.min.js
+2022-11-15 11:25:24,505 - django.request - WARNING - Not Found: /accounts/profile/assets/js/world-merc.js
+2022-11-15 11:25:24,507 - django.request - WARNING - Not Found: /accounts/profile/assets/js/polyfill.js
+2022-11-15 11:25:24,509 - django.request - WARNING - Not Found: /accounts/profile/assets/css/fullcalendar.css
+2022-11-15 11:25:24,517 - django.request - WARNING - Not Found: /accounts/profile/assets/js/main.js
+2022-11-15 11:25:24,527 - django.request - WARNING - Not Found: /accounts/profile/assets/images/products/product-mini-2.jpg
+2022-11-15 11:25:24,530 - django.request - WARNING - Not Found: /accounts/profile/assets/images/products/product-mini-1.jpg
+2022-11-15 11:25:24,541 - django.request - WARNING - Not Found: /accounts/profile/assets/css/fullcalendar.css
+2022-11-15 11:25:24,546 - django.request - WARNING - Not Found: /accounts/profile/assets/images/products/product-mini-3.jpg
+2022-11-15 11:25:24,550 - django.request - WARNING - Not Found: /accounts/profile/assets/images/products/product-mini-4.jpg
+2022-11-15 11:25:24,556 - django.request - WARNING - Not Found: /accounts/profile/assets/css/main.css
+2022-11-15 11:25:24,575 - django.request - WARNING - Not Found: /accounts/profile/assets/images/products/product-mini-1.jpg
+2022-11-15 11:25:24,576 - django.request - WARNING - Not Found: /accounts/profile/assets/images/products/product-mini-2.jpg
+2022-11-15 11:25:24,588 - django.request - WARNING - Not Found: /accounts/profile/assets/images/products/product-mini-3.jpg
+2022-11-15 11:25:24,591 - django.request - WARNING - Not Found: /accounts/profile/assets/images/products/product-mini-4.jpg
+2022-11-15 11:28:14,542 - django.request - WARNING - Not Found: /accounts/profile/assets/images/lead/lead-1.png
+2022-11-15 11:28:14,544 - django.request - WARNING - Not Found: /accounts/profile/assets/images/lead/lead-6.png
+2022-11-15 11:28:14,559 - django.request - WARNING - Not Found: /accounts/profile/assets/images/lead/lead-5.png
+2022-11-15 11:28:14,560 - django.request - WARNING - Not Found: /accounts/profile/assets/images/lead/lead-3.png
+2022-11-15 11:28:14,573 - django.request - WARNING - Not Found: /accounts/profile/assets/images/profile/profile-image.png
+2022-11-15 11:28:14,576 - django.request - WARNING - Not Found: /accounts/profile/assets/images/lead/lead-2.png
+2022-11-15 11:39:54,427 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['p885G1zoU7yonADNEXtUg6idUWEPJ4PzT1kO3GWBMijeL3K0nJwOBrPKfLWAJE4s'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            ']}>
+2022-11-15 11:39:56,388 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['LNEHlG0nhHHTOPJ1Nz5oSkN9UnDvAj3vfGQqIlnA9SsJciQewl8idFkGfcVgATio'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            ']}>
+2022-11-15 11:39:57,721 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['iS76bcgh2VD3LUtqmK3QXG0GJ1OVMHFOMLjPyRDuU6oT9nAD5w6Ki1xd4Q6GMhUH'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            ']}>
+2022-11-15 11:39:58,969 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['SbnxkJJnwv3Gzuy4mLU2Go3wYnEx30etm4zgHo6AoGOwXXFh5xXW1JA3jcWi3Atm'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            ']}>
+2022-11-15 11:40:00,087 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['ufOTeC65xbAl7b5pKRDCrWeBMIVmj0AAY80CBhtipmlbvEcCtDGwMhL87xd7jAPt'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            ']}>
+2022-11-15 11:40:02,475 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Are9BJFarL9hUn3g6Nz5mtwkqutdEvwy4kqSYo2njWU7iQatPzCZHO3RLjLYE5Lr'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['스케치'], 'content': ['\r\n                            ']}>
+2022-11-15 11:40:03,941 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['eZ8cn21PkYFxKYc7RQKBYPgrJ54LXrIZISkVKHo2c9qn8rjkACNvjaNY4UmwX1XS'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            ']}>
+2022-11-15 11:40:50,275 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['LwEGpEiKskRLn9Si9s6eDvFzzmzzOrgJfpQpMjFXkvCBLCZvSe98YQc6UbRkO1vC'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            ']}>
+2022-11-15 11:40:51,992 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['QW4jhWHQQmn0fVVdpm0EBp2FFsnutVeXkPg2EB43Ix8QDo2q883yWKzc0hFftvtQ'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            ']}>
+2022-11-15 11:40:54,662 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['QW4jhWHQQmn0fVVdpm0EBp2FFsnutVeXkPg2EB43Ix8QDo2q883yWKzc0hFftvtQ'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            ']}>
+2022-11-15 11:40:56,551 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['K1J7ii2vDESSI7h9EgJ7Ynfxcl1zfa6WeUVQFXpIvPDI6Aomn2M1jIM4xajkfKlP'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            ']}>
+2022-11-15 11:40:58,624 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['UswpJ6Jryr1eZE60ad2Ks7QgfDnj9czTolI86L6EqCM4n7ddTZ5ENsnNAsF49MOM'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            ']}>
+2022-11-15 11:41:00,555 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['SwDFHUukS7mprSBZGEZUMTCFbU3dtZ8QmpPo4zRxKi7fPlIcpq2O7e9cwJlYtznJ'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            ']}>
+2022-11-15 11:41:58,310 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['fKa3N7nnzpojYaOLlwaoIuasLiJuVHQaJDmMaMKArA99mDVY4idi3PHZ671fVh53'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            ']}>
+2022-11-15 11:47:27,614 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['5aVm9JUlprQnqKxLgEMPt8EykGXvLpXHz375wohyhCBdOdEYZqPJOtb5FvfgLZcA'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['']}>
+2022-11-15 11:47:41,968 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['mQOpF9tQwVewaKDVz0LA2aDVwNqhpTVVQJ082OQ3o6ZmydK8iMOunvasRCI2ptaO'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ\r\n                            ']}>
+2022-11-15 11:48:12,102 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['XqkAlbCJpBIJAlRSI5XN1VKpXj1INQGrrjwjIQZWhMtzYOY5rR0HmghWi8jtNqVk'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['ㅁㄴㅇㄻㄴㅇㄹ\r\n                            ']}>
+2022-11-15 11:49:26,248 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.

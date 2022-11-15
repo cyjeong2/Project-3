@@ -53,6 +53,7 @@ def memory_new(request):
         if form.is_valid():
             # form.cleaned_data
             form.save()
+            messages.success(request, "일기를 저장했습니다.")
             # return redirect(f"/diary/{memory.pk}/")
             # return redirect(memory.get_absolute_url())
             return redirect('http://localhost:8000/diary/select/')
@@ -72,7 +73,7 @@ def memory_edit(request, pk):
         if form.is_valid():
             # form.cleaned_data
             memory = form.save()
-            messages.success(request, "일기를 저장했습니다.")
+            messages.success(request, "일기를 수정했습니다.")
             # return redirect(f"/diary/{memory.pk}/")
             # return redirect(memory.get_absolute_url())
             return redirect(memory)
@@ -134,7 +135,7 @@ def keyword_new(request):
         if form.is_valid():
             # form.cleaned_data
             form.save()
-            messages.success(request, "일기를 생성했습니다.")
+            messages.success(request, "일기를 저장했습니다.")
             # return redirect(f"/diary/{memory.pk}/")
             # return redirect(memory.get_absolute_url())
             return redirect("http://localhost:8000/diary/select/")
@@ -153,7 +154,7 @@ def key_edit(request, pk):
         form = KeywordForm(request.POST, instance=memory)
         if form.is_valid():
             form.save()
-            messages.success(request, "메모리를 저장했습니다.")
+            messages.success(request, "일기를 수정했습니다.")
             return redirect("http://localhost:8000/diary/gallery/")
     else:
         form = MemoryForm(instance=memory)
