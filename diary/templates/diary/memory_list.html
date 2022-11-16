@@ -23,14 +23,29 @@
           font-size: 3.5rem;
         }
       }
+a:link {
+  color : black;
+}
+a:visited {
+  color : black;
+}
+a:hover {
+  color : black;
+}
+a:active {
+  color : black;
+}
+body {
+        background-color:#FFF0F0;
+        }
 </style>
-<section class="jumbotron text-center">
+<section class="jumbotron text-center" style="font-family: 'MaruBuri-Regular'";>
     <div class="container">
-      <h1>갤러리</h1>
-      <p class="lead text-muted">일기로 그린 그림을 모아볼 수 있는 공간입니다<br/>그림 클릭시 일기 상세페이지로 넘어갑니다</p>
+      <h1><b>갤러리</b></h1><br/>
+        <h4>일기로 그린 그림을 모아볼 수 있는 공간입니다<br/>그림 클릭시 일기 상세페이지로 넘어갑니다</h4>
     </div>
   </section>
-<div class="card-column">
+<div class="card-column" style="font-family: 'KyoboHandwriting2020A'";>
 <div class="album py-5 bg-light">
     <div class="container">
       <div class="row">
@@ -44,7 +59,11 @@
               </a>
               {% endif %}
            <div class="card-body">
-              <p class="card-text">{{ m.content }}</p>
+              {% for keyword in keywords_list %}
+              {% if p.pk == keyword.pk %}
+              <p class="card-text">{{ keyword.keywords }}</p>
+              {% endif %}
+            {% endfor %}
               <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted" >{{ m.created_at }}</small>
               </div>

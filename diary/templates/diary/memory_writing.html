@@ -4,12 +4,16 @@
 <style>
 /* ===== Buttons Css ===== */
 .features-style-one .primary-btn-outline {
-  border-color: var(--primary);
-  color: var(--primary);
+  border-color: #FF6464;
+  color: white;
+  width: 240px;
+  height: 60px;
+  font-size: 35px;
+  background-color: red;
 }
-.features-style-one .active.primary-btn-outline, .features-style-one .primary-btn-outline:hover, .features-style-one .primary-btn-outline:focus {
-  background: var(--primary-dark);
-  color: var(--white);
+.features-style-one .active.primary-btn-outline, .features-style-one .primary-btn-outline, .features-style-one .primary-btn-outline:focus {
+  background: #FF6464;
+  color: white;
 }
 .features-style-one .deactive.primary-btn-outline {
   color: var(--dark-3);
@@ -22,7 +26,7 @@
 ===========================*/
 .features-one {
   background-color: var(--light-2);
-  padding-top: 30px;                   <!-- '일기 작성'부분 높이' -->
+  padding-top: 30px;
   padding-bottom: 120px;
 }
 .features-one .section-title {
@@ -31,24 +35,24 @@
 .features-one .title {
   font-size: 44px;
   font-weight: 600;
-  color: #4646CD;
+  color: black;
   line-height: 55px;
 }
 @media (max-width: 767px) {
   .features-one .title {
-    font-size: 30px;
+    font-size: 40px;
     line-height: 35px;
   }
 }
 .features-one .text {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   color: var(--dark-3);
   margin-top: 24px;
 }
 
 .features-style-one {
-  background-color: lightblue;
+  background-color: #FAA8A8;
   padding: 40px 20px;
   margin-top: 20px;
   box-shadow: var(--shadow-2);
@@ -66,9 +70,9 @@
   width: 100px;
   line-height: 100px;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
-  border: 2px solid rgba(187, 187, 187, 0.192);
+  border: 2px white;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -81,19 +85,19 @@
     height: 70px;
     width: 70px;
     line-height: 70px;
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 .features-style-one:hover .features-icon {
-  border-color: #5050FF;
-  color: white;
-  background-color: transparent;
+   border-color: #FF5A5A;
+   color: white;
+   background-color: transparent;
 }
 .features-style-one .features-content {
   margin-top: 24px;
 }
 .features-style-one .features-title {
-  font-size: 26px;
+  font-size: 50px;
   line-height: 35 px;
   font-weight: 600;
   color: black;
@@ -105,7 +109,7 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), (max-width: 767px) {
   .features-style-one .features-title {
-    font-size: 22px;
+    font-size: 40px;
   }
 }
 .features-style-one .text {
@@ -115,10 +119,24 @@
 .features-style-one .features-btn {
   margin-top: 32px;
 }
-
+a:link {
+  color : black;
+}
+a:visited {
+  color : black;
+}
+a:hover {
+  color : black;
+}
+a:active {
+  color : black;
+}
+body {
+   background-color:#FFF0F0;
+}
 </style>
 <!--====== FEATURE ONE PART START ======-->
-<section class="features-area features-one">
+<section class="features-area features-one" style="font-family: 'KyoboHandwriting2020A'";>
    <div class="container">
       <div class="row justify-content-center">
          <div class="col-lg-6">
@@ -139,10 +157,10 @@
                   <i class="fas fa-pencil-alt"></i>
                </div>
                <div class="features-content">
-                  <h4 class="features-title">긴 글로 일기 쓰기</h4>
-                  <p class="text">
+                  <h1>긴 글로 일기 쓰기</h1>
+                  <h5><p><br/>
                      평소 일기 쓰듯이 쓰길 원하시는 분께
-                  </p>
+                  </p></h5>
                   <div class="features-btn rounded-buttons">
                      <a
                         class="btn primary-btn-outline rounded-full"
@@ -161,10 +179,10 @@
                   <i class="fas fa-spell-check"></i>
                </div>
                <div class="features-content">
-                  <h4 class="features-title">짧은 단어로 일기 쓰기</h4>
-                  <p class="text">
+                  <h1>짧은 단어로 일기 쓰기</h1>
+                  <h5><p><br/>
                      짧은 단어들로만 하루를 표현하고 싶으신 분께
-                  </p>
+                  </p></h5>
                   <div class="features-btn rounded-buttons">
                      <a
                         class="btn primary-btn-outline rounded-full"

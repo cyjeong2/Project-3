@@ -1,0 +1,298 @@
+{% extends "diary/base.html" %} {% block content %}
+
+<div class="container">
+  <div class="column">
+    <div class="col-12">
+      <h3>일기에 어울릴 사진을 선택해주세요</h3>
+    </div>
+  </div>
+</div>
+<br />
+
+<div class="container">
+  <div class="column">
+    <div class="col-12">
+      <div class="card-group">
+        <div class="card">
+          <button
+            type="button"
+            class="btm_image"
+            id="img_btn1"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal1"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjtS1MrNf7W-N4MOhqLF0kFR8ojKiC9tC2HPbdnhOMfXs30_-idNsJyY1ewMyOi5hWjg8&usqp=CAU"
+              class="card-img-top"
+              alt="1번째 그림"
+            />
+          </button>
+
+          <!-- Modal -->
+          <form action="" method="post">
+            {% csrf_token %}
+            <div
+              class="modal fade"
+              id="exampleModal1"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel1">
+                      그림 확인
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>이 그림으로 하시겠어요?</p>
+                    <input
+                      type="image"
+                      name="finImg"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjtS1MrNf7W-N4MOhqLF0kFR8ojKiC9tC2HPbdnhOMfXs30_-idNsJyY1ewMyOi5hWjg8&usqp=CAU"
+                      class="card-img-top"
+                      alt="첫번째 그림"
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      닫기
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      이 그림을 저장하겠습니다
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <!-- 2번째 그림 구역 -->
+          <div class="card-footer" style="text-align: center">
+            <small class="text-muted">1</small>
+          </div>
+        </div>
+        <div class="card">
+          <button
+            type="button"
+            class="btm_image"
+            id="img_btn2"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal2"
+          >
+            <img
+              src="http://res.heraldm.com/phpwas/restmb_idxmake.php?idx=507&simg=/content/image/2017/04/13/20170413000772_0.jpg"
+              class="card-img-top"
+              alt="2번째 그림"
+            />
+          </button>
+
+          <!-- Modal -->
+          <form action="" method="post">
+            {% csrf_token %}
+            <div
+              class="modal fade"
+              id="exampleModal2"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel2"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel2">
+                      그림 확인
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>이 그림으로 하시겠어요?</p>
+                    <input
+                      name="finImg"
+                      type="image"
+                      src="http://res.heraldm.com/phpwas/restmb_idxmake.php?idx=507&simg=/content/image/2017/04/13/20170413000772_0.jpg"
+                      class="card-img-top"
+                      alt="2번째 그림"
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      닫기
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      이 그림을 저장하겠습니다
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <!-- 3번째 그림 구역 -->
+          <div class="card-footer" style="text-align: center">
+            <small class="text-muted">2</small>
+          </div>
+        </div>
+        <div class="card">
+          <button
+            type="button"
+            class="btm_image"
+            id="img_btn3"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal3"
+          >
+            <img
+              src="https://jhealthfile.joins.com/photo//2020/05/12/1343c40233bf3.jpg"
+              class="card-img-top"
+              alt="3번째 그림"
+            />
+          </button>
+          <!-- Modal -->
+          <form action="" method="post">
+            {% csrf_token %}
+            <div
+              class="modal fade"
+              id="exampleModal3"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel3"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel3">
+                      그림 확인
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>이 그림으로 하시겠어요?</p>
+                    <input
+                      name="finImg"
+                      type="image"
+                      src="https://jhealthfile.joins.com/photo//2020/05/12/1343c40233bf3.jpg"
+                      class="card-img-top"
+                      alt="3번째 그림"
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      닫기
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      이 그림을 저장하겠습니다
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <!-- 4번째 사진 구역 -->
+          <div class="card-footer" style="text-align: center">
+            <small class="text-muted">3</small>
+          </div>
+        </div>
+        <div class="card">
+          <button
+            type="button"
+            class="btm_image4"
+            id="img_btn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal4"
+          >
+            <img
+              src="http://kormedi.com/wp-content/uploads/2019/02/shutterstock_699645961_5801-580x391.jpg"
+              class="card-img-top"
+              alt="4번째 그림"
+            />
+          </button>
+
+          <!-- Modal -->
+          <form action="" method="post">
+            {% csrf_token %}
+            <div
+              class="modal fade"
+              id="exampleModal4"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel4"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel4">
+                      그림 확인
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>이 그림으로 하시겠어요?</p>
+                    <input
+                      type="image"
+                      name="finImg"
+                      src="http://kormedi.com/wp-content/uploads/2019/02/shutterstock_699645961_5801-580x391.jpg"
+                      class="card-img-top"
+                      alt="4번째 그림"
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      닫기
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      이 그림을 저장하겠습니다
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="card-footer" style="text-align: center">
+            <small class="text-muted">4</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1259,3 +1259,1063 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'memory' not found. 'memory' 
 2022-11-15 11:47:41,968 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['mQOpF9tQwVewaKDVz0LA2aDVwNqhpTVVQJ082OQ3o6ZmydK8iMOunvasRCI2ptaO'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ\r\n                            ']}>
 2022-11-15 11:48:12,102 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['XqkAlbCJpBIJAlRSI5XN1VKpXj1INQGrrjwjIQZWhMtzYOY5rR0HmghWi8jtNqVk'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['ㅁㄴㅇㄻㄴㅇㄹ\r\n                            ']}>
 2022-11-15 11:49:26,248 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-15 12:57:36,080 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['CvlRtOkH1xwfvD7qEwa8bi4OwIthbWry6oxAQtHUTIh5T6eDnid2wDBlRxL2bwGr'], 'Weather': ['흐림'], 'Emotion': ['기쁨'], 'Drawing': ['유화'], 'content': ['\r\n                   ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄹ         ']}>
+2022-11-15 14:30:33,967 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['EmMAyUpi7gaDidw5dPEJUCQ4eUuukq5H8fYjVzMvZrVtGGDiWBHDfXnBzJMfk0kA'], 'Weather': ['비'], 'Emotion': ['기쁨'], 'Drawing': ['스케치'], 'content': ['ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄹ\r\n                            ']}>
+2022-11-15 14:50:00,454 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-15 14:50:05,627 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-15 15:48:29,054 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['qZzQBFyZfjUCtLhoP1rvR0PhHNfzZpehUSLzYkVc7uFsReoByNupclmO2CxkZZta'], 'Weather': ['흐림'], 'Emotion': ['기쁨'], 'Drawing': ['스케치'], 'content': ['그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.\r\n                            ']}>
+2022-11-15 15:49:05,812 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['vccX3qP7EGoSKcCQB1d5b92FbsXeEI1PZ5oGq5ckwR9I8FJ3kNgZwuzcwhfZEigI'], 'Weather': ['비'], 'Emotion': ['기쁨'], 'Drawing': ['디지털 아트'], 'content': ['그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면[5]을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.[6]\r\n                            ']}>
+2022-11-15 15:50:36,511 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-15 15:50:56,114 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Yvfb9LqrQuVvvR8tAk2JXOGkQdKxt1ZUsorUwqNEIFGlTkfGj65Di9dRb22itBeN'], 'Weather': ['흐림'], 'Emotion': ['우울'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면[5]을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.[6]\r\n                            ']}>
+2022-11-15 15:50:56,410 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 96, in memory_new
+    main_cont_300 = main_cont[:301]
+UnboundLocalError: local variable 'main_cont' referenced before assignment
+2022-11-15 15:51:57,696 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Yvfb9LqrQuVvvR8tAk2JXOGkQdKxt1ZUsorUwqNEIFGlTkfGj65Di9dRb22itBeN'], 'Weather': ['흐림'], 'Emotion': ['우울'], 'Drawing': ['디지털 아트'], 'content': ['\r\n                            그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면[5]을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.[6]\r\n                            ']}>
+2022-11-15 15:51:57,759 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 96, in memory_new
+    main_cont_300 = main_cont[:301]
+UnboundLocalError: local variable 'main_cont' referenced before assignment
+2022-11-15 15:54:15,786 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['bb1K2YDeoFuEupMhybybqvA0pPyLqkmEF4dtpD0rgQfuSSTuhXB5LQ7xKEQwqUBx'], 'Weather': ['흐림'], 'Emotion': ['우울'], 'Drawing': ['디지털 아트'], 'content': ['그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면[5]을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.[6]\r\n                            ']}>
+2022-11-15 15:54:15,854 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 96, in memory_new
+    main_cont_300 = main_cont[:301]
+UnboundLocalError: local variable 'main_cont' referenced before assignment
+2022-11-15 15:54:29,705 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['bb1K2YDeoFuEupMhybybqvA0pPyLqkmEF4dtpD0rgQfuSSTuhXB5LQ7xKEQwqUBx'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.\r\n                            ']}>
+2022-11-15 15:54:29,777 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 96, in memory_new
+    main_cont_300 = main_cont[:301]
+UnboundLocalError: local variable 'main_cont' referenced before assignment
+2022-11-15 15:54:40,623 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-15 15:54:54,079 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['e34XGRc5lQ5RU8raqtGceHulFMDWGUEqIWgG3wzid1QHiByn9fJ6z21S0BVHGuTj'], 'Weather': ['흐림'], 'Emotion': ['우울'], 'Drawing': ['디지털 아트'], 'content': ['그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.                ']}>
+2022-11-15 15:54:54,176 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+2022-11-15 15:55:20,877 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-15 15:55:38,984 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['wDB2Cg3ezLgssZcWJcD6XDOojt3CEVG50wNLZVqrrW1iQsj9sYG0iYlVEilnEvVY'], 'Weather': ['맑음'], 'Emotion': ['보통'], 'Drawing': ['디지털 아트'], 'content': [' 그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.                                 ']}>
+2022-11-15 15:55:39,067 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+2022-11-15 16:04:34,715 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['8QAeN4rOGa9yjEptxP9BGVVgnFZp2K35CJMXaJO1ylUoH7wGgBcv1gsNIuha2kiY'], 'Weather': ['흐림'], 'Emotion': ['보통'], 'Drawing': ['디지털 아트'], 'content': ['그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면[5]을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.[6]\r\n                            ']}>
+2022-11-15 16:04:34,839 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+2022-11-15 16:05:52,011 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-15 16:06:08,600 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['a6hHW8udVYfeHHOuaWULhMRWZ6OLRyxtEZtqjNRqN9045aVHTIXFC7otkV6wR8Mm'], 'Weather': ['흐림'], 'Emotion': ['보통'], 'Drawing': ['디지털 아트'], 'content': ['그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면[5]을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.[6]']}>
+2022-11-15 16:06:08,662 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+2022-11-15 16:06:45,495 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-15 16:06:53,229 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-15 16:06:59,348 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-15 16:07:14,806 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['clWEZ2La18DS4Ji0jODOoH6sLW0AF1smGe8nmH8nTjoIscpd2AGIJ2DZ6LilFBHf'], 'Weather': ['흐림'], 'Emotion': ['우울'], 'Drawing': ['디지털 아트'], 'content': ['     그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면[5]을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.[6] ']}>
+2022-11-15 16:07:14,881 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+2022-11-15 16:07:40,147 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-15 16:13:25,168 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['GYcrQCBAjw4w96qlSzizwcIPkF1M3t5eaRoadhYNbHPmxzxyBlltRxfmFujx33k7'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['유화'], 'content': ['\r\n                       그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면[5]을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.[6]그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면[5]을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.[6]     ']}>
+2022-11-15 16:13:25,240 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+2022-11-15 16:51:11,139 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-15 16:51:19,919 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['gzE2w15hRizJcSNsypGGOosldTIi1XHxKsQLTGsuJtkzAlUFhbJA9JZSyI031xWq'], 'Weather': ['흐림'], 'Emotion': ['쾌활'], 'Drawing': ['유화'], 'content': ['그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면[5]을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.[6]\r\n                            ']}>
+2022-11-15 16:51:19,983 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+2022-11-15 17:18:02,401 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['X58n7DkjnCIRm7wvbcX1AGPCUmm00T2OrYk6uiHwfNtHKADIUY0VV1m9fbEL0thH'], 'Weather': ['비'], 'Emotion': ['기쁨'], 'Drawing': ['MZ세대 스타일'], 'content': ['그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다\r\n                            ']}>
+2022-11-15 17:18:02,477 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+2022-11-15 17:18:42,956 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-15 17:19:20,430 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['NSj2dvT53pQeyBHUCdfEJzYY74lG8Db9hLvLAagiVAB4W4O7lZiy4UvvsTDr8dq2'], 'Weather': ['흐림'], 'Emotion': ['쾌활'], 'Drawing': ['유화'], 'content': ['그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.\r\n                            ']}>
+2022-11-15 17:19:20,500 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    drawing = rs[0][4]
+IndexError: tuple index out of range
+2022-11-15 17:20:04,806 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-15 17:20:05,680 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-15 17:30:03,402 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['LfnVgujIoSaoKOEOY03hS6bpxWkFpKeUf8zED9GVg3Ve8hL1HM6bdrIWSLCqpktN'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면[5]을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.[6]\r\n                            ']}>
+2022-11-15 17:30:03,478 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+2022-11-15 17:47:50,171 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-15 17:48:00,416 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['55nCr4qpx4Zbj6xI2KpfMOSKxuNAhHrOzYzlOJNCpfK1HzEVLws979phSj5lhhGH'], 'Weather': ['흐림'], 'Emotion': ['기쁨'], 'Drawing': ['유화'], 'content': ['ㅁ그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면[5]을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.[6]\r\n                            ']}>
+2022-11-15 17:48:00,481 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+2022-11-15 17:49:16,129 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['iWTvAn8zoTbJE448eAo6wUP7NXtZKAWyMP5eX2vMg4Wz2xblXmr0RfmE8MLKKabr'], 'Weather': ['흐림'], 'Emotion': ['기쁨'], 'Drawing': ['유화'], 'content': ['그러자 여우 아저씨는 국립 도서관으로 가서 책들을 빌려 마음껏 음미한다.\r\n\r\n하지만 찢기고 침으로 범벅된 책들 때문에 항의를 받느라 골머리를 앓던 도서관 사서는 점차 책을 빌리고 한 번도 돌려주지 않은 여우 아저씨를 의심한다. 결국 여우 아저씨는 책을 몰래 먹는 장면[5]을 사서에게 들켜 도서관에서 쫓겨난 뒤 도서관 이용 금지를 당한다.[6]\r\n                            ']}>
+2022-11-15 17:49:16,198 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    main_cont = rs[0][1]
+IndexError: tuple index out of range
+2022-11-15 18:52:02,148 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['dLsp3rDwcdEN8a8LILRU1la09jsPZjdsHEE8q60J4opDwDfYrxUOmGHxu8KAZTsl'], 'Weather': ['비'], 'Emotion': ['기쁨'], 'Drawing': ['MZ세대 스타일'], 'content': ['adfasdfasdf\r\n                            ']}>
+2022-11-15 18:52:11,697 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-15 18:53:36,172 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-15 18:55:07,071 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['uv97kcnD4WoqLveQnLyge7opZBJkaVwyYolQHRKQW79g9Yl36xBazsVWkq15avLr'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['MZ세대 스타일'], 'content': ['어제 나는 떡볶이 집에 친구와 가서 생일파티를 했다. 맛있는 음식들과 케이크를 먹으며 축하받았다. \r\n                            ']}>
+2022-11-15 18:55:07,189 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-15 18:55:16,011 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-15 18:56:51,714 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['UrrXRawI8RZ3jwmS524Hj2xySatzZPjIokDGePTV02KTHZt5OO7BEn45dZLkZpyB'], 'Weather': ['흐림'], 'Emotion': ['기쁨'], 'Drawing': ['유화'], 'content': ['와이러노 테스트하는데 왜 문제가 생기냐?\r\n                            ']}>
+2022-11-15 18:56:51,821 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-15 18:57:01,934 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-15 18:59:26,532 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Qst2Mks4N8OH8ua6kNNf8pUILCyFzB7pRx00UKP23W1ONMxqQPyO8ibKTDKcXNGl'], 'Weather': ['흐림'], 'Emotion': ['우울'], 'Drawing': ['스케치'], 'content': ['비오는 날 우산없이 학교에 갔다가 옷이 많이 젖어버렸다. 너무 추었는데 하필이면 학교에서 히터도 안틀어줘서 많이 떨었다. 다행히도 집에가는 길에 비가 그쳐서 잘 돌아갔지만 비오는게 너무 싫다\r\n                            ']}>
+2022-11-15 18:59:26,637 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-15 18:59:34,762 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-15 19:01:23,658 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-15 19:50:18,171 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['kG0VxtC1w0O3pcnxQKAhSkk3bJO3opp6lLxTFTZZMO1a4uKRmMlQSdB5jK0AMBY2'], 'Weather': ['비'], 'Emotion': ['우울'], 'Drawing': ['디지털 아트'], 'content': [' 개발자로서의 삶이 참 힘들다...  밤새도록 웹페이지 만드는 작업을 했는데 아직도 끝을 내지 못했다. 너무 우울해. 좀 쉬고 싶어!!!']}>
+2022-11-15 19:50:24,935 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-15 19:50:34,606 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-15 19:50:55,328 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['kG0VxtC1w0O3pcnxQKAhSkk3bJO3opp6lLxTFTZZMO1a4uKRmMlQSdB5jK0AMBY2'], 'Weather': ['비'], 'Emotion': ['우울'], 'Drawing': ['디지털 아트'], 'content': [' 개발자로서의 삶이 참 힘들다...  밤새도록 웹페이지 만드는 작업을 했는데 아직도 끝을 내지 못했다. 너무 우울해. 좀 쉬고 싶어!!!']}>
+2022-11-15 19:50:55,416 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-15 19:51:02,193 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-15 19:51:47,663 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['kG0VxtC1w0O3pcnxQKAhSkk3bJO3opp6lLxTFTZZMO1a4uKRmMlQSdB5jK0AMBY2'], 'Weather': ['비'], 'Emotion': ['우울'], 'Drawing': ['디지털 아트'], 'content': [' 개발자로서의 삶이 참 힘들다...  밤새도록 웹페이지 만드는 작업을 했는데 아직도 끝을 내지 못했다. 너무 우울해. 좀 쉬고 싶어!!!']}>
+2022-11-15 19:51:47,747 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-15 19:51:53,515 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-15 20:23:58,730 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['36pF3lvC75zfXa06WvrTFMBiqX9EfbkD4bWDbLSAnTMmCsnqsxcsFFSkyYlbDnTz'], 'Weather': ['비'], 'Emotion': ['기쁨'], 'Drawing': ['유화'], 'content': ['쇠가 이 세상에 길을 내고 있습니다. 길이 열리면 이 세계는 그 길 위로 계속해서 움직입니다. 한번 길을 내면, 길이 또 길을 만들어내서 누구도 길을 거역하지 못합니다. 힘이 길을 만들고 길은 힘을 만드는 것입니다\r\n                            ']}>
+2022-11-15 20:23:58,893 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-15 20:24:22,748 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-16 10:15:12,000 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-16 10:15:43,520 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-16 10:16:05,521 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['drLhxirRdXCVKBoKFykGIvt0XOm0NyToewifFIOPtLP2pTL4bA5fIoK25PyxbKsk'], 'Weather': ['흐림'], 'Emotion': ['기쁨'], 'Drawing': ['스케치'], 'content': ['\r\n             asdfasdfasdfasdf               ']}>
+2022-11-16 10:16:11,740 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-16 10:16:26,978 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-16 10:18:52,888 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 10:24:14,408 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 10:26:08,799 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 10:26:24,096 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 10:27:46,193 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 10:28:30,687 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 10:28:55,125 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 10:29:52,780 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 10:30:24,768 - django.request - WARNING - Not Found: /detail/<int:pk>
+2022-11-16 10:30:49,330 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 10:30:53,623 - django.request - WARNING - Not Found: /detail/<int:pk>
+2022-11-16 10:30:53,874 - django.request - WARNING - Not Found: /detail/<int:pk>
+2022-11-16 10:34:55,674 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 10:35:55,260 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 12:13:23,953 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['keWoP6pBHvaKJyywa7WMOvslcbGN8xj8ljtmXwMzXjnRoQVQG9HlOoJnkcSkwJS4'], 'Weather': ['흐림'], 'Emotion': ['기쁨'], 'Drawing': ['유화'], 'content': ['오늘 서점에 가서 파이썬 책을 사왔다.']}>
+2022-11-16 12:13:31,347 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-16 12:13:53,491 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-16 12:17:38,403 - django.request - ERROR - Internal Server Error: /diary/69/edit/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: "'diary/new"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 210, in memory_edit
+    return render(request, "diary/memory_form.html", {
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\defaulttags.py", line 886, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\defaulttags.py", line 889, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''diary/new' from ''diary/new'
+2022-11-16 12:17:52,021 - django.request - ERROR - Internal Server Error: /diary/65/edit/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: "'diary/new"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 210, in memory_edit
+    return render(request, "diary/memory_form.html", {
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\defaulttags.py", line 886, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\defaulttags.py", line 889, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''diary/new' from ''diary/new'
+2022-11-16 12:23:07,339 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['dQN97NfFbry937OtfRByOkkRbbIKPJFKeVk7fdCDrfLgIpbNLTm7OdBTjcUhdVeG'], 'Weather': ['흐림'], 'Emotion': ['보통'], 'Drawing': ['디지털 아트'], 'content': ['오늘 공원에 강아지와 산책을 갔다왔다.']}>
+2022-11-16 12:23:07,511 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-16 12:23:19,336 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-16 12:24:48,850 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 14:16:31,118 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['ZmLahvarEomHnetbbCtPw5f0HBAeamSf0ri8pVxpUczO2wQvHEeowYw2PCMLyyrb'], 'Weather': ['맑음'], 'Emotion': ['보통'], 'Drawing': ['유화'], 'content': ['ㅁㄴㅇㄹㄴㅁㅇㄻㄴㅇㄻㄴㅇㄹ']}>
+2022-11-16 14:16:37,351 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-16 14:16:48,889 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-16 14:17:36,619 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Dg8ygdxZcILiMT7x4LEXT5QJIw3TPQ1aElFwoDUXswYprbuRANpwTY7LQxfqd2A6'], 'Weather': ['비'], 'Emotion': ['기쁨'], 'Drawing': ['디지털 아트'], 'content': ['ㅁㄹㄴㅁㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ']}>
+2022-11-16 14:17:36,715 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-16 14:17:42,649 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-16 14:19:51,324 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\forms.py changed, reloading.
+2022-11-16 14:23:28,165 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 14:48:53,125 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-16 14:49:51,775 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-16 14:53:32,702 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 14:53:44,516 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 14:54:08,655 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 15:00:58,454 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 15:01:36,274 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 15:01:45,783 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:01:59,778 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:04:46,290 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\do_it_django_prj\settings.py changed, reloading.
+2022-11-16 15:06:44,820 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:07:09,530 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:09:02,300 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:12:02,276 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 15:12:05,991 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:12:19,172 - django.request - ERROR - Internal Server Error: /diary/1/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 50, in memory_detail
+    memory = Memory.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.Memory.DoesNotExist: Memory matching query does not exist.
+2022-11-16 15:12:22,560 - django.request - ERROR - Internal Server Error: /diary/26/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 50, in memory_detail
+    memory = Memory.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.Memory.DoesNotExist: Memory matching query does not exist.
+2022-11-16 15:12:27,024 - django.request - ERROR - Internal Server Error: /diary/36/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 50, in memory_detail
+    memory = Memory.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.Memory.DoesNotExist: Memory matching query does not exist.
+2022-11-16 15:12:42,386 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:14:57,329 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:23:46,152 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:26:27,983 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-16 15:26:35,348 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:26:37,345 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:26:38,115 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:26:38,578 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:27:25,781 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-16 15:42:28,573 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-16 15:42:38,928 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:50:36,332 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:50:42,917 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:55:12,214 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 15:55:41,773 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 16:02:35,030 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 16:08:40,542 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 16:11:19,004 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 16:30:15,778 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 16:35:35,172 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 16:38:03,465 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 16:50:58,627 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view diary.views.memory_new didn't return an HttpResponse object. It returned None instead.
+2022-11-16 17:02:32,626 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-16 17:02:32,697 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-16 17:02:40,277 - django.request - ERROR - Internal Server Error: /admin/diary/memory/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'diary_memory.head_image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 2068, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'diary_memory.head_image' in 'field list'")
+2022-11-16 17:05:11,151 - django.request - ERROR - Internal Server Error: /admin/diary/memory/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'diary_memory.head_image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 2068, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'diary_memory.head_image' in 'field list'")
+2022-11-16 17:05:50,861 - django.request - ERROR - Internal Server Error: /admin/diary/memory/add/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'head_image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 1890, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 1802, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\contrib\admin\options.py", line 1225, in save_model
+    obj.save()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'head_image' in 'field list'")
+2022-11-16 17:05:59,946 - django.request - ERROR - Internal Server Error: /diary/5/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'diary_memory.head_image' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 50, in memory_detail
+    memory = Memory.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 646, in get
+    num = len(clone)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'diary_memory.head_image' in 'field list'")
+2022-11-16 17:06:06,457 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-16 17:12:37,083 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 17:13:30,802 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\urls.py changed, reloading.
+2022-11-16 17:14:20,867 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\models.py changed, reloading.
+2022-11-16 17:23:22,653 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['jOaZSJWpXCDqn5knUtdcgVASjkC8zNzzkTHX09jndqQx2nHHqvYLgORUrlOFXZ8v'], 'Weather': ['비'], 'Emotion': ['보통'], 'Drawing': ['요즘 스타일'], 'content': ['언제끝나....']}>
+2022-11-16 17:23:22,653 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 17:24:38,169 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['jOaZSJWpXCDqn5knUtdcgVASjkC8zNzzkTHX09jndqQx2nHHqvYLgORUrlOFXZ8v'], 'Weather': ['비'], 'Emotion': ['보통'], 'Drawing': ['요즘 스타일'], 'content': ['언제끝나....']}>
+2022-11-16 17:24:38,171 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 17:24:53,454 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['jOaZSJWpXCDqn5knUtdcgVASjkC8zNzzkTHX09jndqQx2nHHqvYLgORUrlOFXZ8v'], 'Weather': ['비'], 'Emotion': ['보통'], 'Drawing': ['요즘 스타일'], 'content': ['언제끝나....']}>
+2022-11-16 17:24:53,456 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 17:25:13,756 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['A0E8ybfpBNwnK3jAVskkqLTnnnvEqHrVB5b6GBCnRBJuplGUru5TqEapvoHbOT0R'], 'Weather': ['비'], 'Emotion': ['보통'], 'Drawing': ['MZ세대 스타일'], 'content': ['언제끝날까 집에 가고 싶다... 집에 가서 고양이 쓰다듬고 싶다!!']}>
+2022-11-16 17:25:13,759 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 17:25:14,126 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    conn = pymysql.connect(host='localhost', user='root', password='1234', db='project_test2')
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\connections.py", line 633, in connect
+    self._request_authentication()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\connections.py", line 932, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\_auth.py", line 239, in caching_sha2_password_auth
+    pkt = conn._read_packet()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database 'project_test2'")
+2022-11-16 17:33:49,627 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\do_it_django_prj\settings.py changed, reloading.
+2022-11-16 17:46:14,217 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\my_settings.py changed, reloading.
+2022-11-16 17:46:27,505 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\my_settings.py changed, reloading.
+2022-11-16 17:46:59,076 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\my_settings.py changed, reloading.
+2022-11-16 17:52:47,794 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\my_settings.py changed, reloading.
+2022-11-16 17:53:26,722 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['nX2vaqdBE9rtkqpqderxf9CN4JFlY6w3o2ztiQAzUXEAZIMKJgc6f2TPcKRSmi5Z'], 'Weather': ['눈'], 'Emotion': ['화남'], 'Drawing': ['MZ세대 스타일'], 'content': ['너무 화가나요 어떻게 하죠']}>
+2022-11-16 17:53:26,722 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 17:53:26,964 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 89, in memory_new
+    conn = pymysql.connect(host='localhost', user='root', password='1234', db='project_test2')
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\connections.py", line 633, in connect
+    self._request_authentication()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\connections.py", line 932, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\_auth.py", line 239, in caching_sha2_password_auth
+    pkt = conn._read_packet()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database 'project_test2'")
+2022-11-16 17:53:50,055 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-16 17:54:15,985 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['tlp89BeSSbMfsYYGpUEE1W8l9w9q3DATuqW6h1BQ8ZZm7gl0VWpd1PpnhxlXrP9P'], 'Weather': ['맑음'], 'Emotion': ['화남'], 'Drawing': ['MZ세대 스타일'], 'content': ['화가납니다 살려주세요']}>
+2022-11-16 17:54:15,985 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 17:54:32,489 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 18:01:53,208 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['tlp89BeSSbMfsYYGpUEE1W8l9w9q3DATuqW6h1BQ8ZZm7gl0VWpd1PpnhxlXrP9P'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['MZ세대 스타일'], 'content': ['공원에서 개와 함께 산책을 했다.']}>
+2022-11-16 18:01:53,212 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 18:01:53,418 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-16 18:02:09,464 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-16 18:02:10,059 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 169, in memory_new
+    fin_keyword = max_sum_sim(doc_embedding, candidate_embeddings, candidates, top_n=top_n,
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 167, in max_sum_sim
+    return [words_vals[idx] for idx in candidate]
+TypeError: 'NoneType' object is not iterable
+2022-11-16 18:04:28,917 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['pOU5KRbl1ysAuNFtwn1qOaqhUOnTiWLTqTr3ShyjhmFH952N2pMZO3Hj2PzqG8kP'], 'Weather': ['눈'], 'Emotion': ['화남'], 'Drawing': ['디지털 아트'], 'content': ['강아지 고양이 눈사람 해 달 구름']}>
+2022-11-16 18:04:28,918 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 18:04:29,153 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-16 18:04:40,513 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-16 18:04:46,472 - django.request - ERROR - Internal Server Error: /diary/select/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 364, in select
+    image_qs = ImageFields.objects.values().order_by('-id')[0]
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 446, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2022-11-16 18:18:07,332 - django.request - ERROR - Internal Server Error: /diary/select/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 364, in select
+    image_qs = ImageFields.objects.values().order_by('-id')[0]
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 446, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range

@@ -2,19 +2,24 @@
 
 {% block content %}
 <style>
-
-@font-face {
-    font-family: 'KyoboHandwriting2020A';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+a:link {
+  color : black;
 }
-* {
-	font-family: 'KyoboHandwriting2020A';
+a:visited {
+  color : black;
 }
+a:hover {
+  color : black;
+}
+a:active {
+  color : black;
+}
+body {
+        background-color:#FFF0F0;
+        }
 </style>
 <br/>
-<div class ="container">
+<div class ="container" style="font-family: 'KyoboHandwriting2020A'";>
             <div class="col-md-12>
 <div class="col-md-6">
                 {% if memory.head_image %}
@@ -38,9 +43,9 @@
 <!-- End of card -->
 <hr>
 
-            <a class="btn btn-primary" href="/diary/{{ memory.pk }}/edit/" role="button">수정</a>
-            <a class="btn btn-primary" href="/diary/{{ memory.pk }}/delete/" role="button">삭제</a>
-            <a class="btn btn-primary" href="/diary/" role="button">일기 작성 페이지로</a>
+            <a class="btn btn-danger" href="/diary/{{ memory.pk }}/edit/" role="button" style="font-family: 'MaruBuri-Regular'";><b>수정</b></a>
+            <a class="btn btn-danger" href="/diary/{{ memory.pk }}/delete/" role="button" style="font-family: 'MaruBuri-Regular'";><b>삭제</b></a>
+            <a class="btn btn-danger" href="/diary/" role="button" style="font-family: 'MaruBuri-Regular'";><b>일기 작성 페이지로</b></a>
 </div>
 </div>
 
