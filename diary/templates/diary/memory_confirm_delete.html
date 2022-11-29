@@ -1,12 +1,29 @@
 {% extends "diary/base.html" %}
 
 {% block content %}
+<style>
+body {
+   background-color:#FFF0F0;
+}
+a:link {
+  color : black;
+}
+a:visited {
+  color : black;
+}
+a:hover {
+  color : black;
+}
+a:active {
+  color : black;
+}
+</style>
 <div class ="container" style="font-family: 'MaruBuri-Regular'";>
     <div class ="row">
         <div class ="col-4">
     <form action="" method="post">
         {% csrf_token %}
-        <br/><h1>삭제하시겠습니까?</h1><br/>
+        <br/><h1>삭제하시겠습니까? </h1><br/>
         <h4>삭제하신 일기는 복구하실 수 없습니다</h4><br/><br/>
         <input type="submit" value="네 삭제하겠습니다" />
     </form>

@@ -12,6 +12,7 @@ tzdata               ==2022.6
 wheel                ==0.38.4
 pymysql              ==1.0.2
 
+py-hanspell==1.1 
 googletrans==4.0.0rc1
 konlpy==0.6.0
 
@@ -35,10 +36,5 @@ tqdm==4.64.1
 transformers==4.24.0
 typing-extensions==4.4.0
 
-
-PyKomoran           ==  0.1.6.post1
-py4j                ==  0.10.9.2
-
-pyokt == 0.1.7
 
 openai

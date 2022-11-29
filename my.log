@@ -2319,3 +2319,1236 @@ Traceback (most recent call last):
   File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 446, in __getitem__
     return qs._result_cache[0]
 IndexError: list index out of range
+2022-11-16 19:11:41,766 - django.security.csrf - WARNING - Forbidden (CSRF token from POST incorrect.): /accounts/login/
+2022-11-16 19:42:15,828 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['llSfmcABdtoWYmPr30uKg0CbYnpzI39vcEQs21VnhcWtBNtaQtB868VTXLjqBgEq'], 'Weather': ['비'], 'Emotion': ['보통'], 'Drawing': ['MZ세대 스타일'], 'content': ['ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ']}>
+2022-11-16 19:42:15,839 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 19:42:16,148 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 20:15:01,283 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['6JM5npZIu707h9sT410E7TQEwaidowALX2Ki3ekuyQyEUA6CRu72X19mvyc4hJ5G'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['가나다라마바사아 자차카타파하']}>
+2022-11-16 20:15:01,284 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 20:15:01,654 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-16 20:15:19,933 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-16 20:15:21,841 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 169, in memory_new
+    fin_keyword = max_sum_sim(doc_embedding, candidate_embeddings, candidates, top_n=top_n,
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 167, in max_sum_sim
+    return [words_vals[idx] for idx in candidate]
+TypeError: 'NoneType' object is not iterable
+2022-11-16 20:32:09,866 - django.request - ERROR - Internal Server Error: /diary/keyword/1/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 428, in k_detail_page
+    keyword_memory = KeywordPost.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.KeywordPost.DoesNotExist: KeywordPost matching query does not exist.
+2022-11-16 20:32:17,066 - django.request - ERROR - Internal Server Error: /diary/keyword/7/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 428, in k_detail_page
+    keyword_memory = KeywordPost.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.KeywordPost.DoesNotExist: KeywordPost matching query does not exist.
+2022-11-16 20:57:31,885 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['M8pjkoNaqduzLzRwcA6sO7Df1K7lFmPoDrnw0d8WuW26o0vfZ3dQEfWX081cyzkj'], 'Weather': ['흐림'], 'Emotion': ['보통'], 'Drawing': ['유화'], 'content': ['대충 아무거나 적어보겠습니다. 오늘 강아지와 함께 공원으로 산책을 갔다왔습니다.']}>
+2022-11-16 20:57:31,886 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 20:57:32,188 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-16 20:57:42,045 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-16 20:57:46,509 - django.request - ERROR - Internal Server Error: /diary/select/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 364, in select
+    image_qs = ImageFields.objects.values().order_by('-id')[0]
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 446, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2022-11-16 20:58:37,337 - django.request - ERROR - Internal Server Error: /diary/select/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 364, in select
+    image_qs = ImageFields.objects.values().order_by('-id')[0]
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 446, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2022-11-16 21:06:29,439 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['7L9NYESFnG5M2uHXHS6FA5DAvLEkQ41GY470EtdrrpDjFVlGuld3qdWiu9ybJhwB'], 'Weather': ['흐림'], 'Emotion': ['기쁨'], 'Drawing': ['유화'], 'content': ['asdfasdfasdfasdfasdfasdf']}>
+2022-11-16 21:06:29,440 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 21:06:29,547 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:12:42,604 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Zp1hLIgfSLGzpvQ6Q44mknwg2XnxxvUPQIZurxB1Wue62WuPDxbKavPY1lhoqIpK'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['asdfasdfasdfasdfsadfsadfasdfasdf']}>
+2022-11-16 22:12:42,604 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:12:42,767 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:13:16,570 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Zp1hLIgfSLGzpvQ6Q44mknwg2XnxxvUPQIZurxB1Wue62WuPDxbKavPY1lhoqIpK'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['asdfasdfasdfasdfsadfsadfasdfasdf']}>
+2022-11-16 22:13:16,571 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:13:16,646 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:18:26,438 - django.request - WARNING - Not Found: /home/static/KakaoTalk_20221115_183557358.png
+2022-11-16 22:53:06,846 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['CeFVQRzzs4Lz1XUuZrXXsgNeoe2NahVMtxD8wGUlwNj6EoydMU4lio6WnCWE3uqH'], 'Weather': ['비'], 'Emotion': ['기쁨'], 'Drawing': ['유화'], 'content': ['asdfasdfasdfasdfasdfasdfasdfasdfsadf']}>
+2022-11-16 22:53:06,847 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:53:06,984 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:53:09,759 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['CeFVQRzzs4Lz1XUuZrXXsgNeoe2NahVMtxD8wGUlwNj6EoydMU4lio6WnCWE3uqH'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['유화'], 'content': ['asdfasdfasdfasdfasdfasdfasdfasdfsadf']}>
+2022-11-16 22:53:09,759 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:53:09,840 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:53:17,921 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['CeFVQRzzs4Lz1XUuZrXXsgNeoe2NahVMtxD8wGUlwNj6EoydMU4lio6WnCWE3uqH'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['유화'], 'content': ['asdfasdfasdfasdfasdfasdfasdfasdfsadf']}>
+2022-11-16 22:53:17,922 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:53:17,981 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:53:25,160 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['GDebtE2k4MPLpjAQpFb7HQ93LDwuXw62xWco9tn68vni2Kezc8ivxYsLK1qlQJBX'], 'Weather': ['맑음'], 'Emotion': ['보통'], 'Drawing': ['스케치'], 'content': ['asdfasdfasdfasdfasdfasdfasdf']}>
+2022-11-16 22:53:25,160 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:53:25,231 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:53:41,726 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['BWESqCQj0SFHjiqm6J0mLe4cM0o1txB5sfC56rb54BdeWJ45Tc7KBmnULoiSmK60'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['asdgasdfasdfasdf']}>
+2022-11-16 22:53:41,726 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:53:41,787 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:53:54,033 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['BWESqCQj0SFHjiqm6J0mLe4cM0o1txB5sfC56rb54BdeWJ45Tc7KBmnULoiSmK60'], 'Weather': ['눈'], 'Emotion': ['우울'], 'Drawing': ['디지털 아트'], 'content': ['asdgasdfasdfasdf']}>
+2022-11-16 22:53:54,034 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:53:54,117 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:53:59,567 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['OSJ6bm35gxmSNeFqqZLkr4f579ass9dGFbHjRboRkgUpqFj9dsSIhcyN6x4jlmIB'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['sdszdfsdfs']}>
+2022-11-16 22:53:59,568 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:53:59,632 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:54:16,520 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['OSJ6bm35gxmSNeFqqZLkr4f579ass9dGFbHjRboRkgUpqFj9dsSIhcyN6x4jlmIB'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['sdszdfsdfs']}>
+2022-11-16 22:54:16,520 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:54:16,593 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:54:19,568 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['OSJ6bm35gxmSNeFqqZLkr4f579ass9dGFbHjRboRkgUpqFj9dsSIhcyN6x4jlmIB'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['sdszdfsdfs']}>
+2022-11-16 22:54:19,568 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:54:19,663 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:54:21,799 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['OSJ6bm35gxmSNeFqqZLkr4f579ass9dGFbHjRboRkgUpqFj9dsSIhcyN6x4jlmIB'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['sdszdfsdfs']}>
+2022-11-16 22:54:21,800 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:54:21,881 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:54:23,774 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['OSJ6bm35gxmSNeFqqZLkr4f579ass9dGFbHjRboRkgUpqFj9dsSIhcyN6x4jlmIB'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['sdszdfsdfs']}>
+2022-11-16 22:54:23,774 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:54:23,840 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:54:25,789 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['OSJ6bm35gxmSNeFqqZLkr4f579ass9dGFbHjRboRkgUpqFj9dsSIhcyN6x4jlmIB'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['sdszdfsdfs']}>
+2022-11-16 22:54:25,789 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:54:25,868 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:54:37,818 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['92O8EAKFWo1vnbzJTGwT203oI91m4bd80lMlkp5r07z20CdsG9DhS8m6HxVdXoI3'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['asdfasdfasdfasdf']}>
+2022-11-16 22:54:37,819 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:54:37,904 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:54:40,316 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['92O8EAKFWo1vnbzJTGwT203oI91m4bd80lMlkp5r07z20CdsG9DhS8m6HxVdXoI3'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['asdfasdfasdfasdf']}>
+2022-11-16 22:54:40,317 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:54:40,389 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:54:42,665 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['92O8EAKFWo1vnbzJTGwT203oI91m4bd80lMlkp5r07z20CdsG9DhS8m6HxVdXoI3'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['asdfasdfasdfasdf']}>
+2022-11-16 22:54:42,666 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:54:42,742 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:54:59,166 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['92O8EAKFWo1vnbzJTGwT203oI91m4bd80lMlkp5r07z20CdsG9DhS8m6HxVdXoI3'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['asdfasdfasdfasdf']}>
+2022-11-16 22:54:59,166 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:54:59,257 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:55:05,096 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['pLlQXRGbF0cRG6jyyGbg079hLqpfooSbg4j3DG1XJJKojxXhl9iEQfsZKOj6hBn6'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['asdfasdfasdfasdf']}>
+2022-11-16 22:55:05,096 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:55:05,189 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:55:28,672 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['5Ktu6lbYoGkDHRpHNSHEoZgl18Z1cmPzW3rHMawKspSaki3qAlO2e7z30wTS5zku'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['adfasdfasdfasdf']}>
+2022-11-16 22:55:28,672 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:55:28,749 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:55:41,458 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['xlzmrrL4LG1pfnEdeTA4IoMmiEhGG7uVoExz7g6QPpzWSOiW1mHsyw54h2bxzkZQ'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['asdfasdfasdfasdf']}>
+2022-11-16 22:55:41,458 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:55:41,542 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 22:55:55,496 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['szxNcbfWt3YOxFtK226OEx3Db3sxgcVQjSv0S0AIxMwla67tPvdcuFmlarmo9pqL'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['adfasdfasdfasdf']}>
+2022-11-16 22:55:55,497 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 22:55:55,563 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 23:01:58,778 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Z3e3hFCGtmVwxyQWAM05b2a8SOBNN7rzQmcgXuXsx5t3aZuFnf7t1atQRcvEGkWu'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['인상주의'], 'content': ['zdgasfgsdfgsdfg']}>
+2022-11-16 23:01:58,779 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 23:01:58,865 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 23:02:01,643 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Z3e3hFCGtmVwxyQWAM05b2a8SOBNN7rzQmcgXuXsx5t3aZuFnf7t1atQRcvEGkWu'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['인상주의'], 'content': ['zdgasfgsdfgsdfg']}>
+2022-11-16 23:02:01,644 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 23:02:01,697 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 23:02:03,935 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Z3e3hFCGtmVwxyQWAM05b2a8SOBNN7rzQmcgXuXsx5t3aZuFnf7t1atQRcvEGkWu'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['인상주의'], 'content': ['zdgasfgsdfgsdfg']}>
+2022-11-16 23:02:03,936 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-16 23:02:03,995 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-16 23:02:14,305 - django.request - ERROR - Internal Server Error: /diary/select/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 364, in select
+    image_qs = ImageFields.objects.values().order_by('-id')[0]
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 446, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2022-11-17 00:02:57,544 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-17 00:03:02,194 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-17 10:00:13,200 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-17 10:00:13,212 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-17 10:13:29,744 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-17 10:45:39,314 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-17 10:45:42,890 - django.request - WARNING - Not Found: /home/select
+2022-11-17 10:45:50,216 - django.request - ERROR - Internal Server Error: /diary/select/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 364, in select
+    image_qs = ImageFields.objects.values().order_by('-id')[0]
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 446, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+2022-11-17 11:10:39,299 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-17 11:13:06,312 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-23 13:36:11,929 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-23 13:36:15,397 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-23 13:36:27,545 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['pSwvWS7jDiesiXX7X3y18ncjKWyHwl56gbuICHs5H1MZVoBQKwFpYvv1JksypyA1'], 'Weather': ['흐림'], 'Emotion': ['기쁨'], 'Drawing': ['디지털 아트'], 'content': ['ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ']}>
+2022-11-23 13:36:27,548 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-23 13:36:33,173 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 128, in memory_new
+    count = CountVectorizer(ngram_range=n_gram_range).fit([tokenized_nouns])
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1291, in fit
+    self.fit_transform(raw_documents)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1338, in fit_transform
+    vocabulary, X = self._count_vocab(raw_documents, self.fixed_vocabulary_)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\sklearn\feature_extraction\text.py", line 1228, in _count_vocab
+    raise ValueError(
+ValueError: empty vocabulary; perhaps the documents only contain stop words
+2022-11-23 13:36:57,577 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['pSwvWS7jDiesiXX7X3y18ncjKWyHwl56gbuICHs5H1MZVoBQKwFpYvv1JksypyA1'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['강아지 고양이 공원에서 뒹굴뒹굴 놀다가 집에 돌아갔따.']}>
+2022-11-23 13:36:57,579 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-23 13:37:11,408 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-23 13:37:52,623 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-23 13:37:53,706 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 169, in memory_new
+    fin_keyword = max_sum_sim(doc_embedding, candidate_embeddings, candidates, top_n=top_n,
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 167, in max_sum_sim
+    return [words_vals[idx] for idx in candidate]
+TypeError: 'NoneType' object is not iterable
+2022-11-23 13:46:09,786 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\do_it_django_prj\settings.py changed, reloading.
+2022-11-23 13:46:20,503 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\do_it_django_prj\settings.py changed, reloading.
+2022-11-24 10:52:12,633 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-24 10:52:16,693 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-24 10:53:22,526 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Hb1x3pYl9GAVjkDeThaZgibzURCe6j4YyuZKJej7dp8sWLhXGKhn6quhTfw5ZwzT'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['스케치'], 'content': ['오늘은 유클리드에서 과장님이 오셔서 맛있는 음식들을 사주셨다. 돈까스와 연어초밥을 먹었는데 정말 꿀맛이었다. 나중에 또 갈일이 있으면 좋겠다.']}>
+2022-11-24 10:53:22,526 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 10:53:22,688 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 87, in memory_new
+    conn = pymysql.connect(host='localhost', user='root', password='1234', db='project_test2')
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\connections.py", line 633, in connect
+    self._request_authentication()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\connections.py", line 932, in _request_authentication
+    auth_packet = _auth.caching_sha2_password_auth(self, auth_packet)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\_auth.py", line 239, in caching_sha2_password_auth
+    pkt = conn._read_packet()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database 'project_test2'")
+2022-11-24 10:54:37,148 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-24 10:54:41,755 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Hb1x3pYl9GAVjkDeThaZgibzURCe6j4YyuZKJej7dp8sWLhXGKhn6quhTfw5ZwzT'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['스케치'], 'content': ['오늘은 유클리드에서 과장님이 오셔서 맛있는 음식들을 사주셨다. 돈까스와 연어초밥을 먹었는데 정말 꿀맛이었다. 나중에 또 갈일이 있으면 좋겠다.']}>
+2022-11-24 10:54:41,755 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 10:54:48,804 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 10:54:58,777 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 10:55:04,868 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 10:55:05,712 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=56 request_id=56a527e8ebe70988fbefdd9d3e6f4a92 response_code=401
+2022-11-24 10:55:05,712 - openai - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-mCEl0***************************************N4pQ. You can find your API key at https://beta.openai.com.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2022-11-24 10:55:05,806 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 224, in memory_new
+    response = openai.Image.create(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_resources\image.py", line 22, in create
+    return instance.request("post", cls._get_url("generations"), params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\openai_object.py", line 179, in request
+    response, stream, api_key = requestor.request(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 181, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 396, in _interpret_response
+    self._interpret_response_line(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 429, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.AuthenticationError: Incorrect API key provided: sk-mCEl0***************************************N4pQ. You can find your API key at https://beta.openai.com.
+2022-11-24 10:55:36,753 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-24 10:55:46,398 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Hb1x3pYl9GAVjkDeThaZgibzURCe6j4YyuZKJej7dp8sWLhXGKhn6quhTfw5ZwzT'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['스케치'], 'content': ['오늘은 유클리드에서 과장님이 오셔서 맛있는 음식들을 사주셨다. 돈까스와 연어초밥을 먹었는데 정말 꿀맛이었다. 나중에 또 갈일이 있으면 좋겠다.']}>
+2022-11-24 10:55:46,399 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 10:55:52,990 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 10:55:59,751 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 10:56:02,293 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 10:56:07,978 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=5036 request_id=61ae6f7e7de25bf70ecb6b10f586faa2 response_code=200
+2022-11-24 10:56:35,000 - django.request - ERROR - Internal Server Error: /diary/2/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 52, in memory_detail
+    memory = Memory.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.Memory.DoesNotExist: Memory matching query does not exist.
+2022-11-24 11:02:28,513 - django.request - WARNING - Not Found: /select
+2022-11-24 11:02:37,145 - django.request - WARNING - Not Found: /dairy/select
+2022-11-24 11:03:42,318 - django.request - ERROR - Internal Server Error: /diary/2/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 52, in memory_detail
+    memory = Memory.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.Memory.DoesNotExist: Memory matching query does not exist.
+2022-11-24 11:10:53,955 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['Yuge30pP3pXdwHp5ogDrRh9MHpRL3rYNXQzliPPY9vmUh1VDmzxw3B97rFEsicCu'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['스케치'], 'content': ['오늘은 유클리드에서 과장님이 오셔서 점심을 사주셨다. 점심으로 돈까스와 연어 초밥 세트를 먹었는데 정말 맛있었다. 식사 후에는 연구원님께서 마실 것을 사주셔서 딸기라떼를 먹었는데 되게 괜찮았다.먹을복이 좋은 날이었다.']}>
+2022-11-24 11:10:53,956 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 11:10:54,512 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 11:11:02,099 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 11:11:10,936 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 11:11:16,616 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4815 request_id=817cfab9657262a45d9b9ce9b894ffa1 response_code=200
+2022-11-24 11:12:04,154 - django.request - ERROR - Internal Server Error: /diary/3/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 52, in memory_detail
+    memory = Memory.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.Memory.DoesNotExist: Memory matching query does not exist.
+2022-11-24 11:15:12,908 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['tPkyjjiRxeKAUCG8hFnhSU4UD7UFLDGKsbDFy8I0Dk9hFWcGfYhm4e4fnnHm0okr'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['스케치'], 'content': ['오늘은 강가에 가서 강아지와 산책을 했다. 산책을 나가니 단풍이 물들어서 되게 예뻤고 바람도 선선한게 기분이 좋았다. 저녁에는 부모님과 외식으로 갈비와 냉면을 먹었는데 되게 맛있었다.']}>
+2022-11-24 11:15:12,910 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 11:15:13,268 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 11:15:18,963 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 11:15:25,124 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 11:15:30,811 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4805 request_id=ca9a3124950d2f1c858f2d2de90b4acd response_code=200
+2022-11-24 11:15:40,773 - django.request - ERROR - Internal Server Error: /diary/4/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 52, in memory_detail
+    memory = Memory.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.Memory.DoesNotExist: Memory matching query does not exist.
+2022-11-24 11:22:11,137 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-24 11:22:20,362 - django.request - WARNING - Not Found: /diary/calendar
+2022-11-24 11:34:59,996 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['RowYg1DGjtkwc8xDGAGH0hxQoJVFX3tUQKP5vQ3PpzJdXs3bETAMcBxb8ZImcO7B'], 'Weather': ['흐림'], 'Emotion': ['보통'], 'Drawing': ['MZ세대 스타일'], 'content': ['어린왕자는 B612라는 작은 혹성에서 살았는데 우연히 만난 장미에게 사랑을 느끼지만 장미는 어린왕자에게 상처만 줄 뿐이었다. 그때 어린왕자를 찾아온 사업가를 통해 다른 별의 이야기를 전해 듣고 더 큰 세상을 알면 장미의 행동을 이해할 수 있으리란 생각을 하며 여행을 결심한다.']}>
+2022-11-24 11:34:59,999 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 11:35:06,416 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 11:35:15,957 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 11:35:23,464 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 11:35:28,855 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4650 request_id=f5cc3cbc2749f6590623ed9f1230420d response_code=200
+2022-11-24 11:37:27,388 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['YiDuvK0ca3bpXoyEppQkbwqVUXCnRSnyXEWBKzqlg9A6II4cnIKpnQqgEdp46D1f'], 'Weather': ['비'], 'Emotion': ['보통'], 'Drawing': ['디지털 아트'], 'content': ['어린왕자는 B612라는 작은 혹성에서 살았는데 우연히 만난 장미에게 사랑을 느끼지만 장미는 어린왕자에게 상처만 줄 뿐이었다. 그때 어린왕자를 찾아온 사업가를 통해 다른 별의 이야기를 전해 듣고 더 큰 세상을 알면 장미의 행동을 이해할 수 있으리란 생각을 하며 여행을 결심한다.']}>
+2022-11-24 11:37:27,390 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 11:37:27,695 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 11:37:33,652 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 11:37:36,450 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 11:37:42,000 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4775 request_id=fc21279b91dbb8aa38b87c375b903025 response_code=200
+2022-11-24 11:37:58,295 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['TfS0SPcLDAYOY0UJCjxIEVE85BEtJmVaSBb77ECUJGnvJkqhACrNQfEtPRraY7zR'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['디지털 아트'], 'content': ['어린왕자는 B612라는 작은 혹성에서 살았는데 우연히 만난 장미에게 사랑을 느끼지만 장미는 어린왕자에게 상처만 줄 뿐이었다. 그때 어린왕자를 찾아온 사업가를 통해 다른 별의 이야기를 전해 듣고 더 큰 세상을 알면 장미의 행동을 이해할 수 있으리란 생각을 하며 여행을 결심한다.']}>
+2022-11-24 11:37:58,295 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 11:37:58,917 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 11:38:04,081 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 11:38:06,789 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 11:38:11,776 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4730 request_id=52652e547f38c940bb44d4906f50f87f response_code=200
+2022-11-24 11:38:29,403 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['vNmdUToWX7ddrme3fmJyIzAI5pN1SHeJu9Fk9IO53dCUcGKBdFDDUTA3PFAI7sSq'], 'Weather': ['비'], 'Emotion': ['보통'], 'Drawing': ['디지털 아트'], 'content': ['어린왕자는 B612라는 작은 혹성에서 살았는데 우연히 만난 장미에게 사랑을 느끼지만 장미는 어린왕자에게 상처만 줄 뿐이었다. 그때 어린왕자를 찾아온 사업가를 통해 다른 별의 이야기를 전해 듣고 더 큰 세상을 알면 장미의 행동을 이해할 수 있으리란 생각을 하며 여행을 결심한다.']}>
+2022-11-24 11:38:29,404 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 11:38:29,732 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 11:38:34,694 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 11:38:37,547 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 11:38:42,417 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4610 request_id=ad0382a478fbf095caba2913156a1cce response_code=200
+2022-11-24 11:38:52,454 - django.request - ERROR - Internal Server Error: /diary/8/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 52, in memory_detail
+    memory = Memory.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.Memory.DoesNotExist: Memory matching query does not exist.
+2022-11-24 11:39:11,725 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['fJYnKpdTCiWwmzHUN8dXkC4lcH4uRQCue5huZeD2Iold7TdsLr72wW4GWXRb6Bgb'], 'Weather': ['흐림'], 'Emotion': ['보통'], 'Drawing': ['MZ세대 스타일'], 'content': ['어린왕자는 B612라는 작은 혹성에서 살았는데 우연히 만난 장미에게 사랑을 느끼지만 장미는 어린왕자에게 상처만 줄 뿐이었다. 그때 어린왕자를 찾아온 사업가를 통해 다른 별의 이야기를 전해 듣고 더 큰 세상을 알면 장미의 행동을 이해할 수 있으리란 생각을 하며 여행을 결심한다.']}>
+2022-11-24 11:39:11,726 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 11:39:12,037 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 11:39:17,279 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 11:39:20,027 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 11:39:25,673 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4880 request_id=918867563beb10f1bc5ed431e2338e93 response_code=200
+2022-11-24 11:39:31,543 - django.request - ERROR - Internal Server Error: /diary/9/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 52, in memory_detail
+    memory = Memory.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.Memory.DoesNotExist: Memory matching query does not exist.
+2022-11-24 12:44:31,374 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['0WSe2cK7XywF80tVw7T3GRmBkI7XwczQZiblh1ag3EVmTkZtuqN8SbmW4YUELXdx'], 'Weather': ['비'], 'Emotion': ['기쁨'], 'Drawing': ['MZ세대 스타일'], 'content': ['소년은 개울가에서 소녀를 보게 되지만, 말도 제대로 못 붙이는 내성적인 성격이다. 어느 날, 소녀가 그런 소년에게 조약돌을 던져 관심을 나타내고, 소년은 이를 소중히 간직한다. 그러나 소극적으로 소녀를 피하기만 하던 소년은 소녀의 제안으로 함께 산에 놀러 간다. 논밭을 지나 산마루까지 오르면서 아늑하고 평화로운 가을 날의 시골 정취 속에 둘 사이는 더욱 가까워진다. 산을 내려올 때 갑자기 소나기를 만난 소년과 소녀는 원두막과 수숫단 속에서 비를 피한다. 비가 그친 뒤, 돌아오는 길에 도랑물이 불어서 소년은 소녀를 업고 건너며, 둘 사이는 더욱 친밀해진다. 그 후 한동안 만나지 못\ufeff하다가 다시 소녀를 만난 소년은 소녀의 옷에 진 얼룩을 보고 부끄러워한다. 그리고 소녀는 그 동안 아팠으며, 곧 이사를 가게 되었다는 말을 듣게 된다. 소년은 마지막으로 한 번 소녀를 만나려고 애를 태우다가 소녀가 이사 가기로 한 전날 밤 잠결에 부모의 이야기를 통해 소녀가 죽었으며, 소년과의 추억이 깃든 옷을 그대로 입혀서 묻어 달라는 말을 남겼다는 사실을 알게 된다.']}>
+2022-11-24 12:44:31,375 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 12:44:32,063 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 12:44:49,738 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 12:44:56,732 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 12:44:57,701 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=116 request_id=73ac4f0ca8a34091b57abf35b2fe8b9d response_code=400
+2022-11-24 12:44:57,703 - openai - INFO - error_code=None error_message='Your request was rejected as a result of our safety system. Your prompt may contain text that is not allowed by our safety system.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2022-11-24 12:44:58,989 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 224, in memory_new
+    response = openai.Image.create(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_resources\image.py", line 22, in create
+    return instance.request("post", cls._get_url("generations"), params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\openai_object.py", line 179, in request
+    response, stream, api_key = requestor.request(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 181, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 396, in _interpret_response
+    self._interpret_response_line(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 429, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.InvalidRequestError: Your request was rejected as a result of our safety system. Your prompt may contain text that is not allowed by our safety system.
+2022-11-24 12:45:34,149 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['tirTSCsCwmrfKqvRP5mqX5sbv6lEnKNcsEK07rSLCsQWvK1pNogv9pswfm8lCvrT'], 'Weather': ['비'], 'Emotion': ['우울'], 'Drawing': ['인상주의'], 'content': ['소년은 개울가에서 소녀를 보게 되지만, 말도 제대로 못 붙이는 내성적인 성격이다. 어느 날, 소녀가 그런 소년에게 조약돌을 던져 관심을 나타내고, 소년은 이를 소중히 간직한다. 그러나 소극적으로 소녀를 피하기만 하던 소년은 소녀의 제안으로 함께 산에 놀러 간다. 논밭을 지나 산마루까지 오르면서 아늑하고 평화로운 가을 날의 시골 정취 속에 둘 사이는 더욱 가까워진다. 산을 내려올 때 갑자기 소나기를 만난 소년과 소녀는 원두막과 수숫단 속에서 비를 피한다. 비가 그친 뒤, 돌아오는 길에 도랑물이 불어서 소년은 소녀를 업고 건너며, 둘 사이는 더욱 친밀해진다. 그 후 한동안 만나지 못\ufeff하다가 다시 소녀를 만난 소년은 소녀의 옷에 진 얼룩을 보고 부끄러워한다. 그리고 소녀는 그 동안 아팠으며, 곧 이사를 가게 되었다는 말을 듣게 된다. 소년은 마지막으로 한 번 소녀를 만나려고 애를 태우다가 소녀가 이사 가기로 한 전날 밤 잠결에 부모의 이야기를 통해 소녀가 죽었으며, 소년과의 추억이 깃든 옷을 그대로 입혀서 묻어 달라는 말을 남겼다는 사실을 알게 된다.']}>
+2022-11-24 12:45:34,153 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 12:45:34,603 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 12:45:43,249 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 12:45:46,437 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 12:45:47,201 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=123 request_id=4ee2ccd15bf3488c4e5e5be0ce345f23 response_code=400
+2022-11-24 12:45:47,202 - openai - INFO - error_code=None error_message='Your request was rejected as a result of our safety system. Your prompt may contain text that is not allowed by our safety system.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2022-11-24 12:45:47,346 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 224, in memory_new
+    response = openai.Image.create(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_resources\image.py", line 22, in create
+    return instance.request("post", cls._get_url("generations"), params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\openai_object.py", line 179, in request
+    response, stream, api_key = requestor.request(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 181, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 396, in _interpret_response
+    self._interpret_response_line(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 429, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.InvalidRequestError: Your request was rejected as a result of our safety system. Your prompt may contain text that is not allowed by our safety system.
+2022-11-24 12:47:28,887 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['9Vebot5KfYsUgmuC0Xz173Rs4fBabVPx8hxiDivTl4RB1G0aYgt6jnRNOvoRqGte'], 'Weather': ['흐림'], 'Emotion': ['보통'], 'Drawing': ['디지털 아트'], 'content': ['때는 세기말이라 불리는 1998년[4], 케론별에서는 지구 정복 계획을 세운 뒤 다섯 명의 소대원으로 구성된 선행 부대, 케로로 소대와 본대를 파견했다. 하지만 모종의 사고로 케로로 소대원들은 현지에서 뿔뿔이 흩어지게 됐고 소대의 대장이었던 케로로는 어느 가정집에 불시착하게 된다.\r\n\r\n오늘도 등교 준비로 분주한 히나타 남매. 하지만 누나 나츠미는 일찌감치 교복까지 다 갈아입은 반면 동생 후유키는 아직도 꿈나라에 가 있었다. 이에 화가 난 그녀는 동생을 깨우기 위해 동생이 좋아하는 외계인이 있다고 소리친다. 그런데 그 말을 듣고 깨어난 후유키의 시선은 나츠미의 뒤를 향했고 고개를 돌린 나츠미 역시 경악했다. 멀쩡하던 벽지가 서서히 갈라지더니 정체 모를 초록개구리가 이상한 공까지 든 채로 서 있었기 때문이다.\r\n']}>
+2022-11-24 12:47:28,890 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 12:47:29,480 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 12:47:42,510 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 12:47:52,901 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 12:48:00,254 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=6135 request_id=6a6e4290d20ce44ecc9ae9754cea5b56 response_code=200
+2022-11-24 12:48:11,020 - django.request - ERROR - Internal Server Error: /diary/12/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 52, in memory_detail
+    memory = Memory.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.Memory.DoesNotExist: Memory matching query does not exist.
+2022-11-24 13:08:46,288 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['umGCSlUwmNf9rlIqAAdL4Ayi4Vni1tz0c0izjv6SivembmrV5CnLlcD6zpjSDJgZ'], 'Weather': ['비'], 'Emotion': ['우울'], 'Drawing': ['스케치'], 'content': ['소녀의 흰 얼굴이, 분홍 스웨터가, 남색 스커트가, 안고 있는 꽃과 함께 범벅이 된다. 모두가 하나의 큰 꽃묶음 같다. 어지럽다. 그러나, 내리지 않으리라. 자랑스러웠다. 이것만은 소녀가 흉내 내지 못할, 자기 혼자만이 할 수 있는 일인 것이다.']}>
+2022-11-24 13:08:46,291 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 13:08:46,805 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 13:08:58,396 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 13:09:07,174 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 13:09:12,983 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4898 request_id=1c9013f3700b2eda0223823bbc887020 response_code=200
+2022-11-24 13:09:24,421 - django.request - ERROR - Internal Server Error: /diary/13/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 52, in memory_detail
+    memory = Memory.objects.get(pk=pk)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+diary.models.Memory.DoesNotExist: Memory matching query does not exist.
+2022-11-24 13:12:52,227 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\do_it_django_prj\settings.py changed, reloading.
+2022-11-24 13:17:44,051 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['b63nPdsoVIDMcBL5elrvfsCdcF6V5uDVTKFkgnEKRqCZWCuAJnBvw4H1H92vHKkU'], 'Weather': ['비'], 'Emotion': ['우울'], 'Drawing': ['스케치'], 'content': ['\r\n소녀의 흰 얼굴이, 분홍 스웨터가, 남색 스커트가, 안고 있는 꽃과 함께 범벅이 된다. 모두가 하나의 큰 꽃묶음 같다. 어지럽다. 그러나, 내리지 않으리라. 자랑스러웠다. 이것만은 소녀가 흉내 내지 못할, 자기 혼자만이 할 수 있는 일인 것이다.']}>
+2022-11-24 13:17:44,054 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 13:17:44,471 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'project_test2.diary_memory' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 86, in memory_new
+    form.save()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\forms\models.py", line 548, in save
+    self.instance.save()
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'project_test2.diary_memory' doesn't exist")
+2022-11-24 13:37:35,788 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['0vBzBdCpmncVqVYvvDaVl2slQ1ocSmHuI9dw2nOLi5b8aWH00FkVCEx9lvkMuCot'], 'Weather': ['흐림'], 'Emotion': ['보통'], 'Drawing': ['디지털 아트'], 'content': ['어린왕자는 B612라는 작은 혹성에서 살았는데 우연히 만난 장미에게 사랑을 느끼지만 장미는 어린왕자에게 상처만 줄 뿐이었다. 그때 어린왕자를 찾아온 사업가를 통해 다른 별의 이야기를 전해 듣고 더 큰 세상을 알면 장미의 행동을 이해할 수 있으리란 생각을 하며 여행을 결심한다']}>
+2022-11-24 13:37:35,797 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 13:37:54,730 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 13:38:12,081 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 13:38:16,249 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 13:38:21,925 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4751 request_id=d1afcfeb720bbd159db5fa459d1188de response_code=200
+2022-11-24 13:51:34,934 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['hemuHOJGVwcpVAuQyNgf7J0kWgldzxU0ONrLnZNQEEgQ3q0c7LpNNnm5MC1CteID'], 'Weather': ['눈'], 'Emotion': ['보통'], 'Drawing': ['디지털 아트'], 'content': ['그들이 승강장으로 들어가는 모습을 멀리서 보고 있던 해리는 조심스럽게 이들에게 다가가 승강장 안으로 들어가는 법을 묻는다. 이후 몰리가 가르쳐 주는 대로 무사히 승강장 안에 들어오는 데 성공하고[7] 프레드와 조지의 도움을 받아 기차에 탑승했다. 이후 혼자 앉아서 가고 있는데 론이 다가오더니 빈자리가 없어서 같이 앉아서 가자고 한다. 해리는 론과 통성명을 하고 이때 간식 수레 하나 분량의 간식을 통째로 사서 론과 나눠먹는다. 론과 이런저런 이야기를 나누다가 개구리 초콜릿에서 알버스 덤블도어 카드를 뽑고, 내용을 확인한다.[8] 이런 와중에 또 다른 친구 헤르미온느 그레인저가 네빌 롱보텀의 두꺼비를 찾으러 그들의 칸으로 들어온다. 그녀는 마법으로 해리의 안경을 고쳐준다. 또 드레이코 말포이를 다시 만나게 되나, 이때 약간의 소동으로 사이가 틀어지게 된다.']}>
+2022-11-24 13:51:34,945 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 13:51:52,874 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 13:52:05,040 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 13:52:11,601 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 13:52:17,748 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=5136 request_id=b1bf14442ee754c0963e8e67593f0ac6 response_code=200
+2022-11-24 13:53:48,429 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['T6W5YuFDnIARdkl6FlX9ilhM7iE79vFlqF1mEFJN6QEilaRsej6HYZDxXEkw3ctY'], 'Weather': ['흐림'], 'Emotion': ['우울'], 'Drawing': ['인상주의'], 'content': ['어려서는 그렇게 글씨가 쓰고 싶은 것을 아버지게서 못 배우게 해서 못 써보고 그것이 원이 돼서 부엌에 불 때면서 부주깽이로 재 글어내서 재 우에 가자 써보고 나자 써보고 이렇게 배워서 그저 그럭허니 하고 있었지 절대 글 안다는 표정을 안 했습니다……전에는 뻐꾸기 울기 전에 깨모를 부어야 기름이 잘 난다고 했는데 이제는 날씨가 바뀌어서 뻐구기가 울고도 한참 더 있다가 깨모를 붓는다고 합니다. 콩도 전에는 소만에 심었는데 지금은 하지가 다 되어서 심고, 모든 것이 옛날과는 많이 달라졌습니다']}>
+2022-11-24 13:53:48,441 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 13:53:49,287 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 13:54:01,636 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 13:54:11,424 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 13:54:17,042 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4613 request_id=73c7ca727fa9b4990ef1bbe02eebfd95 response_code=200
+2022-11-24 15:38:31,817 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-24 15:43:49,899 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-24 15:52:34,453 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['c14rDx4Gm9mZwKf6PtYBYhbNTPpbkXOMJA9IjI8Q5hqqEALsor79EVxyJb5AeECp'], 'Weather': ['맑음'], 'Emotion': ['화남'], 'Drawing': ['인상주의'], 'content': ['오늘은 우리 고슴도치의 첫 산책을 갔다. 사실 눈이 많이 오는 날 눈을 보여주기도 하고 비가 오면 데리고 나가서 살짝 보여주곤 했는데 산책줄도 없거니와 야행성이라 밖에 데리고 나가도 숨으려고만 하기 때문에 산책은 별로 시켜주지 않았다.']}>
+2022-11-24 15:52:34,457 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-24 15:52:40,445 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-24 15:53:00,342 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-24 15:53:07,112 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-24 15:53:12,593 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4773 request_id=682283b012b859d4f2162edf3789c12d response_code=200
+2022-11-25 14:34:44,751 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-25 14:34:48,857 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-27 18:47:56,017 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-27 18:48:00,595 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-27 18:50:19,243 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['DhjAsnNRi6FHTd6rWQ40SoKdKYIHapujaQoR8yR11eJ813CNvOdyy26YAko646iW'], 'Weather': ['맑음'], 'Emotion': ['기쁨'], 'Drawing': ['스케치'], 'content': ['오늘은 호수공원에 가서 자전거를 타고 한바퀴 돌고 근처 카페에서 석류에이드를 마셨다. 이렇게 혼자서 바람맞으면서 자전거 타는 것도 참 좋은 것 같다. 나중에 시간이 된다면 수목원도 가보고싶다.']}>
+2022-11-27 18:50:19,244 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-27 18:50:25,306 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-27 18:50:37,345 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-27 18:50:41,217 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-27 18:50:46,523 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4725 request_id=930f74ff5cba960a8791dc2561a874be response_code=200
+2022-11-27 18:56:41,594 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\urls.py changed, reloading.
+2022-11-27 18:57:00,186 - django.request - WARNING - Not Found: /dashboard
+2022-11-27 19:01:00,971 - django.security.csrf - WARNING - Forbidden (CSRF token from POST incorrect.): /accounts/login/
+2022-11-27 19:07:27,837 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['IYRCvclYKUBeAXeHlHQKhEEyLzS4rOtEwbJbM3wL9c5O3bqrnNgToJxDVrF0Yf2l'], 'Weather': ['비'], 'Emotion': ['화남'], 'Drawing': ['인상주의'], 'content': ['오늘은 우울한 날이다. 하루종일 비가 내려서 집에만 있어야 했고, 많은 숙제들 때문에 정신없는 하루였다. 그나마 밥은 기분을 좀 내보려고 토마토 소스미트볼 파스타를 직접 만들어 먹었지만, 혼자먹는 밥은 역시 맛이 없다. 아 언제쯤 나도 내 짝이 생길까?']}>
+2022-11-27 19:07:27,838 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-27 19:07:33,632 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-27 19:07:42,869 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-27 19:07:48,706 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-27 19:07:54,131 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4874 request_id=dd4a5fce5b35a8a5403f22056fe17be4 response_code=200
+2022-11-27 19:13:22,380 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['TxnmnLE3TSeWBd06xKVr54jNWIfT2UvFHKfVECPQiaIw4rcQzQlAc9cS6A2Pzl4m'], 'Weather': ['눈'], 'Emotion': ['화남'], 'Drawing': ['디지털 아트'], 'content': ['오늘은 학교에서 소풍으로 동물원을 갔다. 동물원에서 코끼리도 보고 기린도 보고 판다곰도 보고 아무튼 많이 봤다. 나는 동물중에선 호랑이를 제일 좋아한다. 호랑이는 정말 멋있다. 나도 커서 호랑이가 되고싶다. ']}>
+2022-11-27 19:13:22,381 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-27 19:13:22,669 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-27 19:13:28,799 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-27 19:13:34,376 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-27 19:13:40,080 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=5107 request_id=c465259ce8fd07cfd6b19903e2bda935 response_code=200
+2022-11-27 22:27:03,879 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['yCxKm6guIuR2xxXYb4lulVPqBfDeat2HmPpjDXrh7MlC0L9IdaLDs0IvL7qaHUBo'], 'Weather': ['맑음'], 'Emotion': ['기쁨'], 'Drawing': ['MZ세대 스타일'], 'content': ['오늘은 구름이 좀 끼긴 했어도 화창한 날이었다. 무엇보다도 밤에는 보름달이 크게 뜨고 별들도 많이 반짝거려서 달빛이 예뻤던 기억이 난다. 달밤 아래 바닷가에서 나는 내 친구와 칵테일을 마셨는데 눈앞에 보이는 풍경에 술 맛이 더 좋았던 것 같다.']}>
+2022-11-27 22:27:03,881 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-27 22:27:09,653 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-27 22:27:24,585 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-27 22:27:30,039 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-27 22:27:35,654 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4927 request_id=a742e26615eebb92e8015b1fa8bca39a response_code=200
+2022-11-27 22:42:33,626 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-28 10:31:54,257 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-28 10:35:18,419 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-28 11:22:25,222 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['HHzeiit430lcQKsgdHk8yNhxedYMPF6tvUrNz9ERsiPMjYE0fNKhFSaCo5LIm6Fa'], 'Weather': ['눈'], 'Emotion': ['쾌활'], 'Drawing': ['유화'], 'content': ['오늘은 자고 일어났더니 눈이 펑펑 왔었는지 많이 쌓여있어서 친구들과 밖에서 눈사람을 만들었다. 강아지 뽀삐도 눈이 와서 기쁜지 눈밭을 뛰어다녔다. 작년에 했던 것처럼 눈밭에 누워서 천사만들기를 했다. 옷이 눈때문에 다 젖어버렸지만 그래도 재미있었다.']}>
+2022-11-28 11:22:25,223 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-28 11:22:33,088 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-28 11:22:44,483 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-28 11:22:50,919 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-28 11:22:57,308 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=5500 request_id=0527fd0a3347fde94b7e2d89353314e6 response_code=200
+2022-11-28 12:26:52,720 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:32:13,373 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:33:15,566 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:33:40,055 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:34:46,678 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:34:58,121 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:35:34,038 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:35:41,287 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:35:56,369 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:36:20,916 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:36:27,185 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:36:32,467 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:36:47,503 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:36:53,489 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:39:17,277 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:39:23,603 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:40:17,598 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:40:29,364 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:41:01,061 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:41:07,708 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:41:14,467 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:41:33,010 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:41:53,981 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:42:00,356 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:42:08,974 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:42:16,345 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:42:52,582 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:43:02,229 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:46:37,815 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:46:51,579 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:46:58,359 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:47:04,722 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:47:12,963 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:47:19,355 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:47:30,190 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 12:47:35,737 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:26:35,865 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:26:48,239 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:27:23,233 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:27:46,962 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:28:51,875 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:29:08,813 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:30:32,980 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:30:42,294 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:38:57,449 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:39:07,070 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:39:16,137 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:39:56,650 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:40:08,912 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:40:22,414 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:40:32,851 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:40:41,048 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:40:53,548 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:43:04,180 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:43:15,939 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:43:39,961 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:43:48,611 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:43:59,545 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:44:09,775 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:44:38,611 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:47:43,243 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\urls.py changed, reloading.
+2022-11-28 13:47:52,499 - django.request - ERROR - Internal Server Error: /diary/dashboard/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 586, in bar_chart
+    emotions = memory['Emotion']
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\db\models\query.py", line 414, in __getitem__
+    raise TypeError(
+TypeError: QuerySet indices must be integers or slices, not str.
+2022-11-28 13:49:18,160 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:49:41,034 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:49:49,593 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:50:01,408 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:50:12,855 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:50:20,823 - django.request - ERROR - Internal Server Error: /diary/dashboard/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 583, in bar_chart
+    print(memory)
+UnboundLocalError: local variable 'memory' referenced before assignment
+2022-11-28 13:50:40,830 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:50:49,493 - django.request - ERROR - Internal Server Error: /diary/dashboard/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 592, in bar_chart
+    pritn(emotions)
+NameError: name 'pritn' is not defined
+2022-11-28 13:50:57,454 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:51:09,918 - django.request - ERROR - Internal Server Error: /diary/dashboard/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 621, in bar_chart
+    return render(request, "DashBoard.html", {
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: DashBoard.html
+2022-11-28 13:52:04,800 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:52:14,193 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:52:22,769 - django.request - ERROR - Internal Server Error: /diary/dashboard/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 622, in bar_chart
+    return render(request, "DashBoard.html", {
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: DashBoard.html
+2022-11-28 13:52:41,936 - django.request - ERROR - Internal Server Error: /diary/dashboard/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 622, in bar_chart
+    return render(request, "DashBoard.html", {
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: DashBoard.html
+2022-11-28 13:52:58,157 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:53:05,128 - django.request - ERROR - Internal Server Error: /diary/dashboard/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 623, in bar_chart
+    return render(request, "DashBoard.html", {
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: DashBoard.html
+2022-11-28 13:53:39,355 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:53:49,777 - django.request - ERROR - Internal Server Error: /diary/dashboard/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 624, in bar_chart
+    return render(request, "DashBoard.html", {
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: DashBoard.html
+2022-11-28 13:54:13,524 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:54:22,891 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:54:52,754 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:55:04,732 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:55:16,169 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:55:27,353 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:55:46,007 - django.request - ERROR - Internal Server Error: /diary/dashboard/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 603, in bar_chart
+    print(emotion_count['angry'])
+KeyError: 'angry'
+2022-11-28 13:55:57,453 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 13:59:22,256 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 14:01:51,662 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['u07uH0MPLmjq495HRQeQ671z1yfEOLgridZ3YRXCaEN0xnhrTWEZdcUEbq2AlcP8'], 'Weather': ['비'], 'Emotion': ['우울'], 'Drawing': ['유화'], 'content': ['오늘은 하루종일 비가 내려서 집에갈 때 빨간 우산을 쓰고 갔다. 우산을 쓰고 가던 중에 길고양이가 불쌍하게 비를 맞고 있는 것을 보았다. 정말 불쌍하지만 우리집은 고양이를 키울 수 없어서 데려올 수가 없다보니 너무 안타까웠다.']}>
+2022-11-28 14:01:51,663 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-28 14:02:02,659 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-28 14:02:18,690 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-28 14:02:23,952 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-28 14:02:29,429 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4731 request_id=a4918d9e4c11d903888c63782cb33b0a response_code=200
+2022-11-28 15:00:57,124 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['lkJ8fl6THldCstbo1DHxrFEoix5Beau19xBHwchG6DHcVHn83J7GyKxtspSxLB3I'], 'Weather': ['맑음'], 'Emotion': ['쾌활'], 'Drawing': ['MZ세대 스타일'], 'content': ['오늘은 가족과 함께 바캉스로 하와이에 놀러갔다. 해변에 가서 수영도 하고 수쿠버다이빙으로 바닷속 탐험도 했다. 열대어와 산호초 색이 정말 예뻤고 환상적이었다. 저녁에는 근처 레스토랑에서 칵테일을 마시면서 밤바다 구경을 했다.']}>
+2022-11-28 15:00:57,125 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-28 15:00:57,834 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-28 15:01:09,697 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-28 15:01:15,300 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-28 15:01:21,208 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=5196 request_id=6c5ef385a2135acc07b1d049ccb05197 response_code=200
+2022-11-28 15:03:49,797 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['t2eXtQQLaPj3SlIjXj6iVD7c4Wc9eu32hf6wKH1yz7NDlzU3Zpwr2I0heOZ5LVCJ'], 'Weather': ['맑음'], 'Emotion': ['화남'], 'Drawing': ['MZ세대 스타일'], 'content': ['이집트 카이로에 스핑크스와 피라미드를 구경하러 여행을 갔다. 낙타를 타고 사막을 건너는데 너무 햇빛이 쨍쨍해서 너무 힘들었다. 피라미드는 TV에서 봤던 것보다 훨씬 컸고 웅장했다. 여기까지 오는길이 참 힘들었지만 이런 장관을 볼 수 있었음에 감사한다. ']}>
+2022-11-28 15:03:49,798 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-28 15:03:50,168 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-28 15:04:00,329 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-28 15:04:06,959 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-28 15:04:12,542 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4832 request_id=bfb2eadc9a139d9e499a48db0432413f response_code=200
+2022-11-28 15:17:26,214 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['wj3QK81OaSpCaKk27cOoJ0R3mc0mSWvpkwVp1ZcBzaTcDYwM9iexQ5K8w4Nipn46'], 'Weather': ['맑음'], 'Emotion': ['보통'], 'Drawing': ['MZ세대 스타일'], 'content': ['박소영은 지금 보드를 타며 여기저기 가보고 싶은 곳, 하고 싶은 것이 많다. 어찌보면 방황 중이라고 말할 수 있으려나 모르겠다. 그래도 나는 내 인생이 너무 좋다. 내가 무얼 하든 내 곁에 있어 주는 든든한 가족이 있고, 같이 방귀뀌고 놀 수 있는 소중한 친구가 있다. 히히하헤호 함께 즐기며 웃는 하루하루가 행복을 만들기 때문이지 않을까? 뭐 아니더라도 멀리서 보면 다 행복해 보인다. 물론 무서움과 눈물로 뒤덮인 하루도 많다.나는 내 미래가 기대된다. 솔직히 그냥 그렇게 말하고 싶다. 나중에 나이가 들면 우아한 할머니가 되어 여유롭게 프랑스에서 티를 마시고 있을 것이다. 당연히 빵도 먹을거다. ']}>
+2022-11-28 15:17:26,215 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-28 15:17:26,943 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-28 15:17:34,232 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-28 15:17:39,682 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-28 15:17:45,453 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4849 request_id=048f61b9b1abf0899ed85396d5b46433 response_code=200
+2022-11-28 15:28:03,717 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['3NgjtATlBDpeFNwTL1l2i8OZAZDcJBcxR08SKr480VTO81IDN7LbpdH4KRq8g2Le'], 'Weather': ['흐림'], 'Emotion': ['쾌활'], 'Drawing': ['MZ세대 스타일'], 'content': ['오늘은 날씨가 많이 흐리긴 했어도 바람이 선선한게 기분이 좋았다. 날씨도 좋겠다 강아지를 데리고 주변 공원으로 산책을 나갔다. 호수에는 평화롭게 오리들이 헤엄치고 있었고 비둘기들은 광장에서 모이를 쪼아먹고 있었다. 이제 가을이라고 단풍도 빨갛게 물들어서 걷는동안 구경했다.']}>
+2022-11-28 15:28:03,718 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-28 15:28:04,086 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-28 15:28:09,470 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-28 15:28:15,640 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-28 15:28:21,119 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=4683 request_id=fee450f90f4fc319da2cb627d6372573 response_code=200
+2022-11-28 15:34:00,211 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 15:36:13,526 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 15:44:22,676 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 15:45:22,498 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 15:46:52,140 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 15:47:46,925 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 15:48:19,984 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 16:05:03,489 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-28 17:16:08,424 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-29 16:48:08,947 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-29 16:48:10,854 - django.request - WARNING - Not Found: /favicon.ico

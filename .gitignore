@@ -6,3 +6,6 @@ __pycache__
 ngrok.exe
 .ipynb_checkpoints
 _media/
+*.log
+py-hanspell
+/static/

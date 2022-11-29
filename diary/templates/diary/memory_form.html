@@ -19,7 +19,7 @@ a:active {
   color : black;
 }
 </style>
-<div class ="container" style="font-family: 'MaruBuri-Regular'";>
+<div class ="container" style="font-family: 'MaruBuri-Regular'">
     <div class ="row">
         <div class ="col-12">
     <form action="" method="post" id="memory-form">
@@ -196,7 +196,7 @@ a:active {
                             {% if not form.instance.pk %}
                               <input type="submit" class="btn btn-danger btn-lg" value="그림 그리기" />
                             {% else %}
-                              <input type="submit" class="btn btn-danger btn-lg" value="수정"/>
+                              <input type="submit" class="btn btn-danger btn-lg" value="저장"/>
                             {% endif %}
                         </span>
                         </div>
@@ -216,7 +216,7 @@ a:active {
 <script>
   document.querySelector("#memory-form").addEventListener("submit", function(e) {
     // e.preventDefault();
-    const is_edit_mode = e.submitter.value === "수정";
+    const is_edit_mode = e.submitter.value === "저장";
     if(!is_edit_mode) {
       var loadingModal = new bootstrap.Modal(document.getElementById('loadingModal'), {backdrop: 'static', keyboard: false});
       loadingModal.show();
@@ -229,11 +229,12 @@ a:active {
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">그림을 그리는 중입니다! 조금만 기다려주세요..</h5>
+        <h5 class="modal-title">그림을 그리는 중입니다! &nbsp;조금만 기다려주세요..</h5>
       </div>
       <div class="modal-body">
 
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://upload3.inven.co.kr/upload/2020/11/02/bbs/i015477759243.gif">
+        
 
       </div>
     </div>

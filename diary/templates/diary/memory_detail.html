@@ -1,51 +1,60 @@
-{% extends "diary/base.html" %}
-
-{% block content %}
+{% extends "diary/base.html" %} {% block content %}
 <style>
-a:link {
-  color : black;
-}
-a:visited {
-  color : black;
-}
-a:hover {
-  color : black;
-}
-a:active {
-  color : black;
-}
-body {
-        background-color:#FFF0F0;
-        }
-</style>
-<br/>
-<div class ="container" style="font-family: 'KyoboHandwriting2020A'";>
-            <div class="col-md-12>
-<div class="col-md-6">
-                {% if memory.head_image %}
-            <img src="{{ memory.head_image.url }}" style="float: left;width:800 px; height:500px;"/>
-                {% endif %}
-  <!-- Card Start -->
-  <div class="card">
-    <div class="row ">
-      <div class="col-md-12" style="height:500px;">
-        <div class="card-block px-1" style="text-align:center;">
-          <br/><h3 class="card-title">{{ memory.created_at }} / {{ memory.Weather }} / {{ memory.Emotion }}</h3><hr/>
-                <br/>
-            <h2>{{ memory.content }}</h2>
+  a:link {
+    color : black;
+  }
+  a:visited {
+    color : black;
+  }
+  a:hover {
+    color : black;
+  }
+  a:active {
+    color : black;
+  }
+  body {
+          background-color:#FFF0F0;
+          }
 
-          <br>
+</style>
+<br />
+<div class="container" style="font-family: 'KyoboHandwriting2020A'";>
+  <div class="col-md-12">
+  <div class="">
+    {% if memory.pk %}
+    <img
+      src="/static/dalle/{{ memory.pk }}.jpg"
+      style="float: left; width: 800 px; height: 500px"
+    />
+    {% endif %}
+    <!-- Card Start -->
+    <div class="card">
+      <div class="row">
+        <div class="col-md-12" style="height: 500px; overflow-y: scroll;">
+          <div class="card-block px-1">
+            <h3 class="card-title"><br><b>&nbsp&nbsp&nbsp{{ memory.created_at }}&nbsp;/&nbsp;{{memory.Emotion}}/&nbsp;{{memory.Weather}}</b></h3><hr/>
+            <br />
+            <h2>{{ memory.content }}</h2>
+            <br />
+          </div>
         </div>
       </div>
-</div>
-      </div>
+    </div>
 
-<!-- End of card -->
-<hr>
+    <!-- End of card -->
+    <hr />
 
-            <a class="btn btn-danger" href="/diary/{{ memory.pk }}/edit/" role="button" style="font-family: 'MaruBuri-Regular'";><b>수정</b></a>
-            <a class="btn btn-danger" href="/diary/{{ memory.pk }}/delete/" role="button" style="font-family: 'MaruBuri-Regular'";><b>삭제</b></a>
-            <a class="btn btn-danger" href="/diary/" role="button" style="font-family: 'MaruBuri-Regular'";><b>일기 작성 페이지로</b></a>
+    <a class="btn btn-danger" href="/diary/{{ memory.pk }}/edit/" role="button" style="font-family: 'MaruBuri-Regular'";><b>수정</b></a>
+    <a
+      class="btn btn-danger"
+      href="/diary/{{ memory.pk }}/delete/"
+      role="button" style="font-family: 'MaruBuri-Regular'";
+      ><b>삭제</b></a
+    >
+    <a class="btn btn-danger" href="/diary/gallery/" role="button" style="font-family: 'MaruBuri-Regular'";
+      ><b>갤러리로 가기</b></a
+    >
+  </div>
 </div>
 </div>
 

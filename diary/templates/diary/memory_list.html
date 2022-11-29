@@ -1,81 +1,87 @@
 {% extends "diary/base.html" %}
 {% block content %}
 <style>
-.card-column {
-  @include media-breakpoint-only(lg) {
-    column-count: 4;
+  .card-column {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
   }
-  @include media-breakpoint-only(xl) {
-    column-count: 5;
+      .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+  a:link {
+    color : black;
   }
-}
-    .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-a:link {
-  color : black;
-}
-a:visited {
-  color : black;
-}
-a:hover {
-  color : black;
-}
-a:active {
-  color : black;
-}
-body {
-        background-color:#FFF0F0;
-        }
+  a:visited {
+    color : black;
+  }
+  a:hover {
+    color : black;
+  }
+  a:active {
+    color : black;
+  }
+  body {
+          background-color:#FFF0F0;
+          }
 </style>
-<section class="jumbotron text-center" style="font-family: 'MaruBuri-Regular'";>
+<section class="jumbotron text-center" style="font-family: 'MaruBuri-Regular';">
     <div class="container">
       <h1><b>갤러리</b></h1><br/>
-        <h4>일기로 그린 그림을 모아볼 수 있는 공간입니다<br/>그림 클릭시 일기 상세페이지로 넘어갑니다</h4>
+      <h4>일기로 그린 그림을 모아볼 수 있는 공간입니다<br/>그림 클릭시 일기 상세페이지로 넘어갑니다</h4>
+      <br><br>
     </div>
   </section>
 <div class="card-column" style="font-family: 'KyoboHandwriting2020A'";>
-<div class="album py-5 bg-light">
     <div class="container">
       <div class="row">
-{% for m in memory_list %}
+{% for p in memory_list %}
         <div class="col-md-4" >
           <div class="card mb-4 shadow-sm" style="text-align : center;">
-              {% if m.head_image %}
-              <a href="http://localhost:8000/diary/{{ m.pk }}/"><img src="{{ m.head_image.url }}" height="225" width="400"/></a>
+            {% comment %} {% for keyword in keywords_list %} {% endcomment %}
+
+              {% if p.pk %}
+              <a href="/diary/{{ p.pk }}/">
+                <img src="/static/dalle/{{ p.pk }}.jpg" height="225px" width="400px"/></svg></a>
               {% else %}
-              <a href="http://localhost:8000/diary/{{ m.pk }}/"><svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">준비중입니다</text></svg>
+              <a href="/diary/{{ p.pk }}/"><svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
               </a>
               {% endif %}
+            {% comment %} {% endfor %} {% endcomment %}
+
            <div class="card-body">
-              {% for keyword in keywords_list %}
+            {% for keyword in keywords_list %}
               {% if p.pk == keyword.pk %}
-              <p class="card-text">{{ keyword.keywords }}</p>
+              <p class="card-text"><b><h5>{{ keyword.keywords }}</h5></b></p>
               {% endif %}
             {% endfor %}
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted" >{{ m.created_at }}</small>
+                <small class="text-muted" >{{ p.created_at }}</small>
+
               </div>
             </div>
           </div>
         </div>
-          {% endfor %}
 
+{% endfor %}
       </div>
     </div>
   </div>
-</div>
+
 
 {% endblock %}
 

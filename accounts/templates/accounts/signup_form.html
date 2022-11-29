@@ -1,18 +1,31 @@
 {% extends "accounts/base.html" %}
 {% load django_bootstrap5 %}
-
+<style>
+    label[for="id_username"]{
+        style="font-family: 'MaruBuri-Regular';"}
+</style>
 {% block content %}
-<div class ="container" style="font-family: 'MaruBuri-Regular'";>
+<div class ="container">
     <div class ="row">
-        <div class ="col-8">
-    <h2>회원등록</h2>
+
+        <div class="col">
+           
+          </div>
+          <div class="col-5">
+            <br><h2 style="font-family: 'MaruBuri-Regular';">회원등록</h2><br>
 
     <form action="" method="post">
         {% csrf_token %}
         {% bootstrap_form form %}
-        <button type="submit" class="btn btn-primary">회원가입</button>
+        <button type="submit" class="btn btn-primary" style="font-family: 'MaruBuri-Regular';">회원가입</button>
     </form>
-        </div>
+          </div>
+          <div class="col">
+            
+          </div>
+        
+    
+        
     </div>
 </div>
 {% endblock %}

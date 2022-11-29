@@ -1,27 +1,60 @@
 {% extends "diary/base.html" %}
 {% block content %}
-<!-- 도움말 -->
 <style>
-    a:link {
-  color : black;
-}
-a:visited {
-  color : black;
-}
-a:hover {
-  color : black;
-}
-a:active {
-  color : black;
-}
 body {
-        background-color:#FFF0F0;
-        }
+   background-color:#FFF0F0;
+}
+    a:link {
+        color : black;
+      }
+      a:visited {
+        color : black;
+      }
+      a:hover {
+        color : black;
+      }
+      a:active {
+        color : black;
+      }
 </style>
-<div class ="container" style="font-family: 'MaruBuri-Regular'";>
+<!-- 도움말 -->
+
+<div class ="container">
     <div class ="row">
-        <div class ="col-4">
-            <h1>도움말</h1>
+        <div class ="col-12">
+            <br><h1 style="font-family: 'MaruBuri-Regular';">도움말</h1><br><hr/>
+            <br><h2 style="font-family: 'MaruBuri-Regular';"><b> '하루 그림'에서 일기로 그림을 추출하는 방법 </b></h2><br>
+            <img src= "/static/인공지능도움말.png"  style="width:1200px;"><br>
+
+             
+             <br><h2 style="font-family: 'MaruBuri-Regular';"><b> 일기 작성 페이지 </b></h2><br>
+            <img src="/static/help_writing.png" style="width:1200px;"></br></br>
+          <br><h4 style="font-family: 'MaruBuri-Regular';"><br>1. 오늘의 날씨를 선택해주세요.<br>
+              2. 오늘의 기분을 선택해주세요.<br>
+              3. 어떤 화풍의 그림을 원하시나요? <br>
+              4. 일기를 적어주세요. ( 1000자 이내 )<br>
+              5. 그림그리기 버튼을 누르시면 그림 그리는 인공지능이 돌아가기 시작합니다. <br><br>
+              </h4>
+
+            <br><h3 style="font-family: 'MaruBuri-Regular';"><b> 그림 선택 페이지 </b></h3><br>
+            <img src="/static/select.png"style="width:1200px;"><br>
+            <h4 style="font-family: 'MaruBuri-Regular';"> <br> 인공지능이 그린 그림 중 마음에 드는 그림을 하나 선택해주세요. <br> 마음에 드시는 그림을 클릭하시면 확인창으로 넘어갑니다.  </h4><br>
+            <img src="/static/select2.png" style="width:1200px;"><br>
+            <h3 style="font-family: 'MaruBuri-Regular';"> <br>선택하신 그림을 저장해주세요.</h3><br>
+
+            <br><h2 style="font-family: 'MaruBuri-Regular';"><b> 갤러리 </b></h2><br>
+
+            <h3 style="font-family: 'MaruBuri-Regular';"> 갤러리에서 저장된 그림일기를 확인하세요! </h3> <br>
+            <img src="/static/gallery.png" style="width:1200px;"><br>
+            <h4 style="font-family: 'MaruBuri-Regular';"> <br>그림을 클릭하시면 그림 일기의 <b>상세페이지</b>로 넘어갑니다. <br><br></h4>
+            <img src="/static/detail.png" style="width:1200px;"><br>
+            <h3> <br><br><br></h3>
+
+
+            
+
+
+            
         </div>
     </div>
 </div>

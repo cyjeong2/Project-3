@@ -4,51 +4,55 @@
 {% block content %}
 
 <style>
-    .divider:after,
-.divider:before {
-content: "";
-flex: 1;
-height: 1px;
-background: #eee;
-}
-.h-custom {
-height: calc(100% - 73px);
-}
-@media (max-width: 450px) {
-.h-custom {
-height: 100%;
-}
-}
-a:link {
-  color : black;
-}
-a:visited {
-  color : black;
-}
-a:hover {
-  color : black;
-}
-a:active {
-  color : black;
-}
-body {
-    background-color:#FFF0F0;
-    }
+  .divider:after,
+  .divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+  }
+  .h-custom {
+  height: calc(100% - 73px);
+  }
+  @media (max-width: 450px) {
+  .h-custom {
+  height: 100%;
+  }
+  }
+  a:link {
+    color : black;
+  }
+  a:visited {
+    color : black;
+  }
+  a:hover {
+    color : black;
+  }
+  a:active {
+    color : black;
+  }
+  body {
+      background-color:#FFF0F0;
+      }
+
+
+
+
 </style>
     <br/>
-<div style="text-align:center;font-family: 'MaruBuri-Regular'";>
-    <h1>로그인</h1>
+<div class="logintitle"style="text-align:center" >
+    <h1  style="font-family: 'MaruBuri-Regular';"><b>로그인</b></h1>
 </div>
 <form action="" method="post">
   {% csrf_token %}
 <!--        {% bootstrap_form form %}-->
 <!--        <input type="submit" value="회원가입" />-->
 
-<section class="vh-100" style="font-family: 'MaruBuri-Regular'";>
+<section class="vh-100">
   <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-md-9 col-lg-6 col-xl-5">
-        <img src="\static\DALL·E test.png"
+      <div class="col-md-9 col-lg-6 col-xl-5" >
+        <img src="/static/loginimage.jpg" 
           class="img-fluid" alt="Sample image">
       </div>
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
@@ -60,16 +64,18 @@ body {
 
           <!-- ID input -->
           <div class="form-outline mb-4">
-            <input type="text" name = "username" id="username" class="form-control form-control-lg"
+            <label class="form-label" for="form3Example3" style="font-family: 'MaruBuri-Regular'";><h4><b>사용자 이름</b></h4></label>
+            <input type="text" name = "username" id="username" class="form-control form-control-lg" style="font-family: 'MaruBuri-Regular'";
               placeholder="사용자 이름을 입력해주세요" />
-            <label class="form-label" for="form3Example3">사용자 이름</label>
+            
           </div>
 
           <!-- Password input -->
           <div class="form-outline mb-3">
-            <input type="password" name="password" id="password" class="form-control form-control-lg"
+            <label class="form-label" for="form3Example4" style="font-family: 'MaruBuri-Regular'";><h4><b>비밀번호</b></h4></label>
+            <input type="password" name="password" id="password" class="form-control form-control-lg" style="font-family: 'MaruBuri-Regular'";
               placeholder="비밀번호를 입력해주세요" />
-            <label class="form-label" for="form3Example4">비밀번호</label>
+            
           </div>
 
           <div class="d-flex justify-content-between align-items-center">
@@ -77,10 +83,10 @@ body {
           </div>
 
           <div class="text-center text-lg-start mt-4 pt-2">
-            <button type="submit" class="btn btn-primary btn-lg"
-              style="padding-left: 2.5rem; padding-right: 2.5rem;">로그인</button>
-            <p class="small fw-bold mt-2 pt-1 mb-0">아직 회원이 아니신가요? <a href="http://localhost:8000/accounts/signup/"
-                class="link-danger">회원 등록하기</a></p>
+            <button type="submit" class="btn btn-danger btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem; font-family: 'MaruBuri-Regular';">로그인</button>
+            <br/><br/><p class="small fw-bold mt-2 pt-1 mb-0" style="font-family: 'MaruBuri-Regular';"><h5><b>아직 회원이 아니신가요? &nbsp;&nbsp;&nbsp; <a href="http://localhost:8000/accounts/signup/"
+                                                                                                                                     class="link-danger" style="font-family: 'MaruBuri-Regular'";>회원 등록하기</a></h5></b></p>
           </div>
 
         </form>

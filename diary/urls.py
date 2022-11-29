@@ -13,9 +13,9 @@ urlpatterns = [
     path("<int:pk>/delete/", views.memory_delete),
 
     path("gallery/", views.index),
-    path("calendar/", views.calendar),
+    # path("calendar/", views.calendar),
     path("info/", views.info),
-
+    path("dashboard/", views.bar_chart),
 
 
     path("keyword/new/", views.keyword_new),

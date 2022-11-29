@@ -84,7 +84,18 @@ WSGI_APPLICATION = 'do_it_django_prj.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = my_settings.DATABASES
+# DATABASES = my_settings.DATABASES
+DATABASES = {
+    "default": {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Project_test2', #2
+        'USER': 'admin', #3
+        'PASSWORD': 'admin',  #4
+        'HOST': 'localhost',   #5                
+        'PORT': '3306', #6
+    }
+}
+
 
 
 # Password validation
@@ -121,9 +132,22 @@ USE_TZ = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [os.path.join('do_it_django_prj','static'),]
+# 장고앱/static 은 자동으로 장고가 찾아내요.
+# 다른 경로에 있는 static 폴더는 STATICFILES_DIRS에 추가해줘야, 장고가 찾습니다.
+STATICFILES_DIRS = [
+    BASE_DIR / "do_it_django_prj" / "static",  # 지금의 BASE_DIR은 Path 객체
+    # os.path.join(BASE_DIR, 'do_it_django_prj','static'),  # BASE_DIR은 문자열이었어요.
+]
+
+# STATIC_DIRS =[
+#     os.path.join(BASE_DIR, 'do_it_django_prj', 'static') 
+# ]
+
+#static 파일을 모을 디렉터리
+# 각 장고앱내의 static 파일들을 STATIC_ROOT에 지정한 경로로 복사 => collectstatic 명령
+# STATIC_ROOT = BASE_DIR / 'static'   # os.path.join(BASE_DIR, 'static')
 
 # Default primary key field 1type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -133,8 +157,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 INTERNAL_IPS = ['127.0.0.1']
 
 # MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, '_media')
+# MEDIA_ROOT = BASE_DIR / '_media'  # os.path.join(BASE_DIR, '_media')
 
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, '.media')
+MEDIA_ROOT = BASE_DIR / 'media'  # os.path.join(BASE_DIR, 'media')

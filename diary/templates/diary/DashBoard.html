@@ -1,0 +1,140 @@
+{% extends "diary/base.html" %}
+{% block content %}
+
+<style>
+body {
+   background-color:#FFF0F0;
+}
+    a:link {
+        color : black;
+      }
+      a:visited {
+        color : black;
+      }
+      a:hover {
+        color : black;
+      }
+      a:active {
+        color : black;
+      }
+
+      {% comment %} .col-md-4 {
+        float: left;
+        width: 400px;
+        height: 600px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 20px;
+    } {% endcomment %}
+    {% comment %} .col-md-6 {
+        float: right;
+        width: 300px;
+        height: 300px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 20px;
+    } {% endcomment %}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+
+
+
+<div class="container">
+    <div class="row justify-content-center">
+         <div class="col-lg-12">
+            <div class="section-title text-center" style="font-family:'MaruBuri-Regular';">
+               <h3 class="title"><b>{{ user }}님의 일기 리포트입니다</b></h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+<!--// 차트를 그릴 영역으로 canvas태그를 사용한다.-->
+<br/><canvas id="myChart" width="200" height="250"></canvas>
+    </div>
+</div>
+
+<!--// 해당 부분은 JS파일을 따로 만들어서 사용해도 된다.-->
+<script>
+// 차트를 그럴 영역을 dom요소로 가져온다.
+var chartArea = document.getElementById('myChart').getContext('2d');
+// 차트를 생성한다.
+var myChart = new Chart(chartArea, {
+    // ①차트의 종류(String)
+    type: 'bar',
+    // ②차트의 데이터(Object)
+    data: {
+        // ③x축에 들어갈 이름들(Array)
+        labels: ['쾌활', '기쁨', '보통', '우울', '화남'],
+        // ④실제 차트에 표시할 데이터들(Array), dataset객체들을 담고 있다.
+        datasets: [{
+            // ⑤dataset의 이름(String)
+            label: '해당 감정의 합계',
+            // ⑥dataset값(Array)
+            data: [{{ emotion_count.쾌활 }}, {{ emotion_count.기쁨 }}, {{ emotion_count.보통 }},
+             {{ emotion_count.우울 }}, {{ emotion_count.화남 }}],
+            // ⑦dataset의 배경색(rgba값을 String으로 표현)
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            // ⑧dataset의 선 색(rgba값을 String으로 표현)
+            borderColor: 'rgba(255, 99, 132, 1)',
+            // ⑨dataset의 선 두께(Number)
+            borderWidth: 2
+        }]
+    },
+    options: {
+        title: {
+            display: true,
+            text: '감정 보고서',
+            fontSize: 30,
+            fontColor: 'rgba(46, 49, 49, 1)'
+        },
+        legend: {
+            labels: {
+                fontColor: 'rgba(83, 51, 237, 1)',
+                fontSize: 15
+            }
+        },
+        scales: {
+            xAxes: [{
+                ticks: {
+                    fontColor: 'rgba(27, 163, 156, 1)',
+                    fontSize: '15'
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    fontColor: 'rgba(246, 36, 89, 1)',
+                    fontSize: '15'
+                }
+            }]
+        }
+    }
+});
+</script>
+    {% comment %} <div class="col-md-6">
+<canvas id="myChart2" width="100" height="250"></canvas>
+    </div>
+</div>
+<script>
+var myChart = new Chart(
+    document.getElementById('myChart2'),
+    {
+    type: 'line',
+    data: {
+        labels: "라벨이름들 입니다",
+        datasets: [{
+            label: 'My First Dataset',
+            data: [65, 59, 80, 81, 56, 55, 40],
+            fill: false,
+            borderColor: 'rgb(75, 192, 192)',
+            tension: 0.1
+        }]
+    },
+    options: {}	//추가 옵션이 있을 경우
+   }
+); {% endcomment %}
+
+</script>
+
+
+{% endblock %}

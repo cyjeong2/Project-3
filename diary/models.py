@@ -2,28 +2,18 @@ from django.db import models
 
 from urllib.parse import urlparse
 
-
 # from django.core.files import File
 
 # from utils.file import download, get_buffer_ext # 위에서 만든 file.py 경로
 
 
 class Memory(models.Model):
-    # head_image = models.ImageField(upload_to='blog/images/%Y/%m/%d/', blank=True)
-
-    # keywords = models.CharField()
-
-    # url1 = models.CharField()
-    # url2 = models.CharField()
-    # url3 = models.CharField()
-    # url4 = models.CharField()
 
     content = models.TextField(max_length=1000)
     created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
 
-    weather_choices = {('맑음', 'Sunny'),
-                       ('흐림', 'Cloudy'),
+    weather_choices = {('맑음','Sunny' ),
+                       ( '흐림','Cloudy'),
                        ('비', 'Rainy'),
                        ('눈', 'Snowy')}
 
@@ -31,9 +21,9 @@ class Memory(models.Model):
                        ('유화', 'Oil and Canvas'),
                        ('스케치', 'Sketched'),
                        ('인상주의', 'Impressionism'),
-                       ('MZ세대 스타일', 'Vaper Wave'),
+                       ('MZ세대 스타일','Vaper Wave'),
                        }
-
+                       
     emotion_choices = {('쾌활', 'Cheerful'),
                        ('기쁨', 'Happy'),
                        ('보통', 'Neutral'),
@@ -44,7 +34,6 @@ class Memory(models.Model):
     Weather = models.CharField(max_length=20, choices=weather_choices, null=True)
     Drawing = models.CharField(max_length=20, choices=drawing_choices, null=True)
     Emotion = models.CharField(max_length=20, choices=emotion_choices, null=True)
-
     def __str__(self):
         return f'[{self.pk}]{self.content}'
 
@@ -60,7 +49,6 @@ class Memory(models.Model):
 
 
 class KeywordPost(models.Model):
-    # head_image = models.ImageField(upload_to='blog/images/%Y/%m/%d/', blank=True)
     weather_choices = {('Sunny', 'Sunny'),
                        ('Cloudy', 'Cloudy'),
                        ('Rainy', 'Rainy'),
@@ -89,7 +77,6 @@ class KeywordPost(models.Model):
     content3 = models.TextField(max_length=7)
 
     create_dat = models.DateTimeField(auto_now_add=True)
-    update_dat = models.DateTimeField(auto_now=True)
 
     def get_absolute_url(self):
         return f"/diary/{self.pk}/"
