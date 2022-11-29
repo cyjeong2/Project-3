@@ -629,7 +629,7 @@ def makeWordCloud(request):
     dbCon = pymysql.connect(host='localhost', user='admin', password='admin', db='project_test2')
     cursor = dbCon.cursor()
     print(memorys)
-    df = pd.DataFrame('content')
+    df = pd.DataFrame('memorys')
     mask = Image.open('\static\cloud.png')
     mask = np.array(mask)
 
