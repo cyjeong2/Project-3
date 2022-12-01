@@ -3552,3 +3552,133 @@ KeyError: 'angry'
 2022-11-28 17:16:08,424 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
 2022-11-29 16:48:08,947 - django.request - WARNING - Not Found: /favicon.ico
 2022-11-29 16:48:10,854 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-29 17:48:22,439 - django.request - WARNING - Not Found: /diary/diary/new/
+2022-11-29 18:10:41,982 - django.request - WARNING - Not Found: /diary/dashboard/bower_components/jqcloud2/dist/jqcloud.min.js
+2022-11-29 18:10:42,006 - django.request - WARNING - Not Found: /diary/dashboard/bower_components/jqcloud2/dist/jqcloud.min.css
+2022-11-29 18:10:42,080 - django.request - WARNING - Not Found: /diary/dashboard/bower_components/jqcloud2/dist/jqcloud.min.css
+2022-11-29 18:14:03,753 - django.request - WARNING - Not Found: /diary/dashboard/bower_components/jqcloud2/dist/jqcloud.min.js
+2022-11-29 18:14:03,798 - django.request - WARNING - Not Found: /diary/dashboard/bower_components/jqcloud2/dist/jqcloud.min.css
+2022-11-29 18:14:27,208 - django.request - WARNING - Not Found: /diary/dashboard/bower_components/jqcloud2/dist/jqcloud.min.js
+2022-11-29 18:14:27,244 - django.request - WARNING - Not Found: /diary/dashboard/bower_components/jqcloud2/dist/jqcloud.min.css
+2022-11-29 18:14:27,302 - django.request - WARNING - Not Found: /diary/dashboard/bower_components/jqcloud2/dist/jqcloud.min.css
+2022-11-29 18:17:16,087 - django.request - WARNING - Not Found: /diary/dashboard/bower_components/jqcloud2/dist/jqcloud.min.js
+2022-11-29 18:17:16,136 - django.request - WARNING - Not Found: /diary/dashboard/bower_components/jqcloud2/dist/jqcloud.min.css
+2022-11-29 20:51:53,594 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-29 20:52:25,968 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-29 20:55:10,367 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['liuFPNvT868CBaKAuC08WTGtYS48yXaa9vme6EGGxoCc4oWkwIqh3Yzy8KR45oJR'], 'Weather': ['흐림'], 'Emotion': ['쾌활'], 'Drawing': ['인상주의'], 'content': ['날씨는 흐렸지만 오늘 기분은 상쾌했다. 간만에 서울 멀리서 여기 세종으로 친구가 놀러와줘서 같이 호수공원 산책도 하고, 영화관에서 액션영화도 보고, 레스토랑에서 파스타와 피자를 먹었다. 세종은 놀거리가 별로 없어서 항상 올때마다 미안하기도 하지만 이렇게 시간내서 와주는 친구가 고맙다.']}>
+2022-11-29 20:55:10,368 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-11-29 20:55:20,361 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-11-29 20:55:44,296 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-11-29 20:55:51,052 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-11-29 20:55:51,682 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=45 request_id=dbb1e67e5f2bab769916beed3138d98a response_code=401
+2022-11-29 20:55:51,682 - openai - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-7zm79***************************************pCg4. You can find your API key at https://beta.openai.com.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2022-11-29 20:55:51,782 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 227, in memory_new
+    response = openai.Image.create(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_resources\image.py", line 22, in create
+    return instance.request("post", cls._get_url("generations"), params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\openai_object.py", line 179, in request
+    response, stream, api_key = requestor.request(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 181, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 396, in _interpret_response
+    self._interpret_response_line(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 429, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.AuthenticationError: Incorrect API key provided: sk-7zm79***************************************pCg4. You can find your API key at https://beta.openai.com.
+2022-11-30 13:53:29,285 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-30 14:27:11,632 - django.request - WARNING - Not Found: /favicon.ico
+2022-11-30 16:58:31,703 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-30 17:03:47,700 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-11-30 17:03:56,834 - django.request - WARNING - Not Found: /favicon.ico
+2022-12-01 10:41:18,554 - django.request - WARNING - Not Found: /favicon.ico
+2022-12-01 10:43:58,853 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-12-01 10:45:39,428 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['EdFKYAVsr6W0zdPGMVZ97usjFLT8MH2psqxjfr6fQoqA2r1qO1piezloPDG4j8B6'], 'Weather': ['눈'], 'Emotion': ['우울'], 'Drawing': ['인상주의'], 'content': ['오늘은 원래 안 나와도 되는데 저번에 탈주를 해서 어쩔 수 없이 회사에 끌려나오게 되었다. 원래 일정이라면 15분 안에 도착하는 코스인데 1시간 40분 코스로 변경이 되었다. 오늘 날씨도 추운데 너무 서러웠다. ']}>
+2022-12-01 10:45:39,430 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-12-01 10:45:57,226 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-12-01 10:46:11,378 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-12-01 10:46:16,050 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-12-01 10:46:16,786 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=48 request_id=cca49f02f4a999ee12627b695aaf1581 response_code=401
+2022-12-01 10:46:16,787 - openai - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-7zm79***************************************pCg4. You can find your API key at https://beta.openai.com.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2022-12-01 10:46:17,616 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 227, in memory_new
+    response = openai.Image.create(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_resources\image.py", line 22, in create
+    return instance.request("post", cls._get_url("generations"), params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\openai_object.py", line 179, in request
+    response, stream, api_key = requestor.request(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 181, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 396, in _interpret_response
+    self._interpret_response_line(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 429, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.AuthenticationError: Incorrect API key provided: sk-7zm79***************************************pCg4. You can find your API key at https://beta.openai.com.
+2022-12-01 10:47:20,413 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-12-01 10:49:19,644 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['uNQm1uytGmULaBNyf9sSNzkfIVdtfB1Zi0IVilJg5EolDPZihfS1UEdkSN0pM2AG'], 'Weather': ['눈'], 'Emotion': ['우울'], 'Drawing': ['인상주의'], 'content': ['오늘은 회사에 안 나와도 되는데 회사에 나왔다. 저번에 나왔더라면 15분 걸리는 거리에 갔다가 바로 집으로 가서 침대에 누워있을 수 있었는데 1시간 40분 걸리는 코스로 변경이 되어 너무 슬펐다. 오늘 밖에 날씨도 춥던데 내 기분도 서러웠다.']}>
+2022-12-01 10:49:19,646 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-12-01 10:49:36,625 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-12-01 10:49:54,359 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-12-01 10:49:57,753 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-12-01 10:49:58,585 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=44 request_id=b7de62d4e56b8e0f0d5be702d92519ee response_code=401
+2022-12-01 10:49:58,586 - openai - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-7zm79***************************************pCg4. You can find your API key at https://beta.openai.com.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2022-12-01 10:49:58,858 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 227, in memory_new
+    response = openai.Image.create(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_resources\image.py", line 22, in create
+    return instance.request("post", cls._get_url("generations"), params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\openai_object.py", line 179, in request
+    response, stream, api_key = requestor.request(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 181, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 396, in _interpret_response
+    self._interpret_response_line(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 429, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.AuthenticationError: Incorrect API key provided: sk-7zm79***************************************pCg4. You can find your API key at https://beta.openai.com.
+2022-12-01 16:22:21,921 - django.request - WARNING - Not Found: /favicon.ico
+2022-12-01 16:23:21,832 - django.request - WARNING - Not Found: /favicon.ico
+2022-12-01 16:24:57,800 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-12-01 16:25:42,984 - root - INFO - <QueryDict: {'csrfmiddlewaretoken': ['IPnseo9fuUUiUJQHFLx3jNGZtlwjm8Duw2f1vfk2TcoSnX2rHRXcqSz4DdjfTzcb'], 'Weather': ['눈'], 'Emotion': ['우울'], 'Drawing': ['인상주의'], 'content': ['오늘은 회사에 안 나와도 되는데 회사에 나왔다. 저번에 나왔더라면 15분 걸리는 거리에 갔다가 바로 집으로 가서 침대에 누워있을 수 있었는데 1시간 40분 걸리는 코스로 변경이 되어 너무 슬펐다. 오늘 밖에 날씨도 춥던데 내 기분도 서러웠다.']}>
+2022-12-01 16:25:42,986 - root - INFO - <bound method BaseForm.is_valid of <MemoryForm bound=True, valid=Unknown, fields=(content;Weather;Drawing;Emotion)>>
+2022-12-01 16:25:50,060 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/xlm-r-100langs-bert-base-nli-stsb-mean-tokens
+2022-12-01 16:26:05,339 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2022-12-01 16:26:08,064 - openai - INFO - message='Request to OpenAI API' method=post path=https://api.openai.com/v1/images/generations
+2022-12-01 16:26:08,634 - openai - INFO - message='OpenAI API response' path=https://api.openai.com/v1/images/generations processing_ms=44 request_id=67bd4641dccfc4d28bfbd2c532e6bcda response_code=401
+2022-12-01 16:26:08,635 - openai - INFO - error_code=invalid_api_key error_message='Incorrect API key provided: sk-7zm79***************************************pCg4. You can find your API key at https://beta.openai.com.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+2022-12-01 16:26:08,804 - django.request - ERROR - Internal Server Error: /diary/new/
+Traceback (most recent call last):
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\GIT WD\Project 3\esg-a-django\diary\views.py", line 227, in memory_new
+    response = openai.Image.create(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_resources\image.py", line 22, in create
+    return instance.request("post", cls._get_url("generations"), params)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\openai_object.py", line 179, in request
+    response, stream, api_key = requestor.request(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 181, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 396, in _interpret_response
+    self._interpret_response_line(
+  File "D:\GIT WD\Project 3\esg-a-django\venv\lib\site-packages\openai\api_requestor.py", line 429, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.AuthenticationError: Incorrect API key provided: sk-7zm79***************************************pCg4. You can find your API key at https://beta.openai.com.
+2022-12-01 16:27:31,318 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.
+2022-12-01 16:28:32,025 - django.utils.autoreload - INFO - D:\GIT WD\Project 3\esg-a-django\diary\views.py changed, reloading.

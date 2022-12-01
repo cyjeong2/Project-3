@@ -22,7 +22,8 @@ body {
 </style>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 
-
+<script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+<script src="https://cdn.anychart.com/releases/v8/js/anychart-tag-cloud.min.js"></script>
 
 <div class="container">
     <div class="row justify-content-center">
@@ -32,9 +33,10 @@ body {
             </div>
         </div>
     </div>
-    <div class="col-md-4" style="display: inline-block;float:left;">
+    <div class="col-md-4" style="display: inline-block;float:left;text-align:center;font-family:'MaruBuri-Regular';">
 <!--// 차트를 그릴 영역으로 canvas태그를 사용한다.-->
-<br/><canvas id="myChart" width="200" height="250"></canvas>
+        <h5><b>감정 리포트</b></h5>
+        <canvas id="myChart" width="200" height="250"></canvas>
     </div>
 
 
@@ -96,8 +98,9 @@ var myChart = new Chart(chartArea, {
     }
 });
 </script>
-    <br/><div class="col-md-6" style="display: inline-block;float:right;">
-<canvas id="myChart2" width="200px" height="75px" ></canvas>
+    <div class="col-md-6" style="display: inline-block;float:right;text-align:center;font-family:'MaruBuri-Regular';">
+    <h5><b>날씨 리포트</b></h5>
+<canvas id="myChart2" style="width:200px;height:75px"></canvas>
     </div>
 
 <script>
@@ -106,10 +109,10 @@ var myChart = new Chart(
     {
     type: 'line',
     data: {
-        labels: "라벨이름들 입니다",
+        labels: ['', '맑음', '흐림', '비', '눈', ''],
         datasets: [{
-            label: 'My First Dataset',
-            data: [65, 59, 80, 81, 56, 55, 40],
+            label: '일기 별 날씨 총 합',
+            data: [0, {{ weather_count.맑음 }}, {{ weather_count.흐림 }}, {{ weather_count.비 }}, {{ weather_count.눈 }}, 0],
             fill: false,
             borderColor: 'rgb(75, 192, 192)',
             tension: 0.1
@@ -122,30 +125,54 @@ var myChart = new Chart(
 </script>
 
 <br/><div class="col-md-6" style="float:right;">
-<br/><canvas id="myChart3" width="200px" height="75px" ></canvas>
+    <div class="chart-area">
+<br/><div id="container" style="width=250px;height=200px;text-align:center;font-family:'MaruBuri-Regular';" >
+        <br/><h5><b>일기에 많이 사용된 단어</b></h5>
     </div>
 </div>
 </div>
 <script>
-var myChart = new Chart(
-    document.getElementById('myChart3'),
-    {
-    type: 'line',
-    data: {
-        labels: "라벨이름들 입니다",
-        datasets: [{
-            label: 'My First Dataset',
-            data: [65, 59, 80, 81, 56, 55, 40],
-            fill: false,
-            borderColor: 'rgb(75, 192, 192)',
-            tension: 0.1
-        }]
-    },
-    options: {}	//추가 옵션이 있을 경우
-   }
-);
-
+anychart.onDocumentReady(function () {
+    var data = [
+        {
+            "x": "하루",
+            "value": 590000000,
+            category: "Sino-Tibetan"
+        },
+        {
+            "x": "공원",
+            "value": 283000000,
+            category: "Indo-European"
+        },
+        {
+            "x": "강아지",
+            "value": 544000000,
+            category: "Indo-European"
+        },
+        {
+            "x": "산책",
+            "value": 527000000,
+            category: "Indo-European"
+        }, {
+            "x": "비",
+            "value": 422000000,
+            category: "Afro-Asiatic"
+        }, {
+            "x": "바다",
+            "value": 620000000,
+            category: "Afro-Asiatic"
+        }
+    ];
+    var chart = anychart.tagCloud(data);
+    chart.angles([0]);
+    chart.container("container");
+    //chart.getCredits().setEnabled(false);
+    chart.draw();
+});
 </script>
+</div>
+
+
 
 
 {% endblock %}

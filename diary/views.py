@@ -221,7 +221,7 @@ def memory_new(request):
             
             # return redirect(f"/diary/{memory.pk}/")
             # return redirect(memory.get_absolute_url())
-            openai.api_key = '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'
+            openai.api_key = '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'
 
             #함수
             response = openai.Image.create(
@@ -396,7 +396,7 @@ def image_extraction(request):
 
     # 3) 이미지 전환 및 추출
     # token keys
-    openai.api_key = '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'
+    openai.api_key = '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'
 
     #함수
     response = openai.Image.create(
@@ -587,6 +587,7 @@ def bar_chart(request) :
     cursor = dbCon.cursor()
     
     emotions = []
+    weathers = []
     for memory in memorys:
         
         emotions.append(memory['Emotion'])
@@ -614,6 +615,26 @@ def bar_chart(request) :
         elif emotion == '화남' :
             emotion_count['화남'] += 1
 
+    for weather in memorys:
+        weathers.append(weather['Weather'])
+
+    weather_count = {
+        '맑음': 0,
+        '흐림': 0,
+        '눈': 0,
+        '비': 0,
+    }
+
+    for weather in weathers:
+
+        if weather == '맑음':
+            weather_count['맑음'] += 1
+        elif weather == '흐림':
+            weather_count['흐림'] += 1
+        elif weather == '비':
+            weather_count['비'] += 1
+        elif weather == '눈':
+            weather_count['눈'] += 1
 
 
     with dbCon :
@@ -622,6 +643,7 @@ def bar_chart(request) :
     
     return render(request, "diary/dashboard.html", {
         'emotion_count' : emotion_count,
+        'weather_count' : weather_count,
         })
 
 def makeWordCloud(request):
@@ -642,4 +664,3 @@ def makeWordCloud(request):
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.show()
     return render(request, 'diary/dashboard.html', {'content': df.content})
-    
